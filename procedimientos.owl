@@ -67,10 +67,10 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
         <vann:preferredNamespaceUri rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#"/>
         <owl:versionIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos/0.1"/>
     </owl:Ontology>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Annotation properties
@@ -78,34 +78,34 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://purl.org/dc/terms/issued -->
 
     <owl:AnnotationProperty rdf:about="&dcterms;issued"/>
-    
+
 
 
     <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
 
     <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
-    
+
 
 
     <!-- http://www.w3.org/2000/01/rdf-schema#isDefinedBy -->
 
     <owl:AnnotationProperty rdf:about="&rdfs;isDefinedBy"/>
-    
+
 
 
     <!-- http://www.w3.org/2000/01/rdf-schema#label -->
 
     <owl:AnnotationProperty rdf:about="&rdfs;label"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Object Properties
@@ -113,62 +113,19 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
 
 
-    <!-- http://purl.org/dc/terms/type -->
 
-    <owl:ObjectProperty rdf:about="&dcterms;type"/>
-    
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#lugarPago -->
 
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#contienePortal -->
-
-    <owl:ObjectProperty rdf:about="&esproc;contienePortal">
-        <rdfs:label xml:lang="es">contiene portal</rdfs:label>
-        <dcterms:issued>2014-03-28</dcterms:issued>
-        <rdfs:comment xml:lang="es">Portal que un fenómeno geográfico contiene (por ejemplo, una vía o un tramo de vía, aunque también puede ser un barrio, distrito, ciudad, etc.)</rdfs:comment>
-        <rdfs:comment rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"/>
-        <rdfs:subPropertyOf rdf:resource="&geosparql;sfContains"/>
+    <owl:ObjectProperty rdf:about="&esproc;lugarPago">
+        <rdfs:label xml:lang="es">lugar de pago</rdfs:label>
+        <dcterms:issued>2016-07-28</dcterms:issued>
+        <rdfs:comment xml:lang="es">Lugar de pago del procedimiento, en caso de tener que realizar pago</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/cpsv#physicallyAvailableAt"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos"/>
     </owl:ObjectProperty>
-    
 
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#contieneTramoVia -->
-
-    <owl:ObjectProperty rdf:about="&esproc;contieneTramoVia">
-        <rdfs:label xml:lang="es">contiene tramo de vía</rdfs:label>
-        <dcterms:issued>2014-03-28</dcterms:issued>
-        <rdfs:comment xml:lang="es">Tramo de vía que un fenómeno geográfico contiene (por ejemplo, una vía, aunque también puede ser un barrio, distrito, ciudad, etc.)</rdfs:comment>
-        <rdfs:range rdf:resource="&esproc;TramoVia"/>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"/>
-        <rdfs:subPropertyOf rdf:resource="&geosparql;sfContains"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#contieneVia -->
-
-    <owl:ObjectProperty rdf:about="&esproc;contieneVia">
-        <rdfs:label xml:lang="es">contiene vía</rdfs:label>
-        <dcterms:issued>2014-03-28</dcterms:issued>
-        <rdfs:comment xml:lang="es">Vía que un fenómeno geográfico contiene (por ejemplo, un barrio, distrito, ciudad, etc.)</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"/>
-        <rdfs:subPropertyOf rdf:resource="&geosparql;sfContains"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#dedicadoA -->
-
-    <owl:ObjectProperty rdf:about="&esproc;dedicadoA">
-        <rdfs:label xml:lang="es">dedicado a</rdfs:label>
-        <dcterms:issued>2014-03-28</dcterms:issued>
-        <rdfs:comment xml:lang="es">Una calle puede estar dedicada a un evento, personaje, película, etc.</rdfs:comment>
-        <rdfs:domain rdf:resource="&esproc;Via"/>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"/>
-    </owl:ObjectProperty>
-    
 
 
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#tipoVia -->
@@ -176,78 +133,18 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
     <owl:ObjectProperty rdf:about="&esproc;tipoVia">
         <rdfs:label xml:lang="es">tipo de vía</rdfs:label>
         <dcterms:issued rdf:datatype="&xsd;dateTime">2014-03-28</dcterms:issued>
-        <rdfs:comment xml:lang="es">Tipo de vía, que será representado mediante la clasificación en SKOS de URI http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via. 
+        <rdfs:comment xml:lang="es">Tipo de vía, que será representado mediante la clasificación en SKOS de URI http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via.
 Por ejemplo, estas serán las URIs correspondientes a calles y plazas
 http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via/CL
 http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via/PL</rdfs:comment>
         <rdfs:domain rdf:resource="&esproc;Via"/>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos"/>
         <rdfs:range rdf:resource="&skos;Concept"/>
     </owl:ObjectProperty>
-    
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#tramoVia -->
 
-    <owl:ObjectProperty rdf:about="&esproc;tramoVia">
-        <rdfs:label xml:lang="es">pertenece al tramo de vía</rdfs:label>
-        <dcterms:issued>2014-03-28</dcterms:issued>
-        <rdfs:comment xml:lang="es">Tramo de vía al que pertenece un fenómeno (por ejemplo, una dirección, un portal, etc.)</rdfs:comment>
-        <rdfs:range rdf:resource="&esproc;TramoVia"/>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"/>
-        <rdfs:subPropertyOf rdf:resource="&geosparql;sfWithin"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#via -->
-
-    <owl:ObjectProperty rdf:about="&esproc;via">
-        <rdfs:label xml:lang="es">pertenece a la vía</rdfs:label>
-        <dcterms:issued>2014-03-28</dcterms:issued>
-        <rdfs:comment xml:lang="es">Vía a la que pertenece un fenómeno (por ejemplo, una dirección, un tramo de vía, un portal, etc.)</rdfs:comment>
-        <rdfs:range rdf:resource="&esproc;Via"/>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"/>
-        <rdfs:subPropertyOf rdf:resource="&geosparql;sfWithin"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.geonames.org/ontology#featureClass -->
-
-    <owl:ObjectProperty rdf:about="&geonames;featureClass">
-        <rdfs:label xml:lang="es">Clase del fenómeno</rdfs:label>
-        <rdfs:comment xml:lang="es">La categoría principal a la que pertenece el fenómeno, tal y como se define en la taxonomía de GeoNames</rdfs:comment>
-        <rdfs:subPropertyOf rdf:resource="&dcterms;type"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.geonames.org/ontology"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.geonames.org/ontology#featureCode -->
-
-    <owl:ObjectProperty rdf:about="&geonames;featureCode">
-        <rdfs:label xml:lang="es">código del fenómeno</rdfs:label>
-        <rdfs:comment xml:lang="es">Tipo del fenómeno, tal y como se define en la taxonomía de GeoNames</rdfs:comment>
-        <rdfs:subPropertyOf rdf:resource="&dcterms;type"/>
-        <rdfs:isDefinedBy rdf:resource="http://www.geonames.org/ontology"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://www.opengis.net/ont/geosparql#sfContains -->
-
-    <owl:ObjectProperty rdf:about="&geosparql;sfContains"/>
-    
-
-
-    <!-- http://www.opengis.net/ont/geosparql#sfWithin -->
-
-    <owl:ObjectProperty rdf:about="&geosparql;sfWithin"/>
-    
-
-
-    <!-- 
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Data properties
@@ -255,23 +152,65 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
 
 
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#lugarPago -->
 
-    <owl:DatatypeProperty rdf:about="&esproc;lugarPago">
-        <rdfs:label xml:lang="es">Lugar de pago</rdfs:label>
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#lugarPagoTexto -->
+
+    <owl:DatatypeProperty rdf:about="&esproc;lugarPagoTexto">
+        <rdfs:label xml:lang="es">lugar de pago (formato texto)</rdfs:label>
         <dcterms:issued>2016-07-28</dcterms:issued>
-        <rdfs:comment xml:lang="es">Lugar donde se realiza el pago del servicio, en caso de que haya que realizar pago</rdfs:comment>
+        <rdfs:comment xml:lang="es">Lugar donde se realiza el pago del servicio, en caso de que haya que realizar pago (en formato textual)</rdfs:comment>
         <rdfs:domain rdf:resource="http://purl.org/vocab/cpsv#PublicService"/>
         <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
-    
 
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#fechaPresentacionTexto -->
 
-    <!-- 
+    <owl:DatatypeProperty rdf:about="&esproc;fechaPresentacionTexto">
+        <rdfs:label xml:lang="es">fecha de presentación (formato texto)</rdfs:label>
+        <dcterms:issued>2016-07-28</dcterms:issued>
+        <rdfs:comment xml:lang="es">fecha en la que se deben presentar las solicitudes (en formato textual)</rdfs:comment>
+        <rdfs:domain rdf:resource="http://purl.org/vocab/cpsv#PublicService"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#fechaPresentacion -->
+
+    <owl:DatatypeProperty rdf:about="&esproc;fechaPresentacion">
+        <rdfs:label xml:lang="es">fecha de presentación (formato fecha)</rdfs:label>
+        <dcterms:issued>2016-07-28</dcterms:issued>
+        <rdfs:comment xml:lang="es">fecha en la que se deben presentar las solicitudes (en formato fecha)</rdfs:comment>
+        <rdfs:domain rdf:resource="http://purl.org/vocab/cpsv#PublicService"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#fechaRespuestaTexto -->
+
+    <owl:DatatypeProperty rdf:about="&esproc;fechaRespuestaTexto">
+        <rdfs:label xml:lang="es">fecha de respuesta (formato texto)</rdfs:label>
+        <dcterms:issued>2016-07-28</dcterms:issued>
+        <rdfs:comment xml:lang="es">fecha en la que se deben resolver las solicitudes (en formato textual)</rdfs:comment>
+        <rdfs:domain rdf:resource="http://purl.org/vocab/cpsv#PublicService"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#fechaRespuesta -->
+
+    <owl:DatatypeProperty rdf:about="&esproc;fechaRespuesta">
+        <rdfs:label xml:lang="es">fecha de respuesta (formato fecha)</rdfs:label>
+        <dcterms:issued>2016-07-28</dcterms:issued>
+        <rdfs:comment xml:lang="es">fecha en la que se deben resolver las solicitudes (en formato fecha/duración)</rdfs:comment>
+        <rdfs:domain rdf:resource="http://purl.org/vocab/cpsv#PublicService"/>
+        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Classes
@@ -279,94 +218,21 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://schema.org/Place -->
 
     <owl:Class rdf:about="&schema;Place"/>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#Portal -->
-
-    <owl:Class rdf:about="&esproc;Portal">
-        <rdfs:label xml:lang="es">Portal</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&geonames;Feature"/>
-        <dcterms:issued rdf:datatype="&xsd;dateTime">2013-03-28</dcterms:issued>
-        <rdfs:comment xml:lang="es">Subacceso independiente exterior (al aire libre) a una misma construcción. Para una misma construcción, con un mismo número de vía, pueden existir varias entradas que pueden estar numeradas con números o letras. [fuente: Modelo de Direcciones de la Administración General del Estado v.2]</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"/>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#TramoVia -->
-
-    <owl:Class rdf:about="&esproc;TramoVia">
-        <rdfs:label xml:lang="es">Tramo de vía</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&geonames;Feature"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&geonames;featureCode"/>
-                <owl:hasValue rdf:resource="&geonames;R.ST"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&geonames;featureClass"/>
-                <owl:hasValue rdf:resource="&geonames;R"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <dcterms:issued rdf:datatype="&xsd;dateTime">2013-03-28</dcterms:issued>
-        <rdfs:comment xml:lang="es">Tramo parcial o total de una vía</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"/>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#Via -->
-
-    <owl:Class rdf:about="&esproc;Via">
-        <rdfs:label xml:lang="es">Vía</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&geonames;Feature"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&geonames;featureCode"/>
-                <owl:hasValue rdf:resource="&geonames;R.ST"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&geonames;featureClass"/>
-                <owl:hasValue rdf:resource="&geonames;R"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <dcterms:issued rdf:datatype="&xsd;dateTime">2013-03-28</dcterms:issued>
-        <rdfs:comment xml:lang="es">Vía de comunicación construida para la circulación. 
-En su definición según el modelo de direcciones de la Administración General del Estado, Incluye calles, carreteras de todo tipo, caminos, vías de agua, pantalanes, etc. Asimismo, incluye la pseudovía., es decir todo aquello que complementa o sustituye a la vía.
-En nuestro caso, este término se utiliza para hacer referencia a las vías urbanas.
-
-Por esta razón, se utiliza geonames:R.ST como valor principal de la propiedad geonames:featureCode, dejando de lado otras opciones como R.PRMN (promenade), R.TRL (trail). Quizás en el futuro haya que relajar un poco esta opción, sobre todo, por ejemplo, para ciudades con costa y paseo marítimo.</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.geonames.org/ontology#Feature -->
-
-    <owl:Class rdf:about="&geonames;Feature">
-        <rdfs:subClassOf rdf:resource="&schema;Place"/>
-    </owl:Class>
-    
 
 
     <!-- http://www.w3.org/2004/02/skos/core#Concept -->
 
     <owl:Class rdf:about="&skos;Concept"/>
-    
 
 
-    <!-- 
+
+    <!--
     ///////////////////////////////////////////////////////////////////////////////////////
     //
     // Individuals
@@ -374,7 +240,7 @@ Por esta razón, se utiliza geonames:R.ST como valor principal de la propiedad g
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
+
 
 
     <!-- http://www.geonames.org/ontology#R -->
@@ -382,7 +248,7 @@ Por esta razón, se utiliza geonames:R.ST como valor principal de la propiedad g
     <owl:NamedIndividual rdf:about="&geonames;R">
         <rdf:type rdf:resource="&skos;Concept"/>
     </owl:NamedIndividual>
-    
+
 
 
     <!-- http://www.geonames.org/ontology#R.ST -->
@@ -401,4 +267,3 @@ Por esta razón, se utiliza geonames:R.ST como valor principal de la propiedad g
 
 
 <!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
-
