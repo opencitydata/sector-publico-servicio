@@ -9,24 +9,9 @@
     "issued" : {
       "@id" : "http://purl.org/dc/terms/issued"
     },
-    "contienePortal" : {
-      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#contienePortal",
-      "@type" : "@id"
-    },
-    "via" : {
-      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#via",
-      "@type" : "@id"
-    },
-    "sfWithin" : {
-      "@id" : "http://www.opengis.net/ont/geosparql#sfWithin",
-      "@type" : "@id"
-    },
-    "featureCode" : {
-      "@id" : "http://www.geonames.org/ontology#featureCode",
-      "@type" : "@id"
-    },
-    "Feature" : {
-      "@id" : "http://www.geonames.org/ontology#Feature"
+    "fechaRespuesta" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#fechaRespuesta",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
@@ -34,22 +19,15 @@
     "Concept" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
     },
-    "contieneTramoVia" : {
-      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#contieneTramoVia",
-      "@type" : "@id"
-    },
     "Via" : {
       "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#Via"
     },
-    "featureClass" : {
-      "@id" : "http://www.geonames.org/ontology#featureClass",
-      "@type" : "@id"
-    },
-    "TramoVia" : {
-      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#TramoVia"
-    },
     "creator" : {
       "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "fechaPresentacionTexto" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#fechaPresentacionTexto",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "rights" : {
       "@id" : "http://purl.org/dc/elements/1.1/rights"
@@ -63,31 +41,20 @@
     "isDefinedBy" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
     },
-    "sfContains" : {
-      "@id" : "http://www.opengis.net/ont/geosparql#sfContains",
-      "@type" : "@id"
+    "fechaPresentacion" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#fechaPresentacion",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
     },
     "title" : {
       "@id" : "http://purl.org/dc/elements/1.1/title"
     },
-    "contieneVia" : {
-      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#contieneVia",
-      "@type" : "@id"
-    },
-    "type" : {
-      "@id" : "http://purl.org/dc/terms/type",
-      "@type" : "@id"
-    },
-    "Portal" : {
-      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#Portal"
-    },
-    "dedicadoA" : {
-      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#dedicadoA",
-      "@type" : "@id"
+    "fechaRespuestaTexto" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#fechaRespuestaTexto",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "lugarPago" : {
       "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#lugarPago",
-      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+      "@type" : "@id"
     },
     "tipoVia" : {
       "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#tipoVia",
@@ -96,12 +63,16 @@
     "date" : {
       "@id" : "http://purl.org/dc/elements/1.1/date"
     },
+    "physicallyAvailableAt" : {
+      "@id" : "http://purl.org/vocab/cpsv#physicallyAvailableAt",
+      "@type" : "@id"
+    },
     "comment" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
     },
-    "tramoVia" : {
-      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#tramoVia",
-      "@type" : "@id"
+    "lugarPagoTexto" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#lugarPagoTexto",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
     },
     "hasFormat" : {
       "@id" : "http://purl.org/dc/terms/hasFormat"

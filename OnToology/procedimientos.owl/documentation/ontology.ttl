@@ -22,9 +22,8 @@
 geonames:R
       a       owl:NamedIndividual , skos:Concept .
 
-geonames:Feature
-      a       owl:Class ;
-      rdfs:subClassOf schema:Place .
+rdfs:isDefinedBy
+      a       owl:AnnotationProperty .
 
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos>
       a       owl:Ontology ;
@@ -47,169 +46,89 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
       owl:imports <http://purl.org/vocab/cpsv> ;
       owl:versionIRI <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos/0.1> .
 
+esproc:fechaPresentacion
+      a       owl:DatatypeProperty ;
+      rdfs:comment "fecha en la que se deben presentar las solicitudes (en formato fecha)"@es ;
+      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> ;
+      rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos> ;
+      rdfs:label "fecha de presentación (formato fecha)"@es ;
+      rdfs:range xsd:dateTime ;
+      dcterms:issued "2016-07-28" .
+
+schema:Place
+      a       owl:Class .
+
+esproc:fechaRespuestaTexto
+      a       owl:DatatypeProperty ;
+      rdfs:comment "fecha en la que se deben resolver las solicitudes (en formato textual)"@es ;
+      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> ;
+      rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos> ;
+      rdfs:label "fecha de respuesta (formato texto)"@es ;
+      rdfs:range xsd:string ;
+      dcterms:issued "2016-07-28" .
+
 rdfs:label
       a       owl:AnnotationProperty .
 
-esproc:contienePortal
+esproc:tipoVia
       a       owl:ObjectProperty ;
-      rdfs:comment "Portal que un fenómeno geográfico contiene (por ejemplo, una vía o un tramo de vía, aunque también puede ser un barrio, distrito, ciudad, etc.)"@es , <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> ;
-      rdfs:label "contiene portal"@es ;
-      rdfs:subPropertyOf geosparql:sfContains ;
-      dcterms:issued "2014-03-28" .
+      rdfs:comment """Tipo de vía, que será representado mediante la clasificación en SKOS de URI http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via.
+Por ejemplo, estas serán las URIs correspondientes a calles y plazas
+http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via/CL
+http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via/PL"""@es ;
+      rdfs:domain esproc:Via ;
+      rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos> ;
+      rdfs:label "tipo de vía"@es ;
+      rdfs:range skos:Concept ;
+      dcterms:issued "2014-03-28"^^xsd:dateTime .
 
-esproc:tramoVia
-      a       owl:ObjectProperty ;
-      rdfs:comment "Tramo de vía al que pertenece un fenómeno (por ejemplo, una dirección, un portal, etc.)"@es ;
-      rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> ;
-      rdfs:label "pertenece al tramo de vía"@es ;
-      rdfs:range esproc:TramoVia ;
-      rdfs:subPropertyOf geosparql:sfWithin ;
-      dcterms:issued "2014-03-28" .
-
-esproc:TramoVia
-      a       owl:Class ;
-      rdfs:comment "Tramo parcial o total de una vía"@es ;
-      rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> ;
-      rdfs:label "Tramo de vía"@es ;
-      rdfs:subClassOf geonames:Feature ;
-      rdfs:subClassOf
-              [ a       owl:Restriction ;
-                owl:hasValue geonames:R ;
-                owl:onProperty geonames:featureClass
-              ] ;
-      rdfs:subClassOf
-              [ a       owl:Restriction ;
-                owl:hasValue <http://www.geonames.org/ontology#R.ST> ;
-                owl:onProperty geonames:featureCode
-              ] ;
-      dcterms:issued "2013-03-28"^^xsd:dateTime .
-
-geonames:featureClass
-      a       owl:ObjectProperty ;
-      rdfs:comment "La categoría principal a la que pertenece el fenómeno, tal y como se define en la taxonomía de GeoNames"@es ;
-      rdfs:isDefinedBy <http://www.geonames.org/ontology> ;
-      rdfs:label "Clase del fenómeno"@es ;
-      rdfs:subPropertyOf dcterms:type .
-
-[]    rdfs:label "HTML" .
-
-esproc:contieneVia
-      a       owl:ObjectProperty ;
-      rdfs:comment "Vía que un fenómeno geográfico contiene (por ejemplo, un barrio, distrito, ciudad, etc.)"@es ;
-      rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> ;
-      rdfs:label "contiene vía"@es ;
-      rdfs:subPropertyOf geosparql:sfContains ;
-      dcterms:issued "2014-03-28" .
-
-esproc:lugarPago
+esproc:lugarPagoTexto
       a       owl:DatatypeProperty ;
-      rdfs:comment "Lugar donde se realiza el pago del servicio, en caso de que haya que realizar pago"@es ;
+      rdfs:comment "Lugar donde se realiza el pago del servicio, en caso de que haya que realizar pago (en formato textual)"@es ;
       rdfs:domain <http://purl.org/vocab/cpsv#PublicService> ;
       rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos> ;
-      rdfs:label "Lugar de pago"@es ;
+      rdfs:label "lugar de pago (formato texto)"@es ;
       rdfs:range xsd:string ;
+      dcterms:issued "2016-07-28" .
+
+esproc:fechaRespuesta
+      a       owl:DatatypeProperty ;
+      rdfs:comment "fecha en la que se deben resolver las solicitudes (en formato fecha/duración)"@es ;
+      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> ;
+      rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos> ;
+      rdfs:label "fecha de respuesta (formato fecha)"@es ;
+      rdfs:range xsd:dateTime ;
+      dcterms:issued "2016-07-28" .
+
+esproc:lugarPago
+      a       owl:ObjectProperty ;
+      rdfs:comment "Lugar de pago del procedimiento, en caso de tener que realizar pago"@es ;
+      rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos> ;
+      rdfs:label "lugar de pago"@es ;
+      rdfs:subPropertyOf <http://purl.org/vocab/cpsv#physicallyAvailableAt> ;
       dcterms:issued "2016-07-28" .
 
 rdfs:comment
       a       owl:AnnotationProperty .
 
-skos:Concept
-      a       owl:Class .
-
-rdfs:isDefinedBy
-      a       owl:AnnotationProperty .
-
-esproc:Portal
-      a       owl:Class ;
-      rdfs:comment "Subacceso independiente exterior (al aire libre) a una misma construcción. Para una misma construcción, con un mismo número de vía, pueden existir varias entradas que pueden estar numeradas con números o letras. [fuente: Modelo de Direcciones de la Administración General del Estado v.2]"@es ;
-      rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> ;
-      rdfs:label "Portal"@es ;
-      rdfs:subClassOf geonames:Feature ;
-      dcterms:issued "2013-03-28"^^xsd:dateTime .
-
-geosparql:sfContains
-      a       owl:ObjectProperty .
-
-dcterms:type
-      a       owl:ObjectProperty .
-
-schema:Place
-      a       owl:Class .
-
-esproc:dedicadoA
-      a       owl:ObjectProperty ;
-      rdfs:comment "Una calle puede estar dedicada a un evento, personaje, película, etc."@es ;
-      rdfs:domain esproc:Via ;
-      rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> ;
-      rdfs:label "dedicado a"@es ;
-      dcterms:issued "2014-03-28" .
-
-esproc:contieneTramoVia
-      a       owl:ObjectProperty ;
-      rdfs:comment "Tramo de vía que un fenómeno geográfico contiene (por ejemplo, una vía, aunque también puede ser un barrio, distrito, ciudad, etc.)"@es ;
-      rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> ;
-      rdfs:label "contiene tramo de vía"@es ;
-      rdfs:range esproc:TramoVia ;
-      rdfs:subPropertyOf geosparql:sfContains ;
-      dcterms:issued "2014-03-28" .
-
-esproc:Via
-      a       owl:Class ;
-      rdfs:comment """Vía de comunicación construida para la circulación. 
-En su definición según el modelo de direcciones de la Administración General del Estado, Incluye calles, carreteras de todo tipo, caminos, vías de agua, pantalanes, etc. Asimismo, incluye la pseudovía., es decir todo aquello que complementa o sustituye a la vía.
-En nuestro caso, este término se utiliza para hacer referencia a las vías urbanas.
-
-Por esta razón, se utiliza geonames:R.ST como valor principal de la propiedad geonames:featureCode, dejando de lado otras opciones como R.PRMN (promenade), R.TRL (trail). Quizás en el futuro haya que relajar un poco esta opción, sobre todo, por ejemplo, para ciudades con costa y paseo marítimo."""@es ;
-      rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> ;
-      rdfs:label "Vía"@es ;
-      rdfs:subClassOf geonames:Feature ;
-      rdfs:subClassOf
-              [ a       owl:Restriction ;
-                owl:hasValue <http://www.geonames.org/ontology#R.ST> ;
-                owl:onProperty geonames:featureCode
-              ] ;
-      rdfs:subClassOf
-              [ a       owl:Restriction ;
-                owl:hasValue geonames:R ;
-                owl:onProperty geonames:featureClass
-              ] ;
-      dcterms:issued "2013-03-28"^^xsd:dateTime .
-
-geosparql:sfWithin
-      a       owl:ObjectProperty .
-
-esproc:via
-      a       owl:ObjectProperty ;
-      rdfs:comment "Vía a la que pertenece un fenómeno (por ejemplo, una dirección, un tramo de vía, un portal, etc.)"@es ;
-      rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> ;
-      rdfs:label "pertenece a la vía"@es ;
-      rdfs:range esproc:Via ;
-      rdfs:subPropertyOf geosparql:sfWithin ;
-      dcterms:issued "2014-03-28" .
-
-esproc:tipoVia
-      a       owl:ObjectProperty ;
-      rdfs:comment """Tipo de vía, que será representado mediante la clasificación en SKOS de URI http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via. 
-Por ejemplo, estas serán las URIs correspondientes a calles y plazas
-http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via/CL
-http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via/PL"""@es ;
-      rdfs:domain esproc:Via ;
-      rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> ;
-      rdfs:label "tipo de vía"@es ;
-      rdfs:range skos:Concept ;
-      dcterms:issued "2014-03-28"^^xsd:dateTime .
-
 []    rdfs:label "RDF" .
+
+[]    rdfs:label "HTML" .
 
 <http://www.geonames.org/ontology#R.ST>
       a       owl:NamedIndividual , skos:Concept .
 
+skos:Concept
+      a       owl:Class .
+
 dcterms:issued
       a       owl:AnnotationProperty .
 
-geonames:featureCode
-      a       owl:ObjectProperty ;
-      rdfs:comment "Tipo del fenómeno, tal y como se define en la taxonomía de GeoNames"@es ;
-      rdfs:isDefinedBy <http://www.geonames.org/ontology> ;
-      rdfs:label "código del fenómeno"@es ;
-      rdfs:subPropertyOf dcterms:type .
+esproc:fechaPresentacionTexto
+      a       owl:DatatypeProperty ;
+      rdfs:comment "fecha en la que se deben presentar las solicitudes (en formato textual)"@es ;
+      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> ;
+      rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos> ;
+      rdfs:label "fecha de presentación (formato texto)"@es ;
+      rdfs:range xsd:string ;
+      dcterms:issued "2016-07-28" .

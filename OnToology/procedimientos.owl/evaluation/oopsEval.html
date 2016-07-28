@@ -74,12 +74,12 @@ P04. Creating unconnected ontology elements<span style="float: right;">1 case de
 <div class="panel-heading">
 <h4 class="panel-title">
 <a data-toggle="collapse" href="#collapse1">
-P08. Missing annotations<span style="float: right;">6 cases detected. <span class="label label-minor">Minor</span></span></a>
+P08. Missing annotations<span style="float: right;">2 cases detected. <span class="label label-minor">Minor</span></span></a>
 </h4>
 </div>
 <div id="collapse1" class="panel-collapse collapse">
 <div class="panel-body">
-<p>Ontology terms lack annotations properties. This kind of properties improves the ontology understanding and usability from a user point of view.</p><p>This pitfall affects to the following ontology elements: </p><ul><li><a href="http://purl.org/dc/terms/type" target="_blank">http://purl.org/dc/terms/type</a></li><li><a href="http://www.opengis.net/ont/geosparql#sfContains" target="_blank">http://www.opengis.net/ont/geosparql#sfContains</a></li><li><a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank">http://www.w3.org/2004/02/skos/core#Concept</a></li><li><a href="http://www.opengis.net/ont/geosparql#sfWithin" target="_blank">http://www.opengis.net/ont/geosparql#sfWithin</a></li><li><a href="http://www.geonames.org/ontology#Feature" target="_blank">http://www.geonames.org/ontology#Feature</a></li><li><a href="http://schema.org/Place" target="_blank">http://schema.org/Place</a></li></ul></div>
+<p>Ontology terms lack annotations properties. This kind of properties improves the ontology understanding and usability from a user point of view.</p><p>This pitfall affects to the following ontology elements: </p><ul><li><a href="http://www.w3.org/2004/02/skos/core#Concept" target="_blank">http://www.w3.org/2004/02/skos/core#Concept</a></li><li><a href="http://schema.org/Place" target="_blank">http://schema.org/Place</a></li></ul></div>
 </div>
 </div>
 <div class="panel panel-default">
@@ -98,24 +98,36 @@ P10. Missing disjointness [1, 2, 3]<span style="float: right;"> ontology *<span 
 <div class="panel-heading">
 <h4 class="panel-title">
 <a data-toggle="collapse" href="#collapse3">
-P11. Missing domain or range in properties<span style="float: right;">11 cases detected. <span class="label label-warning">Important</span></span></a>
+P11. Missing domain or range in properties<span style="float: right;">1 case detected. <span class="label label-warning">Important</span></span></a>
 </h4>
 </div>
 <div id="collapse3" class="panel-collapse collapse">
 <div class="panel-body">
-<p>Relationships and/or attributes without domain or range (or none of them) are included in the ontology. There are situations in which the relation is very general and the range should be the most general concept "Thing". However, in other cases, the relations are more specific and it could be a good practice to specify its domain and/or range. An example of this type of pitfall is to create the relationship "hasWritten" in an ontology about art in which the relationship domain should be "Writer" and the relationship range should be "LiteraryWork". This pitfall is related to the common error when defining ranges and domains described in [3].</p><p>This pitfall affects to the following ontology elements: </p><ul><li><a href="http://www.opengis.net/ont/geosparql#sfContains" target="_blank">http://www.opengis.net/ont/geosparql#sfContains</a></li><li><a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#contienePortal" target="_blank">http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#contienePortal</a></li><li><a href="http://www.opengis.net/ont/geosparql#sfWithin" target="_blank">http://www.opengis.net/ont/geosparql#sfWithin</a></li><li><a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#via" target="_blank">http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#via</a></li><li><a href="http://purl.org/dc/terms/type" target="_blank">http://purl.org/dc/terms/type</a></li><li><a href="http://www.geonames.org/ontology#featureCode" target="_blank">http://www.geonames.org/ontology#featureCode</a></li><li><a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#dedicadoA" target="_blank">http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#dedicadoA</a></li><li><a href="http://www.geonames.org/ontology#featureClass" target="_blank">http://www.geonames.org/ontology#featureClass</a></li><li><a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#contieneTramoVia" target="_blank">http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#contieneTramoVia</a></li><li><a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#tramoVia" target="_blank">http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#tramoVia</a></li><li><a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#contieneVia" target="_blank">http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#contieneVia</a></li></ul></div>
+<p>Relationships and/or attributes without domain or range (or none of them) are included in the ontology. There are situations in which the relation is very general and the range should be the most general concept "Thing". However, in other cases, the relations are more specific and it could be a good practice to specify its domain and/or range. An example of this type of pitfall is to create the relationship "hasWritten" in an ontology about art in which the relationship domain should be "Writer" and the relationship range should be "LiteraryWork". This pitfall is related to the common error when defining ranges and domains described in [3].</p><p>This pitfall affects to the following ontology elements: </p><ul><li><a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#lugarPago" target="_blank">http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#lugarPago</a></li></ul></div>
 </div>
 </div>
 <div class="panel panel-default">
 <div class="panel-heading">
 <h4 class="panel-title">
 <a data-toggle="collapse" href="#collapse4">
-P13. Missing inverse relationships<span style="float: right;">12 cases detected. <span class="label label-minor">Minor</span></span></a>
+P13. Missing inverse relationships<span style="float: right;">2 cases detected. <span class="label label-minor">Minor</span></span></a>
 </h4>
 </div>
 <div id="collapse4" class="panel-collapse collapse">
 <div class="panel-body">
-<p>This pitfall appears when a relationship (except for the symmetric ones) has not an inverse relationship defined within the ontology. For example, the case in which the ontology developer omits the inverse definition between the relations "hasLanguageCode" and "isCodeOf", or between "hasReferee" and "isRefereeOf".</p><p>This pitfall affects to the following ontology elements: </p><ul><li><a href="http://www.opengis.net/ont/geosparql#sfContains" target="_blank">http://www.opengis.net/ont/geosparql#sfContains</a></li><li><a href="http://www.opengis.net/ont/geosparql#sfWithin" target="_blank">http://www.opengis.net/ont/geosparql#sfWithin</a></li><li><a href="http://www.geonames.org/ontology#featureClass" target="_blank">http://www.geonames.org/ontology#featureClass</a></li><li><a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#tramoVia" target="_blank">http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#tramoVia</a></li><li><a href="http://www.geonames.org/ontology#featureCode" target="_blank">http://www.geonames.org/ontology#featureCode</a></li><li><a href="http://purl.org/dc/terms/type" target="_blank">http://purl.org/dc/terms/type</a></li><li><a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#contieneTramoVia" target="_blank">http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#contieneTramoVia</a></li><li><a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#dedicadoA" target="_blank">http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#dedicadoA</a></li><li><a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#tipoVia" target="_blank">http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#tipoVia</a></li><li><a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#via" target="_blank">http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#via</a></li><li><a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#contieneVia" target="_blank">http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#contieneVia</a></li><li><a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#contienePortal" target="_blank">http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#contienePortal</a></li><ul></div>
+<p>This pitfall appears when a relationship (except for the symmetric ones) has not an inverse relationship defined within the ontology. For example, the case in which the ontology developer omits the inverse definition between the relations "hasLanguageCode" and "isCodeOf", or between "hasReferee" and "isRefereeOf".</p><p>This pitfall affects to the following ontology elements: </p><ul><li><a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#tipoVia" target="_blank">http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#tipoVia</a></li><li><a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#lugarPago" target="_blank">http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#lugarPago</a></li><ul></div>
+</div>
+</div>
+<div class="panel panel-default">
+<div class="panel-heading">
+<h4 class="panel-title">
+<a data-toggle="collapse" href="#collapse5">
+P35. Untyped property<span style="float: right;">1 case detected. <span class="label label-warning">Important</span></span></a>
+</h4>
+</div>
+<div id="collapse5" class="panel-collapse collapse">
+<div class="panel-body">
+<p>A resource is used as a property, e.g. appearing as the subject or object of an "rdfs:subPropertyOf" statement, without having been declared as a "rdf:Property" or some subclass of it. </p><p>This pitfall affects to the following ontology elements: </p><ul><li><a href="http://purl.org/vocab/cpsv#physicallyAvailableAt" target="_blank">http://purl.org/vocab/cpsv#physicallyAvailableAt</a></li></ul></div>
 </div>
 </div>
 </div>
