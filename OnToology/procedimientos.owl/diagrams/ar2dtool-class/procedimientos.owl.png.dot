@@ -1,0 +1,44 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "skos:Concept" "esproc:Via" "esproc:TramoVia" "cpsv:FormalFramework" "cpsv:Output" "cpsv:Input" "cpsv:Rule" "cpsv:PublicService" ; /*classes style*/
+	"NULL" -> "http://joinup.ec.europa.eu/asset/core_public_service/document/core-public-service-working-group" [ label = "foaf:homepage" ];
+	"NULL" -> "geonames:R.ST" [ label = "owl:hasValue" ];
+	"NULL" -> "geonames:featureCode" [ label = "owl:onProperty" ];
+	"NULL" -> "geonames:R" [ label = "owl:hasValue" ];
+	"NULL" -> "geonames:featureClass" [ label = "owl:onProperty" ];
+	"http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos" -> "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos.html" [ label = "dcterms:hasFormat" ];
+	"http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos" -> "http://purl.org/vocab/cpsv" [ label = "owl:imports" ];
+	"http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos" -> "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos.rdf" [ label = "dcterms:hasFormat" ];
+	"http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos" -> "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos/0.1" [ label = "owl:versionIRI" ];
+	"http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos" -> "http://creativecommons.org/licenses/by/4.0/" [ label = "cc:license" ];
+	"http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos" -> "esproc:" [ label = "vann:preferredNamespaceUri" ];
+	"geonames:featureClass" -> "dcterms:type" [ label = "rdfs:subPropertyOf" ];
+	"esproc:via" -> "geosparql:sfWithin" [ label = "rdfs:subPropertyOf" ];
+	"cpsv:provides" -> "cpsv:hasRole" [ label = "rdfs:subPropertyOf" ];
+	"esproc:contieneVia" -> "geosparql:sfContains" [ label = "rdfs:subPropertyOf" ];
+	"esproc:contieneTramoVia" -> "geosparql:sfContains" [ label = "rdfs:subPropertyOf" ];
+	"esproc:tramoVia" -> "geosparql:sfWithin" [ label = "rdfs:subPropertyOf" ];
+	"http://purl.org/vocab/cpsv" -> "-310bc30b:15630d8187c:-7ff6" [ label = "dcterms:publisher" ];
+	"http://purl.org/vocab/cpsv" -> "-310bc30b:15630d8187c:-7ff5" [ label = "dcterms:creator" ];
+	"http://purl.org/vocab/cpsv" -> "http://purl.org/adms/assettype/Ontology" [ label = "dcterms:type" ];
+	"http://purl.org/vocab/cpsv" -> "http://purl.org/adms/status/UnderDevelopment" [ label = "dcterms:status" ];
+	"http://purl.org/vocab/cpsv" -> "http://joinup.ec.europa.eu/asset/core_public_service/description" [ label = "foaf:homepage" ];
+	"cpsv:uses" -> "cpsv:hasRole" [ label = "rdfs:subPropertyOf" ];
+	"geonames:featureCode" -> "dcterms:type" [ label = "rdfs:subPropertyOf" ];
+	"esproc:contienePortal" -> "geosparql:sfContains" [ label = "rdfs:subPropertyOf" ];
+	"esproc:contienePortal" -> "http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero" [ label = "rdfs:comment" ];
+	"cpsv:PublicService" -> "xsd:string" [ label = "esproc:lugarPago" ];
+	"owl:Thing" -> "esproc:TramoVia" [ label = "esproc:contieneTramoVia" ];
+	"owl:Thing" -> "esproc:TramoVia" [ label = "esproc:tramoVia" ];
+	"owl:Thing" -> "cpsv:Input" [ label = "cpsv:hasInput" ];
+	"esproc:Via" -> "skos:Concept" [ label = "esproc:tipoVia" ];
+	"cpsv:Rule" -> "cpsv:FormalFramework" [ label = "cpsv:implements" ];
+	"owl:Thing" -> "esproc:Via" [ label = "esproc:via" ];
+	"esproc:Via" -> "owl:Thing" [ label = "esproc:dedicadoA" ];
+	"dcterms:Agent" -> "cpsv:PublicService" [ label = "cpsv:hasRole" ];
+	"cpsv:PublicService" -> "dcterms:Location" [ label = "cpsv:physicallyAvailableAt" ];
+	"owl:Thing" -> "cpsv:Rule" [ label = "cpsv:follows" ];
+	"owl:Thing" -> "cpsv:Output" [ label = "cpsv:produces" ];
+
+}

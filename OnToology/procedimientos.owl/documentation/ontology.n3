@@ -1,0 +1,130 @@
+<http://www.geonames.org/ontology#R.ST> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.geonames.org/ontology#R.ST> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+_:AX2dX5064a32cX3aX15630d82656X3aXX2dX7ffb <http://www.w3.org/2002/07/owl#hasValue> <http://www.geonames.org/ontology#R> .
+_:AX2dX5064a32cX3aX15630d82656X3aXX2dX7ffb <http://www.w3.org/2002/07/owl#onProperty> <http://www.geonames.org/ontology#featureClass> .
+_:AX2dX5064a32cX3aX15630d82656X3aXX2dX7ffb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.geonames.org/ontology#Feature> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Place> .
+<http://www.geonames.org/ontology#Feature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:AX2dX5064a32cX3aX15630d82656X3aXX2dX7ff7 <http://www.w3.org/2000/01/rdf-schema#label> "RDF" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos> <http://purl.org/dc/elements/1.1/rights> "Creative Commons Attribution 4.0 International (CC BY 4.0)" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos> <http://purl.org/dc/terms/hasFormat> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos.html> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos> <http://purl.org/dc/elements/1.1/creator> "Freddy Priyatna (Ontology Engineering Group, Universidad Polit\u00E9cnica de Madrid)" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos> <http://purl.org/dc/elements/1.1/creator> "V\u00EDctor Morl\u00E1n (Ayuntamiento de Zaragoza)" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos> <http://purl.org/dc/elements/1.1/date> "2016-07-28"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos> <http://purl.org/dc/elements/1.1/creator> "Oscar Corcho (Ontology Engineering Group, Universidad Polit\u00E9cnica de Madrid)" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/vocab/cpsv> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos> <http://purl.org/dc/elements/1.1/identifier> "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos> <http://purl.org/dc/terms/issued> "2016-07-28"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos> <http://purl.org/dc/terms/hasFormat> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos.rdf> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos> <http://www.w3.org/2002/07/owl#versionIRI> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos/0.1> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos> <http://creativecommons.org/ns#license> <http://creativecommons.org/licenses/by/4.0/> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos> <http://www.w3.org/2000/01/rdf-schema#comment> "Este vocabulario se utiliza para la descripci\u00F3n de procedimientos administrativos ofrecidos por un ayuntamiento. Reutiliza t\u00E9rminos de varios vocabularios, como:\n- schema.org\n- CPSV (Core Public Service Vocabulary)\n- Unidades territoriales en Espa\u00F1a\nAsimismo, se actualizar\u00E1 de acuerdo con la evoluci\u00F3n de estos vocabularios (especialmente los que est\u00E1n en pleno desarrollo en el momento de creaci\u00F3n de este vocabulario, como el vocabulario sobre unidades territoriales en Espa\u00F1a).\n\t\t"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos> <http://purl.org/dc/elements/1.1/title> "Vocabulario para la representaci\u00F3n de procedimientos administrativos ofrecidos por un ayuntamiento"@es .
+_:AX2dX5064a32cX3aX15630d82656X3aXX2dX7ffa <http://www.w3.org/2002/07/owl#hasValue> <http://www.geonames.org/ontology#R.ST> .
+_:AX2dX5064a32cX3aX15630d82656X3aXX2dX7ffa <http://www.w3.org/2002/07/owl#onProperty> <http://www.geonames.org/ontology#featureCode> .
+_:AX2dX5064a32cX3aX15630d82656X3aXX2dX7ffa <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.geonames.org/ontology#featureClass> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.geonames.org/ontology> .
+<http://www.geonames.org/ontology#featureClass> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/type> .
+<http://www.geonames.org/ontology#featureClass> <http://www.w3.org/2000/01/rdf-schema#comment> "La categor\u00EDa principal a la que pertenece el fen\u00F3meno, tal y como se define en la taxonom\u00EDa de GeoNames"@es .
+<http://www.geonames.org/ontology#featureClass> <http://www.w3.org/2000/01/rdf-schema#label> "Clase del fen\u00F3meno"@es .
+<http://www.geonames.org/ontology#featureClass> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#via> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.opengis.net/ont/geosparql#sfWithin> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#via> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#via> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#Via> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#via> <http://www.w3.org/2000/01/rdf-schema#comment> "V\u00EDa a la que pertenece un fen\u00F3meno (por ejemplo, una direcci\u00F3n, un tramo de v\u00EDa, un portal, etc.)"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#via> <http://purl.org/dc/terms/issued> "2014-03-28" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#via> <http://www.w3.org/2000/01/rdf-schema#label> "pertenece a la v\u00EDa"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#via> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.geonames.org/ontology#R> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://www.geonames.org/ontology#R> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#dedicadoA> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#dedicadoA> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#Via> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#dedicadoA> <http://www.w3.org/2000/01/rdf-schema#comment> "Una calle puede estar dedicada a un evento, personaje, pel\u00EDcula, etc."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#dedicadoA> <http://purl.org/dc/terms/issued> "2014-03-28" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#dedicadoA> <http://www.w3.org/2000/01/rdf-schema#label> "dedicado a"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#dedicadoA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#contieneVia> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.opengis.net/ont/geosparql#sfContains> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#contieneVia> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#contieneVia> <http://www.w3.org/2000/01/rdf-schema#comment> "V\u00EDa que un fen\u00F3meno geogr\u00E1fico contiene (por ejemplo, un barrio, distrito, ciudad, etc.)"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#contieneVia> <http://purl.org/dc/terms/issued> "2014-03-28" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#contieneVia> <http://www.w3.org/2000/01/rdf-schema#label> "contiene v\u00EDa"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#contieneVia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.opengis.net/ont/geosparql#sfContains> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#contieneTramoVia> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.opengis.net/ont/geosparql#sfContains> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#contieneTramoVia> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#contieneTramoVia> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#TramoVia> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#contieneTramoVia> <http://www.w3.org/2000/01/rdf-schema#comment> "Tramo de v\u00EDa que un fen\u00F3meno geogr\u00E1fico contiene (por ejemplo, una v\u00EDa, aunque tambi\u00E9n puede ser un barrio, distrito, ciudad, etc.)"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#contieneTramoVia> <http://purl.org/dc/terms/issued> "2014-03-28" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#contieneTramoVia> <http://www.w3.org/2000/01/rdf-schema#label> "contiene tramo de v\u00EDa"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#contieneTramoVia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#tramoVia> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.opengis.net/ont/geosparql#sfWithin> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#tramoVia> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#tramoVia> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#TramoVia> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#tramoVia> <http://www.w3.org/2000/01/rdf-schema#comment> "Tramo de v\u00EDa al que pertenece un fen\u00F3meno (por ejemplo, una direcci\u00F3n, un portal, etc.)"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#tramoVia> <http://purl.org/dc/terms/issued> "2014-03-28" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#tramoVia> <http://www.w3.org/2000/01/rdf-schema#label> "pertenece al tramo de v\u00EDa"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#tramoVia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#Via> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#Via> <http://www.w3.org/2000/01/rdf-schema#comment> "V\u00EDa de comunicaci\u00F3n construida para la circulaci\u00F3n. \nEn su definici\u00F3n seg\u00FAn el modelo de direcciones de la Administraci\u00F3n General del Estado, Incluye calles, carreteras de todo tipo, caminos, v\u00EDas de agua, pantalanes, etc. Asimismo, incluye la pseudov\u00EDa., es decir todo aquello que complementa o sustituye a la v\u00EDa.\nEn nuestro caso, este t\u00E9rmino se utiliza para hacer referencia a las v\u00EDas urbanas.\n\nPor esta raz\u00F3n, se utiliza geonames:R.ST como valor principal de la propiedad geonames:featureCode, dejando de lado otras opciones como R.PRMN (promenade), R.TRL (trail). Quiz\u00E1s en el futuro haya que relajar un poco esta opci\u00F3n, sobre todo, por ejemplo, para ciudades con costa y paseo mar\u00EDtimo."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#Via> <http://purl.org/dc/terms/issued> "2013-03-28"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#Via> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:AX2dX5064a32cX3aX15630d82656X3aXX2dX7ff9 .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#Via> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:AX2dX5064a32cX3aX15630d82656X3aXX2dX7ffa .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#Via> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.geonames.org/ontology#Feature> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#Via> <http://www.w3.org/2000/01/rdf-schema#label> "V\u00EDa"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#Via> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.geonames.org/ontology#featureCode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.geonames.org/ontology> .
+<http://www.geonames.org/ontology#featureCode> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/terms/type> .
+<http://www.geonames.org/ontology#featureCode> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo del fen\u00F3meno, tal y como se define en la taxonom\u00EDa de GeoNames"@es .
+<http://www.geonames.org/ontology#featureCode> <http://www.w3.org/2000/01/rdf-schema#label> "c\u00F3digo del fen\u00F3meno"@es .
+<http://www.geonames.org/ontology#featureCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#tipoVia> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#tipoVia> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#tipoVia> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#Via> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#tipoVia> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de v\u00EDa, que ser\u00E1 representado mediante la clasificaci\u00F3n en SKOS de URI http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via. \nPor ejemplo, estas ser\u00E1n las URIs correspondientes a calles y plazas\nhttp://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via/CL\nhttp://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via/PL"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#tipoVia> <http://purl.org/dc/terms/issued> "2014-03-28"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#tipoVia> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de v\u00EDa"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#tipoVia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:AX2dX5064a32cX3aX15630d82656X3aXX2dX7ff9 <http://www.w3.org/2002/07/owl#hasValue> <http://www.geonames.org/ontology#R> .
+_:AX2dX5064a32cX3aX15630d82656X3aXX2dX7ff9 <http://www.w3.org/2002/07/owl#onProperty> <http://www.geonames.org/ontology#featureClass> .
+_:AX2dX5064a32cX3aX15630d82656X3aXX2dX7ff9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#Portal> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#Portal> <http://www.w3.org/2000/01/rdf-schema#comment> "Subacceso independiente exterior (al aire libre) a una misma construcci\u00F3n. Para una misma construcci\u00F3n, con un mismo n\u00FAmero de v\u00EDa, pueden existir varias entradas que pueden estar numeradas con n\u00FAmeros o letras. [fuente: Modelo de Direcciones de la Administraci\u00F3n General del Estado v.2]"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#Portal> <http://purl.org/dc/terms/issued> "2013-03-28"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#Portal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.geonames.org/ontology#Feature> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#Portal> <http://www.w3.org/2000/01/rdf-schema#label> "Portal"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#Portal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.opengis.net/ont/geosparql#sfWithin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#contienePortal> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.opengis.net/ont/geosparql#sfContains> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#contienePortal> <http://www.w3.org/2000/01/rdf-schema#comment> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#contienePortal> <http://www.w3.org/2000/01/rdf-schema#comment> "Portal que un fen\u00F3meno geogr\u00E1fico contiene (por ejemplo, una v\u00EDa o un tramo de v\u00EDa, aunque tambi\u00E9n puede ser un barrio, distrito, ciudad, etc.)"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#contienePortal> <http://purl.org/dc/terms/issued> "2014-03-28" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#contienePortal> <http://www.w3.org/2000/01/rdf-schema#label> "contiene portal"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#contienePortal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+_:AX2dX5064a32cX3aX15630d82656X3aXX2dX7ffc <http://www.w3.org/2002/07/owl#hasValue> <http://www.geonames.org/ontology#R.ST> .
+_:AX2dX5064a32cX3aX15630d82656X3aXX2dX7ffc <http://www.w3.org/2002/07/owl#onProperty> <http://www.geonames.org/ontology#featureCode> .
+_:AX2dX5064a32cX3aX15630d82656X3aXX2dX7ffc <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#TramoVia> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#TramoVia> <http://www.w3.org/2000/01/rdf-schema#comment> "Tramo parcial o total de una v\u00EDa"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#TramoVia> <http://purl.org/dc/terms/issued> "2013-03-28"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#TramoVia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:AX2dX5064a32cX3aX15630d82656X3aXX2dX7ffb .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#TramoVia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:AX2dX5064a32cX3aX15630d82656X3aXX2dX7ffc .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#TramoVia> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.geonames.org/ontology#Feature> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#TramoVia> <http://www.w3.org/2000/01/rdf-schema#label> "Tramo de v\u00EDa"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#TramoVia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#lugarPago> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#lugarPago> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#lugarPago> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/cpsv#PublicService> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#lugarPago> <http://www.w3.org/2000/01/rdf-schema#comment> "Lugar donde se realiza el pago del servicio, en caso de que haya que realizar pago"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#lugarPago> <http://purl.org/dc/terms/issued> "2016-07-28" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#lugarPago> <http://www.w3.org/2000/01/rdf-schema#label> "Lugar de pago"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#lugarPago> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:AX2dX5064a32cX3aX15630d82656X3aXX2dX7ff8 <http://www.w3.org/2000/01/rdf-schema#label> "HTML" .
+<http://schema.org/Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
