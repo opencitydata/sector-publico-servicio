@@ -1,0 +1,215 @@
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
+@prefix :        <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
+@prefix vann:    <http://purl.org/vocab/vann/> .
+@prefix owl2:    <http://www.w3.org/2006/12/owl2#> .
+@prefix geonames:  <http://www.geonames.org/ontology#> .
+@prefix vcard:   <http://www.w3.org/2006/vcard/ns#> .
+@prefix dcterms:  <http://purl.org/dc/terms/> .
+@prefix schema:  <http://schema.org/> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix esadm:   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> .
+@prefix geosparql:  <http://www.opengis.net/ont/geosparql#> .
+@prefix dctype:  <http://purl.org/dc/dcmitype/> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl:     <http://www.w3.org/2002/07/owl#> .
+@prefix esproc:  <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#> .
+@prefix dbpedia:  <http://dbpedia.org/ontology/> .
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
+@prefix cc:      <http://creativecommons.org/ns#> .
+
+geonames:R
+      a       owl:NamedIndividual , skos:Concept .
+
+geonames:Feature
+      a       owl:Class ;
+      rdfs:subClassOf schema:Place .
+
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos>
+      a       owl:Ontology ;
+      rdfs:comment """Este vocabulario se utiliza para la descripción de procedimientos administrativos ofrecidos por un ayuntamiento. Reutiliza términos de varios vocabularios, como:
+- schema.org
+- CPSV (Core Public Service Vocabulary)
+- Unidades territoriales en España
+Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (especialmente los que están en pleno desarrollo en el momento de creación de este vocabulario, como el vocabulario sobre unidades territoriales en España).
+		"""@es ;
+      cc:license <http://creativecommons.org/licenses/by/4.0/> ;
+      dc:creator "Freddy Priyatna (Ontology Engineering Group, Universidad Politécnica de Madrid)" , "Víctor Morlán (Ayuntamiento de Zaragoza)" , "Oscar Corcho (Ontology Engineering Group, Universidad Politécnica de Madrid)" ;
+      dc:date "2016-07-28"^^xsd:dateTime ;
+      dc:identifier "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos"^^xsd:dateTime ;
+      dc:rights "Creative Commons Attribution 4.0 International (CC BY 4.0)" ;
+      dc:title "Vocabulario para la representación de procedimientos administrativos ofrecidos por un ayuntamiento"@es ;
+      dcterms:hasFormat <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos.html> , <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos.rdf> ;
+      dcterms:issued "2016-07-28"^^xsd:dateTime ;
+      vann:preferredNamespaceUri
+              esproc: ;
+      owl:imports <http://purl.org/vocab/cpsv> ;
+      owl:versionIRI <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos/0.1> .
+
+rdfs:label
+      a       owl:AnnotationProperty .
+
+esproc:contienePortal
+      a       owl:ObjectProperty ;
+      rdfs:comment "Portal que un fenómeno geográfico contiene (por ejemplo, una vía o un tramo de vía, aunque también puede ser un barrio, distrito, ciudad, etc.)"@es , <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> ;
+      rdfs:label "contiene portal"@es ;
+      rdfs:subPropertyOf geosparql:sfContains ;
+      dcterms:issued "2014-03-28" .
+
+esproc:tramoVia
+      a       owl:ObjectProperty ;
+      rdfs:comment "Tramo de vía al que pertenece un fenómeno (por ejemplo, una dirección, un portal, etc.)"@es ;
+      rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> ;
+      rdfs:label "pertenece al tramo de vía"@es ;
+      rdfs:range esproc:TramoVia ;
+      rdfs:subPropertyOf geosparql:sfWithin ;
+      dcterms:issued "2014-03-28" .
+
+esproc:TramoVia
+      a       owl:Class ;
+      rdfs:comment "Tramo parcial o total de una vía"@es ;
+      rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> ;
+      rdfs:label "Tramo de vía"@es ;
+      rdfs:subClassOf geonames:Feature ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:hasValue geonames:R ;
+                owl:onProperty geonames:featureClass
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:hasValue <http://www.geonames.org/ontology#R.ST> ;
+                owl:onProperty geonames:featureCode
+              ] ;
+      dcterms:issued "2013-03-28"^^xsd:dateTime .
+
+geonames:featureClass
+      a       owl:ObjectProperty ;
+      rdfs:comment "La categoría principal a la que pertenece el fenómeno, tal y como se define en la taxonomía de GeoNames"@es ;
+      rdfs:isDefinedBy <http://www.geonames.org/ontology> ;
+      rdfs:label "Clase del fenómeno"@es ;
+      rdfs:subPropertyOf dcterms:type .
+
+[]    rdfs:label "HTML" .
+
+esproc:contieneVia
+      a       owl:ObjectProperty ;
+      rdfs:comment "Vía que un fenómeno geográfico contiene (por ejemplo, un barrio, distrito, ciudad, etc.)"@es ;
+      rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> ;
+      rdfs:label "contiene vía"@es ;
+      rdfs:subPropertyOf geosparql:sfContains ;
+      dcterms:issued "2014-03-28" .
+
+esproc:lugarPago
+      a       owl:DatatypeProperty ;
+      rdfs:comment "Lugar donde se realiza el pago del servicio, en caso de que haya que realizar pago"@es ;
+      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> ;
+      rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos> ;
+      rdfs:label "Lugar de pago"@es ;
+      rdfs:range xsd:string ;
+      dcterms:issued "2016-07-28" .
+
+rdfs:comment
+      a       owl:AnnotationProperty .
+
+skos:Concept
+      a       owl:Class .
+
+rdfs:isDefinedBy
+      a       owl:AnnotationProperty .
+
+esproc:Portal
+      a       owl:Class ;
+      rdfs:comment "Subacceso independiente exterior (al aire libre) a una misma construcción. Para una misma construcción, con un mismo número de vía, pueden existir varias entradas que pueden estar numeradas con números o letras. [fuente: Modelo de Direcciones de la Administración General del Estado v.2]"@es ;
+      rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> ;
+      rdfs:label "Portal"@es ;
+      rdfs:subClassOf geonames:Feature ;
+      dcterms:issued "2013-03-28"^^xsd:dateTime .
+
+geosparql:sfContains
+      a       owl:ObjectProperty .
+
+dcterms:type
+      a       owl:ObjectProperty .
+
+schema:Place
+      a       owl:Class .
+
+esproc:dedicadoA
+      a       owl:ObjectProperty ;
+      rdfs:comment "Una calle puede estar dedicada a un evento, personaje, película, etc."@es ;
+      rdfs:domain esproc:Via ;
+      rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> ;
+      rdfs:label "dedicado a"@es ;
+      dcterms:issued "2014-03-28" .
+
+esproc:contieneTramoVia
+      a       owl:ObjectProperty ;
+      rdfs:comment "Tramo de vía que un fenómeno geográfico contiene (por ejemplo, una vía, aunque también puede ser un barrio, distrito, ciudad, etc.)"@es ;
+      rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> ;
+      rdfs:label "contiene tramo de vía"@es ;
+      rdfs:range esproc:TramoVia ;
+      rdfs:subPropertyOf geosparql:sfContains ;
+      dcterms:issued "2014-03-28" .
+
+esproc:Via
+      a       owl:Class ;
+      rdfs:comment """Vía de comunicación construida para la circulación. 
+En su definición según el modelo de direcciones de la Administración General del Estado, Incluye calles, carreteras de todo tipo, caminos, vías de agua, pantalanes, etc. Asimismo, incluye la pseudovía., es decir todo aquello que complementa o sustituye a la vía.
+En nuestro caso, este término se utiliza para hacer referencia a las vías urbanas.
+
+Por esta razón, se utiliza geonames:R.ST como valor principal de la propiedad geonames:featureCode, dejando de lado otras opciones como R.PRMN (promenade), R.TRL (trail). Quizás en el futuro haya que relajar un poco esta opción, sobre todo, por ejemplo, para ciudades con costa y paseo marítimo."""@es ;
+      rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> ;
+      rdfs:label "Vía"@es ;
+      rdfs:subClassOf geonames:Feature ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:hasValue <http://www.geonames.org/ontology#R.ST> ;
+                owl:onProperty geonames:featureCode
+              ] ;
+      rdfs:subClassOf
+              [ a       owl:Restriction ;
+                owl:hasValue geonames:R ;
+                owl:onProperty geonames:featureClass
+              ] ;
+      dcterms:issued "2013-03-28"^^xsd:dateTime .
+
+geosparql:sfWithin
+      a       owl:ObjectProperty .
+
+esproc:via
+      a       owl:ObjectProperty ;
+      rdfs:comment "Vía a la que pertenece un fenómeno (por ejemplo, una dirección, un tramo de vía, un portal, etc.)"@es ;
+      rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> ;
+      rdfs:label "pertenece a la vía"@es ;
+      rdfs:range esproc:Via ;
+      rdfs:subPropertyOf geosparql:sfWithin ;
+      dcterms:issued "2014-03-28" .
+
+esproc:tipoVia
+      a       owl:ObjectProperty ;
+      rdfs:comment """Tipo de vía, que será representado mediante la clasificación en SKOS de URI http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via. 
+Por ejemplo, estas serán las URIs correspondientes a calles y plazas
+http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via/CL
+http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via/PL"""@es ;
+      rdfs:domain esproc:Via ;
+      rdfs:isDefinedBy <http://vocab.linkeddata.es/datosabiertos/def/urbanismo-infraestructuras/callejero> ;
+      rdfs:label "tipo de vía"@es ;
+      rdfs:range skos:Concept ;
+      dcterms:issued "2014-03-28"^^xsd:dateTime .
+
+[]    rdfs:label "RDF" .
+
+<http://www.geonames.org/ontology#R.ST>
+      a       owl:NamedIndividual , skos:Concept .
+
+dcterms:issued
+      a       owl:AnnotationProperty .
+
+geonames:featureCode
+      a       owl:ObjectProperty ;
+      rdfs:comment "Tipo del fenómeno, tal y como se define en la taxonomía de GeoNames"@es ;
+      rdfs:isDefinedBy <http://www.geonames.org/ontology> ;
+      rdfs:label "código del fenómeno"@es ;
+      rdfs:subPropertyOf dcterms:type .
