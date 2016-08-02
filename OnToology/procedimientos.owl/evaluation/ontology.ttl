@@ -22,8 +22,6 @@
 geonames:R
       a       owl:NamedIndividual , skos:Concept .
 
-[]    rdfs:label "RDF" .
-
 rdfs:isDefinedBy
       a       owl:AnnotationProperty .
 
@@ -48,8 +46,6 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
       owl:imports <http://purl.org/vocab/cpsv> ;
       owl:versionIRI <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos/0.1> .
 
-[]    rdfs:label "HTML" .
-
 esproc:fechaPresentacion
       a       owl:DatatypeProperty ;
       rdfs:comment "fecha en la que se deben presentar las solicitudes (en formato fecha)"@es ;
@@ -73,6 +69,10 @@ esproc:fechaRespuestaTexto
 
 rdfs:label
       a       owl:AnnotationProperty .
+
+[]    rdfs:label "RDF" .
+
+[]    rdfs:label "HTML" .
 
 esproc:tipoVia
       a       owl:ObjectProperty ;
