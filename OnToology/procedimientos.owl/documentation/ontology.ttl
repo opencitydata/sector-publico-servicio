@@ -1,5 +1,5 @@
-@prefix dc:      <http://purl.org/dc/elements/1.1/> .
 @prefix :        <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#> .
+@prefix dc:      <http://purl.org/dc/elements/1.1/> .
 @prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix vann:    <http://purl.org/vocab/vann/> .
 @prefix owl2:    <http://www.w3.org/2006/12/owl2#> .
@@ -8,21 +8,19 @@
 @prefix dcterms:  <http://purl.org/dc/terms/> .
 @prefix schema:  <http://schema.org/> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix esadm:   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> .
 @prefix geosparql:  <http://www.opengis.net/ont/geosparql#> .
+@prefix esadm:   <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/territorio#> .
 @prefix dctype:  <http://purl.org/dc/dcmitype/> .
+@prefix dbpedia:  <http://dbpedia.org/ontology/> .
+@prefix esproc:  <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
-@prefix esproc:  <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#> .
-@prefix dbpedia:  <http://dbpedia.org/ontology/> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
 @prefix cc:      <http://creativecommons.org/ns#> .
 
 geonames:R
       a       owl:NamedIndividual , skos:Concept .
-
-[]    rdfs:label "RDF" .
 
 rdfs:isDefinedBy
       a       owl:AnnotationProperty .
@@ -62,6 +60,11 @@ esproc:fechaPresentacion
 schema:Place
       a       owl:Class .
 
+esproc:recursoProcede
+      a       owl:ObjectProperty ;
+      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> ;
+      rdfs:range esproc:Recurso .
+
 esproc:fechaRespuestaTexto
       a       owl:DatatypeProperty ;
       rdfs:comment "fecha en la que se deben resolver las solicitudes (en formato textual)"@es ;
@@ -71,8 +74,16 @@ esproc:fechaRespuestaTexto
       rdfs:range xsd:string ;
       dcterms:issued "2016-07-28" .
 
+esproc:Via
+      a       owl:Class .
+
 rdfs:label
       a       owl:AnnotationProperty .
+
+esproc:recursoProcedeTexto
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> ;
+      rdfs:range xsd:string .
 
 esproc:tipoVia
       a       owl:ObjectProperty ;
@@ -95,6 +106,8 @@ esproc:lugarPagoTexto
       rdfs:range xsd:string ;
       dcterms:issued "2016-07-28" .
 
+[]    rdfs:label "RDF" .
+
 esproc:fechaRespuesta
       a       owl:DatatypeProperty ;
       rdfs:comment "fecha en la que se deben resolver las solicitudes (en formato fecha/duración)"@es ;
@@ -115,14 +128,17 @@ esproc:lugarPago
 rdfs:comment
       a       owl:AnnotationProperty .
 
+dcterms:issued
+      a       owl:AnnotationProperty .
+
 <http://www.geonames.org/ontology#R.ST>
       a       owl:NamedIndividual , skos:Concept .
 
 skos:Concept
       a       owl:Class .
 
-dcterms:issued
-      a       owl:AnnotationProperty .
+esproc:Recurso
+      a       owl:Class .
 
 esproc:fechaPresentacionTexto
       a       owl:DatatypeProperty ;
