@@ -92,6 +92,14 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
     
 
 
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#claseIniciacion -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#claseIniciacion">
+        <rdfs:domain rdf:resource="http://purl.org/vocab/cpsv#PublicService"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#lugarPago -->
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#lugarPago">
