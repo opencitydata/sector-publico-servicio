@@ -10,10 +10,10 @@ node [shape = rectangle, color="orange"]; "skos:Concept" "esproc:Via" "esproc:Re
 	"http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos" -> "http://creativecommons.org/licenses/by/4.0/" [ label = "cc:license" ];
 	"http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos" -> "esproc:" [ label = "vann:preferredNamespaceUri" ];
 	"cpsv:provides" -> "cpsv:hasRole" [ label = "rdfs:subPropertyOf" ];
-	"http://purl.org/vocab/cpsv" -> "5a565f77:1564ae2a748:-7ffa" [ label = "dcterms:publisher" ];
-	"http://purl.org/vocab/cpsv" -> "5a565f77:1564ae2a748:-7ff9" [ label = "dcterms:creator" ];
 	"http://purl.org/vocab/cpsv" -> "http://purl.org/adms/assettype/Ontology" [ label = "dcterms:type" ];
 	"http://purl.org/vocab/cpsv" -> "http://purl.org/adms/status/UnderDevelopment" [ label = "dcterms:status" ];
+	"http://purl.org/vocab/cpsv" -> "-321d3c65:1564b1bfcb5:-7ff9" [ label = "dcterms:creator" ];
+	"http://purl.org/vocab/cpsv" -> "-321d3c65:1564b1bfcb5:-7ffa" [ label = "dcterms:publisher" ];
 	"http://purl.org/vocab/cpsv" -> "http://joinup.ec.europa.eu/asset/core_public_service/description" [ label = "foaf:homepage" ];
 	"cpsv:uses" -> "cpsv:hasRole" [ label = "rdfs:subPropertyOf" ];
 	"esproc:lugarPago" -> "cpsv:physicallyAvailableAt" [ label = "rdfs:subPropertyOf" ];
@@ -22,6 +22,7 @@ node [shape = rectangle, color="orange"]; "skos:Concept" "esproc:Via" "esproc:Re
 	"cpsv:PublicService" -> "xsd:string" [ label = "esproc:fechaPresentacionTexto" ];
 	"cpsv:PublicService" -> "esproc:Recurso" [ label = "esproc:recursoProcede" ];
 	"cpsv:PublicService" -> "dcterms:Location" [ label = "cpsv:physicallyAvailableAt" ];
+	"cpsv:PublicService" -> "owl:Thing" [ label = "esproc:claseIniciacion" ];
 	"cpsv:Rule" -> "cpsv:FormalFramework" [ label = "cpsv:implements" ];
 	"esproc:Via" -> "skos:Concept" [ label = "esproc:tipoVia" ];
 	"cpsv:PublicService" -> "xsd:string" [ label = "esproc:fechaRespuestaTexto" ];

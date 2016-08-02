@@ -33,6 +33,10 @@
     "Via" : {
       "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#Via"
     },
+    "claseIniciacion" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#claseIniciacion",
+      "@type" : "@id"
+    },
     "creator" : {
       "@id" : "http://purl.org/dc/elements/1.1/creator"
     },
@@ -87,6 +91,9 @@
     },
     "hasFormat" : {
       "@id" : "http://purl.org/dc/terms/hasFormat"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
     },
     "preferredNamespaceUri" : {
       "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
