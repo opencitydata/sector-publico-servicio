@@ -105,6 +105,12 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
     
 
 
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#claseTerminacion -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#claseTerminacion"/>
+    
+
+
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#lugarPago -->
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#lugarPago">
@@ -150,6 +156,18 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#claseIniciacionTexto -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#claseIniciacionTexto"/>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#claseTerminacionTexto -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#claseTerminacionTexto"/>
     
 
 
