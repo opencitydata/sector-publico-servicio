@@ -22,6 +22,9 @@
     <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A0">
+    <rdfs:label>HTML</rdfs:label>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#isDefinedBy">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AnnotationProperty"/>
   </rdf:Description>
@@ -36,6 +39,11 @@
     <owl:imports rdf:resource="http://purl.org/vocab/cpsv"/>
     <dc:identifier rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos</dc:identifier>
     <dcterms:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2016-07-28</dcterms:issued>
+    <dcterms:description xml:lang="es">Este vocabulario se utiliza para la descripción de procedimientos administrativos ofrecidos por un ayuntamiento. Reutiliza términos de varios vocabularios, como:
+- schema.org
+- CPSV (Core Public Service Vocabulary)
+- Unidades territoriales en España
+Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (especialmente los que están en pleno desarrollo en el momento de creación de este vocabulario, como el vocabulario sobre unidades territoriales en España).</dcterms:description>
     <dcterms:hasFormat rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos.rdf"/>
     <owl:versionIRI rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos/0.1"/>
     <cc:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
@@ -47,9 +55,6 @@
 - Unidades territoriales en España
 Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (especialmente los que están en pleno desarrollo en el momento de creación de este vocabulario, como el vocabulario sobre unidades territoriales en España).
 		</rdfs:comment>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A0">
-    <rdfs:label>HTML</rdfs:label>
   </rdf:Description>
   <rdf:Description rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#fechaPresentacion">
     <rdfs:label xml:lang="es">fecha de presentación (formato fecha)</rdfs:label>
@@ -88,6 +93,9 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
     <rdfs:domain rdf:resource="http://purl.org/vocab/cpsv#PublicService"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <rdfs:label>RDF</rdfs:label>
+  </rdf:Description>
   <rdf:Description rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#tipoVia">
     <rdfs:label xml:lang="es">tipo de vía</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos"/>
@@ -109,9 +117,6 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
     <rdfs:domain rdf:resource="http://purl.org/vocab/cpsv#PublicService"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A1">
-    <rdfs:label>RDF</rdfs:label>
-  </rdf:Description>
   <rdf:Description rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#fechaRespuesta">
     <rdfs:label xml:lang="es">fecha de respuesta (formato fecha)</rdfs:label>
     <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos"/>
@@ -127,6 +132,10 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
     <rdfs:comment xml:lang="es">Lugar de pago del procedimiento, en caso de tener que realizar pago</rdfs:comment>
     <dcterms:issued>2016-07-28</dcterms:issued>
     <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/cpsv#physicallyAvailableAt"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#claseIniciacion">
+    <rdfs:domain rdf:resource="http://purl.org/vocab/cpsv#PublicService"/>
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.w3.org/2000/01/rdf-schema#comment">

@@ -22,6 +22,8 @@
 geonames:R
       a       owl:NamedIndividual , skos:Concept .
 
+[]    rdfs:label "HTML" .
+
 rdfs:isDefinedBy
       a       owl:AnnotationProperty .
 
@@ -39,14 +41,17 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
       dc:identifier "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos"^^xsd:dateTime ;
       dc:rights "Creative Commons Attribution 4.0 International (CC BY 4.0)" ;
       dc:title "Vocabulario para la representación de procedimientos administrativos ofrecidos por un ayuntamiento"@es ;
+      dcterms:description """Este vocabulario se utiliza para la descripción de procedimientos administrativos ofrecidos por un ayuntamiento. Reutiliza términos de varios vocabularios, como:
+- schema.org
+- CPSV (Core Public Service Vocabulary)
+- Unidades territoriales en España
+Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (especialmente los que están en pleno desarrollo en el momento de creación de este vocabulario, como el vocabulario sobre unidades territoriales en España)."""@es ;
       dcterms:hasFormat <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos.html> , <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos.rdf> ;
       dcterms:issued "2016-07-28"^^xsd:dateTime ;
       vann:preferredNamespaceUri
               esproc: ;
       owl:imports <http://purl.org/vocab/cpsv> ;
       owl:versionIRI <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos/0.1> .
-
-[]    rdfs:label "HTML" .
 
 esproc:fechaPresentacion
       a       owl:DatatypeProperty ;
@@ -85,6 +90,8 @@ esproc:recursoProcedeTexto
       rdfs:domain <http://purl.org/vocab/cpsv#PublicService> ;
       rdfs:range xsd:string .
 
+[]    rdfs:label "RDF" .
+
 esproc:tipoVia
       a       owl:ObjectProperty ;
       rdfs:comment """Tipo de vía, que será representado mediante la clasificación en SKOS de URI http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via.
@@ -106,8 +113,6 @@ esproc:lugarPagoTexto
       rdfs:range xsd:string ;
       dcterms:issued "2016-07-28" .
 
-[]    rdfs:label "RDF" .
-
 esproc:fechaRespuesta
       a       owl:DatatypeProperty ;
       rdfs:comment "fecha en la que se deben resolver las solicitudes (en formato fecha/duración)"@es ;
@@ -124,6 +129,10 @@ esproc:lugarPago
       rdfs:label "lugar de pago"@es ;
       rdfs:subPropertyOf <http://purl.org/vocab/cpsv#physicallyAvailableAt> ;
       dcterms:issued "2016-07-28" .
+
+esproc:claseIniciacion
+      a       owl:ObjectProperty ;
+      rdfs:domain <http://purl.org/vocab/cpsv#PublicService> .
 
 rdfs:comment
       a       owl:AnnotationProperty .
