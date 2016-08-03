@@ -1,5 +1,9 @@
 {
   "@context" : {
+    "recursoProcedeTexto" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#recursoProcedeTexto",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
     "PublicService" : {
       "@id" : "http://purl.org/vocab/cpsv#PublicService"
     },
@@ -13,14 +17,25 @@
       "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#fechaRespuesta",
       "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
     },
+    "Recurso" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#Recurso"
+    },
     "label" : {
       "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "recursoProcede" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#recursoProcede",
+      "@type" : "@id"
     },
     "Concept" : {
       "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
     },
     "Via" : {
       "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#Via"
+    },
+    "claseIniciacion" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#claseIniciacion",
+      "@type" : "@id"
     },
     "creator" : {
       "@id" : "http://purl.org/dc/elements/1.1/creator"
@@ -76,6 +91,9 @@
     },
     "hasFormat" : {
       "@id" : "http://purl.org/dc/terms/hasFormat"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
     },
     "preferredNamespaceUri" : {
       "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
