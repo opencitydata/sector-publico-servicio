@@ -452,7 +452,9 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
 
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#ProcedimientoProceso -->
 
-    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#ProcedimientoProceso"/>
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#ProcedimientoProceso">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vocab/cpsv#Rule"/>
+    </owl:Class>
     
 
 
