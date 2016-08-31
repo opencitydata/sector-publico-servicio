@@ -207,6 +207,15 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
     
 
 
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#materiaDePregunta -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#materiaDePregunta">
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#Pregunta"/>
+        <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#Materia"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#normativa -->
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#normativa">
@@ -218,7 +227,7 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#preguntaDeMateria -->
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#preguntaDeMateria">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#ProcedimientoMateria"/>
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#Materia"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#Pregunta"/>
     </owl:ObjectProperty>
     
@@ -254,7 +263,7 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#procedimientoDeMateria -->
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#procedimientoDeMateria">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#ProcedimientoMateria"/>
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#Materia"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#Procedimiento"/>
     </owl:ObjectProperty>
     
@@ -272,6 +281,7 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#telefonoDocumentacion -->
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#telefonoDocumentacion">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/cpsv#hasInput"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#ProcedimientoPorTelefono"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#DocumentacionEntrada"/>
     </owl:ObjectProperty>
@@ -570,6 +580,15 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
     
 
 
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#requisitos -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#requisitos">
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#Procedimiento"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#telefonoDocumentacionTexto -->
 
     <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#telefonoDocumentacionTexto">
@@ -628,6 +647,12 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
     
 
 
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#Materia -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#Materia"/>
+    
+
+
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#MaterialAgrupacion -->
 
     <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#MaterialAgrupacion"/>
@@ -645,12 +670,6 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
     <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#Procedimiento">
         <rdfs:subClassOf rdf:resource="http://purl.org/vocab/cpsv#PublicService"/>
     </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#ProcedimientoMateria -->
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#ProcedimientoMateria"/>
     
 
 
