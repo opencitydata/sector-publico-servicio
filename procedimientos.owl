@@ -162,7 +162,7 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#destino -->
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#destino">
-        <rdfs:subPropertyOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#proporcionadoPor"/>
+        <rdfs:subPropertyOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#usedBy"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#Procedimiento"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#CentroServicio"/>
     </owl:ObjectProperty>
@@ -267,7 +267,7 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#lugarPresentacion -->
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#lugarPresentacion">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/cpsv#hasChannel"/>
+        <rdfs:subPropertyOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#usedBy"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#Procedimiento"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#CentroServicio"/>
     </owl:ObjectProperty>
@@ -304,7 +304,7 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#otroLugarPresentacion -->
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#otroLugarPresentacion">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/cpsv#physicallyAvailableAt"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/cpsv#hasChannel"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#Procedimiento"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/procedimientos#LugarPresentacion"/>
     </owl:ObjectProperty>
@@ -947,10 +947,10 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     </owl:NamedIndividual>
     <rdf:Description>
-        <rdfs:label>RDF</rdfs:label>
+        <rdfs:label>HTML</rdfs:label>
     </rdf:Description>
     <rdf:Description>
-        <rdfs:label>HTML</rdfs:label>
+        <rdfs:label>RDF</rdfs:label>
     </rdf:Description>
 </rdf:RDF>
 
