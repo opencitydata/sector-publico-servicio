@@ -1,0 +1,22 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "esproc:ProcedimientoPorEnLinea" "schema:Question" "schema:CivicStructure" "esproc:CentroServicio" "esproc:DocumentacionEntrada" "esproc:GestorDecisor" "esproc:Impreso" "esproc:DestinadoProcedimiento" "esproc:ProcedimientoPorCorreo" "esproc:Normativa" "esproc:ProcedimientoPorTelefono" "esproc:Procedimiento" "esproc:ProcedimientoProceso" "esproc:Pregunta" "http://www.w3.org/ns/org#Organization" "esproc:LugarPresentacion" "esproc:ProcedimientoPorPresencial" "cpsv:FormalFramework" "cpsv:Input" "cpsv:Rule" "cpsv:PublicService" ; /*classes style*/
+	"esproc:ProcedimientoPorEnLinea" -> "esproc:Procedimiento" [ label = "rdfs:subClassOf" ];
+	"esproc:ProcedimientoPorPresencial" -> "esproc:Procedimiento" [ label = "rdfs:subClassOf" ];
+	"esproc:DestinadoProcedimiento" -> "dcterms:Agent" [ label = "rdfs:subClassOf" ];
+	"esproc:Pregunta" -> "schema:Question" [ label = "rdfs:subClassOf" ];
+	"esproc:Procedimiento" -> "cpsv:PublicService" [ label = "rdfs:subClassOf" ];
+	"esproc:Impreso" -> "cpsv:Input" [ label = "rdfs:subClassOf" ];
+	"esproc:ProcedimientoProceso" -> "cpsv:Rule" [ label = "rdfs:subClassOf" ];
+	"esproc:GestorDecisor" -> "dcterms:Agent" [ label = "rdfs:subClassOf" ];
+	"esproc:ProcedimientoPorTelefono" -> "esproc:Procedimiento" [ label = "rdfs:subClassOf" ];
+	"cpsv:Rule" -> "frbr:Expression" [ label = "rdfs:subClassOf" ];
+	"esproc:DocumentacionEntrada" -> "cpsv:Input" [ label = "rdfs:subClassOf" ];
+	"cpsv:FormalFramework" -> "frbr:Expression" [ label = "rdfs:subClassOf" ];
+	"esproc:Normativa" -> "cpsv:Rule" [ label = "rdfs:subClassOf" ];
+	"esproc:ProcedimientoPorCorreo" -> "esproc:Procedimiento" [ label = "rdfs:subClassOf" ];
+	"esproc:LugarPresentacion" -> "schema:CivicStructure" [ label = "rdfs:subClassOf" ];
+	"esproc:CentroServicio" -> "http://www.w3.org/ns/org#Organization" [ label = "rdfs:subClassOf" ];
+
+}
