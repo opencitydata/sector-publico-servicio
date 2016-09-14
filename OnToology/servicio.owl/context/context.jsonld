@@ -1,0 +1,410 @@
+{
+  "@context" : {
+    "tipoProcedimiento" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#tipoProcedimiento",
+      "@type" : "@id"
+    },
+    "GestorDecisor" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#GestorDecisor"
+    },
+    "claseIniciacionTexto" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseIniciacionTexto",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "recursoProcedeTexto" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#recursoProcedeTexto",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "permiteTramitacionCorreoCertificado" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitacionCorreoCertificado",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "enLineaURL" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#enLineaURL",
+      "@type" : "@id"
+    },
+    "PublicService" : {
+      "@id" : "http://purl.org/vocab/cpsv#PublicService"
+    },
+    "detalleTramitacionTelefonoTexto" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionTelefonoTexto",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasInputTexto" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#hasInputTexto",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "permiteTramitationCorreoPostal" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitationCorreoPostal",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "lugarPresentacionTexto" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPresentacionTexto",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "correoDocumentacionTexto" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#correoDocumentacionTexto"
+    },
+    "license" : {
+      "@id" : "http://creativecommons.org/ns#license"
+    },
+    "ProcedimientoPorPresencial" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorPresencial"
+    },
+    "organo" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#organo",
+      "@type" : "@id"
+    },
+    "ProcedimientoPorTelefono" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorTelefono"
+    },
+    "Organization" : {
+      "@id" : "http://www.w3.org/ns/org#Organization"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "presencialDocumentacion" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#presencialDocumentacion",
+      "@type" : "@id"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "enLineaDocumentacionTexto" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#enLineaDocumentacionTexto",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "requisitos" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#requisitos",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "detalleTramitacionEnLinea" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionEnLinea",
+      "@type" : "@id"
+    },
+    "pago" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#pago",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "telefonoDocumentacionTexto" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#telefonoDocumentacionTexto",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "permiteTramitation" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitation"
+    },
+    "materiaDePregunta" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#materiaDePregunta",
+      "@type" : "@id"
+    },
+    "correoDocumentacion" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#correoDocumentacion",
+      "@type" : "@id"
+    },
+    "permiteTramitacionTelefono" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitacionTelefono",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "procedimientoDeMateria" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#procedimientoDeMateria",
+      "@type" : "@id"
+    },
+    "fechaRespuesta" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaRespuesta",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "provides" : {
+      "@id" : "http://purl.org/vocab/cpsv#provides",
+      "@type" : "@id"
+    },
+    "Recurso" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Recurso"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "recursoProcede" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#recursoProcede",
+      "@type" : "@id"
+    },
+    "proporcionadoPor" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#proporcionadoPor",
+      "@type" : "@id"
+    },
+    "Concept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "Question" : {
+      "@id" : "http://schema.org/Question"
+    },
+    "info" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#info",
+      "@type" : "@id"
+    },
+    "dirigidoPor" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#dirigidoPor",
+      "@type" : "@id"
+    },
+    "follows" : {
+      "@id" : "http://purl.org/vocab/cpsv#follows",
+      "@type" : "@id"
+    },
+    "Via" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Via"
+    },
+    "DocumentacionEntrada" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#DocumentacionEntrada"
+    },
+    "usadoPor" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#usadoPor",
+      "@type" : "@id"
+    },
+    "claseTerminacionTexto" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseTerminacionTexto",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "preguntaDeMateria" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#preguntaDeMateria",
+      "@type" : "@id"
+    },
+    "claseIniciacion" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseIniciacion",
+      "@type" : "@id"
+    },
+    "hasChannel" : {
+      "@id" : "http://purl.org/vocab/cpsv#hasChannel",
+      "@type" : "@id"
+    },
+    "Materia" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Materia"
+    },
+    "Agent" : {
+      "@id" : "http://purl.org/dc/terms/Agent"
+    },
+    "presencialDocumentacionTexto" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#presencialDocumentacionTexto",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "detalleTramitacionCorreoPostal" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionCorreoPostal",
+      "@type" : "@id"
+    },
+    "ProcedimientoPorCorreo" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorCorreo"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "detalleTramitacionPresencial" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionPresencial",
+      "@type" : "@id"
+    },
+    "hasInput" : {
+      "@id" : "http://purl.org/vocab/cpsv#hasInput",
+      "@type" : "@id"
+    },
+    "realizacion" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#realizacion",
+      "@type" : "@id"
+    },
+    "hasChannelTexto" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#hasChannelTexto"
+    },
+    "enLineaDocumentacion" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#enLineaDocumentacion",
+      "@type" : "@id"
+    },
+    "fechaPresentacionTexto" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPresentacionTexto",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Pregunta" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Pregunta"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/elements/1.1/rights"
+    },
+    "otroLugarPresentacion" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#otroLugarPresentacion",
+      "@type" : "@id"
+    },
+    "followsTexto" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#followsTexto",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "question" : {
+      "@id" : "http://schema.org/question",
+      "@type" : "@id"
+    },
+    "identifier" : {
+      "@id" : "http://purl.org/dc/elements/1.1/identifier"
+    },
+    "presentar" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#presentar",
+      "@type" : "@id"
+    },
+    "CivicStructure" : {
+      "@id" : "http://schema.org/CivicStructure"
+    },
+    "Input" : {
+      "@id" : "http://purl.org/vocab/cpsv#Input"
+    },
+    "DestinadoProcedimiento" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#DestinadoProcedimiento"
+    },
+    "LugarPresentacion" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#LugarPresentacion"
+    },
+    "detalleTramitacionCorreoPostalTexto" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionCorreoPostalTexto"
+    },
+    "pregunta" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#pregunta",
+      "@type" : "@id"
+    },
+    "detalleTramitacionPresencialTexto" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionPresencialTexto",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Place" : {
+      "@id" : "http://schema.org/Place"
+    },
+    "detalleTramitacionEnLineaTexto" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionEnLineaTexto",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "fechaPlazoInicio" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPlazoInicio",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "normativa" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#normativa",
+      "@type" : "@id"
+    },
+    "fechaPresentacion" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPresentacion",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "impreso" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#impreso",
+      "@type" : "@id"
+    },
+    "Rule" : {
+      "@id" : "http://purl.org/vocab/cpsv#Rule"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "Impreso" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Impreso"
+    },
+    "permiteTramitacionEnLinea" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitacionEnLinea",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "telefonoDocumentacion" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#telefonoDocumentacion",
+      "@type" : "@id"
+    },
+    "uses" : {
+      "@id" : "http://purl.org/vocab/cpsv#uses",
+      "@type" : "@id"
+    },
+    "TipoProcedimiento" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#TipoProcedimiento"
+    },
+    "detalleTramitacionTelefono" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionTelefono",
+      "@type" : "@id"
+    },
+    "ProcedimientoProceso" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoProceso"
+    },
+    "destino" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#destino",
+      "@type" : "@id"
+    },
+    "fechaRespuestaTexto" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaRespuestaTexto",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "lugarPago" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPago",
+      "@type" : "@id"
+    },
+    "tipoVia" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#tipoVia",
+      "@type" : "@id"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/elements/1.1/date"
+    },
+    "physicallyAvailableAt" : {
+      "@id" : "http://purl.org/vocab/cpsv#physicallyAvailableAt",
+      "@type" : "@id"
+    },
+    "Procedimiento" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento"
+    },
+    "fechaPlazoFin" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPlazoFin",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "lugarPresentacion" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPresentacion",
+      "@type" : "@id"
+    },
+    "CentroServicio" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#CentroServicio"
+    },
+    "MaterialAgrupacion" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#MaterialAgrupacion"
+    },
+    "enLineaUrl" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#enLineaUrl",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "claseTerminacion" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseTerminacion",
+      "@type" : "@id"
+    },
+    "lugarPagoTexto" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPagoTexto",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "preguntaDeProcedimiento" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#preguntaDeProcedimiento",
+      "@type" : "@id"
+    },
+    "ProcedimientoPorEnLinea" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorEnLinea"
+    },
+    "hasFormat" : {
+      "@id" : "http://purl.org/dc/terms/hasFormat"
+    },
+    "permiteTramitacionPresencial" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitacionPresencial",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "Normativa" : {
+      "@id" : "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Normativa"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    }
+  }
+}
