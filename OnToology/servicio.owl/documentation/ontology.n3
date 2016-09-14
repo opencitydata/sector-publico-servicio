@@ -1,4 +1,3 @@
-_:AX2dX48f586b4X3aX1572866dedfX3aXX2dX7ffc <http://www.w3.org/2000/01/rdf-schema#label> "HTML" .
 <http://schema.org/Question> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitationCorreoPostal> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitationCorreoPostal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/cpsv#PublicService> .
@@ -54,7 +53,6 @@ _:AX2dX48f586b4X3aX1572866dedfX3aXX2dX7ffc <http://www.w3.org/2000/01/rdf-schema
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionPresencialTexto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorPresencial> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionPresencialTexto> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#followsTexto> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionPresencialTexto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-_:AX2dX48f586b4X3aX1572866dedfX3aXX2dX7ffb <http://www.w3.org/2000/01/rdf-schema#label> "RDF" .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#LugarPresentacion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/CivicStructure> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#LugarPresentacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://purl.org/vocab/cpsv#provides> <http://www.w3.org/2002/07/owl#inverseOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#proporcionadoPor> .
@@ -127,6 +125,7 @@ _:AX2dX48f586b4X3aX1572866dedfX3aXX2dX7ffb <http://www.w3.org/2000/01/rdf-schema
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitacionTelefono> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitation> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitacionTelefono> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+_:A58b2d9b3X3aX1572869e9e4X3aXX2dX7ffc <http://www.w3.org/2000/01/rdf-schema#label> "HTML" .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#impreso> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/cpsv#PublicService> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#impreso> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/cpsv#hasInput> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#impreso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -168,6 +167,7 @@ _:AX2dX48f586b4X3aX1572866dedfX3aXX2dX7ffb <http://www.w3.org/2000/01/rdf-schema
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#recursoProcedeTexto> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#recursoProcedeTexto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/cpsv#PublicService> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#recursoProcedeTexto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+_:A58b2d9b3X3aX1572869e9e4X3aXX2dX7ffb <http://www.w3.org/2000/01/rdf-schema#label> "RDF" .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Normativa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/cpsv#Rule> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Normativa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionPresencial> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoProceso> .

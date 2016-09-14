@@ -19,6 +19,8 @@
 @prefix skos:    <http://www.w3.org/2004/02/skos/core#> .
 @prefix cc:      <http://creativecommons.org/ns#> .
 
+[]    rdfs:label "RDF" .
+
 esproc:lugarPago
       a       owl:ObjectProperty ;
       rdfs:comment "Lugar de pago del procedimiento, en caso de tener que realizar pago"@es ;
@@ -54,8 +56,6 @@ esproc:organo
       rdfs:range esproc:GestorDecisor ;
       rdfs:subPropertyOf owl:topObjectProperty .
 
-[]    rdfs:label "HTML" .
-
 esproc:permiteTramitacionEnLinea
       a       owl:DatatypeProperty ;
       rdfs:domain <http://purl.org/vocab/cpsv#PublicService> ;
@@ -88,14 +88,14 @@ esproc:pago
       rdfs:domain esproc:Procedimiento ;
       rdfs:range xsd:string .
 
-rdfs:isDefinedBy
-      a       owl:AnnotationProperty .
-
 esproc:permiteTramitacionPresencial
       a       owl:DatatypeProperty ;
       rdfs:domain <http://purl.org/vocab/cpsv#PublicService> ;
       rdfs:range xsd:boolean ;
       rdfs:subPropertyOf esproc:permiteTramitation .
+
+rdfs:isDefinedBy
+      a       owl:AnnotationProperty .
 
 esproc:lugarPresentacionTexto
       a       owl:DatatypeProperty ;
@@ -143,8 +143,6 @@ esproc:dirigidoPor
 
 esproc:proporcionadoPor
       a       owl:ObjectProperty .
-
-[]    rdfs:label "RDF" .
 
 esproc:recursoProcede
       a       owl:ObjectProperty ;
@@ -202,6 +200,8 @@ esproc:procedimientoDeMateria
 esproc:DestinadoProcedimiento
       a       owl:Class ;
       rdfs:subClassOf dcterms:Agent .
+
+[]    rdfs:label "HTML" .
 
 esproc:detalleTramitacionPresencialTexto
       a       owl:DatatypeProperty ;
