@@ -390,7 +390,12 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
         <rdfs:comment>fpriyatna: I am not sure whether this property should be a subproperty of proporcionadoPor or cpsv:physicallyAvailableAt, depends on how we set the range of this property (dct:Location or dct:Agent)
 
 The range of cpsv:physicallyAvailableAt is dct:Location
-The range of proporcionadoPor is dct:Agent</rdfs:comment>
+The range of proporcionadoPor is dct:Agent
+
+e.g.: Procedimiento 16901: Padrón Municipal de Habitantes: Modificación de Datos
+realizacion: Oficina de Relaciones con los Ciudadanos (ORC, Plaza del Pilar)
+realizacion: Unidad de Estadística y Gestión Padronal
+realizacion: Oficina de Relaciones con los Ciudadanos (ORC, Edificio Seminario)</rdfs:comment>
     </owl:ObjectProperty>
     
 
