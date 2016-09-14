@@ -18,10 +18,10 @@ node [shape = rectangle, color="orange"]; "esproc:Recurso" "esproc:Via" "esproc:
 	"esproc:lugarPresentacionTexto" -> "esproc:hasChannelTexto" [ label = "rdfs:subPropertyOf" ];
 	"esproc:permiteTramitacionCorreoCertificado" -> "esproc:permiteTramitation" [ label = "rdfs:subPropertyOf" ];
 	"esproc:permiteTramitacionTelefono" -> "esproc:permiteTramitation" [ label = "rdfs:subPropertyOf" ];
+	"http://purl.org/vocab/cpsv" -> "573d8763:1572869d226:-7ff9" [ label = "dcterms:creator" ];
+	"http://purl.org/vocab/cpsv" -> "573d8763:1572869d226:-7ffa" [ label = "dcterms:publisher" ];
 	"http://purl.org/vocab/cpsv" -> "http://purl.org/adms/assettype/Ontology" [ label = "dcterms:type" ];
-	"http://purl.org/vocab/cpsv" -> "75aee163:1572866c9da:-7ff9" [ label = "dcterms:creator" ];
 	"http://purl.org/vocab/cpsv" -> "http://purl.org/adms/status/UnderDevelopment" [ label = "dcterms:status" ];
-	"http://purl.org/vocab/cpsv" -> "75aee163:1572866c9da:-7ffa" [ label = "dcterms:publisher" ];
 	"http://purl.org/vocab/cpsv" -> "http://joinup.ec.europa.eu/asset/core_public_service/description" [ label = "foaf:homepage" ];
 	"esproc:impreso" -> "cpsv:hasInput" [ label = "rdfs:subPropertyOf" ];
 	"esproc:dirigidoPor" -> "esproc:usadoPor" [ label = "rdfs:subPropertyOf" ];
