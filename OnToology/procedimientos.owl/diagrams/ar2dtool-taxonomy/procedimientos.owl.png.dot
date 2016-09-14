@@ -1,8 +1,0 @@
-digraph ar2dtool_diagram { 
-rankdir=LR;
-size="1000"
-node [shape = rectangle, color="black"]; "cpsv:FormalFramework" "cpsv:Rule" ; /*classes style*/
-	"cpsv:FormalFramework" -> "frbr:Expression" [ label = "rdfs:subClassOf" ];
-	"cpsv:Rule" -> "frbr:Expression" [ label = "rdfs:subClassOf" ];
-
-}
