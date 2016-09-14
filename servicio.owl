@@ -290,7 +290,7 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#normativa -->
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#normativa">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/cpsv#hasInput"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/cpsv#follows"/>
         <rdfs:domain rdf:resource="http://purl.org/vocab/cpsv#PublicService"/>
     </owl:ObjectProperty>
     
