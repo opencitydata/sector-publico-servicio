@@ -374,7 +374,10 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
 
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#proporcionadoPor -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#proporcionadoPor"/>
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#proporcionadoPor">
+        <rdfs:domain rdf:resource="http://purl.org/vocab/cpsv#PublicService"/>
+        <rdfs:range rdf:resource="http://purl.org/dc/terms/Agent"/>
+    </owl:ObjectProperty>
     
 
 
@@ -384,6 +387,10 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
         <rdfs:subPropertyOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#proporcionadoPor"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#CentroServicio"/>
+        <rdfs:comment>fpriyatna: I am not sure whether this property should be a subproperty of proporcionadoPor or cpsv:physicallyAvailableAt, depends on how we set the range of this property (dct:Location or dct:Agent)
+
+The range of cpsv:physicallyAvailableAt is dct:Location
+The range of proporcionadoPor is dct:Agent</rdfs:comment>
     </owl:ObjectProperty>
     
 
