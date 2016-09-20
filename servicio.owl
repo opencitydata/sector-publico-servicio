@@ -137,6 +137,7 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseIniciacion">
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento"/>
+        <rdfs:comment xml:lang="en">To be completed</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -145,6 +146,7 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseTerminacion">
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento"/>
+        <rdfs:comment xml:lang="en">To be completed</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -155,6 +157,7 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
         <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/cpsv#hasInput"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorCorreo"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#DocumentacionEntrada"/>
+        <rdfs:comment xml:lang="en">This property links a postal mail based Public Service with its inputs/requirements.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -162,9 +165,10 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#destino -->
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#destino">
-        <rdfs:subPropertyOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#usadoPor"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/cpsv#hasChannel"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#CentroServicio"/>
+        <rdfs:comment xml:lang="en">This property links a Public Service to an organization in which the Public Service should be addressed to.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -172,9 +176,10 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionCorreoPostal -->
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionCorreoPostal">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/cpsv#follows"/>
+        <rdfs:subPropertyOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#normativa"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorCorreo"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoProceso"/>
+        <rdfs:comment xml:lang="en">The detalleTramitacionCorreoPostal property links a postal mail based service to the Rule(s) under which it operates.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -182,9 +187,10 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionEnLinea -->
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionEnLinea">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/cpsv#follows"/>
+        <rdfs:subPropertyOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#normativa"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorEnLinea"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoProceso"/>
+        <rdfs:comment xml:lang="en">The detalleTramitacionEnLinea property links an online-based service to the Rule(s) under which it operates.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -192,9 +198,10 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionPresencial -->
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionPresencial">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/cpsv#follows"/>
+        <rdfs:subPropertyOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#normativa"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorPresencial"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoProceso"/>
+        <rdfs:comment xml:lang="en">The detalleTramitacionPresencial property links a presence-based service to the Rule(s) under which it operates.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -202,9 +209,10 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionTelefono -->
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionTelefono">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/cpsv#follows"/>
+        <rdfs:subPropertyOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#normativa"/>
         <rdfs:domain rdf:resource="http://purl.org/vocab/cpsv#PublicService"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoProceso"/>
+        <rdfs:comment xml:lang="en">The detalleTramitacionEnLinea property links a telephone-based service to the Rule(s) under which it operates.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -214,6 +222,8 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#dirigidoPor">
         <rdfs:subPropertyOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#usadoPor"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento"/>
+        <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#DestinadoProcedimiento"/>
+        <rdfs:comment xml:lang="en">This property links a Public Service with an Entity that directs it</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -224,6 +234,7 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
         <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/cpsv#hasInput"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorEnLinea"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#DocumentacionEntrada"/>
+        <rdfs:comment xml:lang="en">This property links an online-based Public Service with its inputs/requirements.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -232,6 +243,8 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#enLineaURL">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/cpsv#hasChannel"/>
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento"/>
+        <rdfs:comment xml:lang="en">This property links a online-based PublicService with its URL</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -241,6 +254,8 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#impreso">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/cpsv#hasInput"/>
         <rdfs:domain rdf:resource="http://purl.org/vocab/cpsv#PublicService"/>
+        <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Impreso"/>
+        <rdfs:comment xml:lang="en">This property links a Public Service with its applications forms.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -248,8 +263,10 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#info -->
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#info">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/cpsv#hasChannel"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#CentroServicio"/>
+        <rdfs:comment xml:lang="en">This property links a Public Service with the organization that provide information for the corresponding Public Service.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -257,9 +274,9 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPago -->
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPago">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/cpsv#physicallyAvailableAt"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/cpsv#hasChannel"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento"/>
-        <rdfs:range rdf:resource="http://purl.org/dc/terms/Location"/>
+        <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#CentroServicio"/>
         <dcterms:issued>2016-07-28</dcterms:issued>
         <rdfs:comment xml:lang="es">Lugar de pago del procedimiento, en caso de tener que realizar pago</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio"/>
@@ -271,9 +288,10 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPresentacion -->
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPresentacion">
-        <rdfs:subPropertyOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#usadoPor"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/cpsv#hasChannel"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#CentroServicio"/>
+        <rdfs:comment xml:lang="en">This property links a Public Service with the organization to which the application is to be presented.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -283,6 +301,7 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#materiaDePregunta">
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Pregunta"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Materia"/>
+        <rdfs:comment xml:lang="en">To  be completed</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -291,7 +310,8 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#normativa">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/cpsv#follows"/>
-        <rdfs:domain rdf:resource="http://purl.org/vocab/cpsv#PublicService"/>
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento"/>
+        <rdfs:comment xml:lang="en">The normativa property links a Public Service to a Rule</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -302,6 +322,7 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#GestorDecisor"/>
+        <rdfs:comment xml:lang="en">To  be completed</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -311,7 +332,8 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#otroLugarPresentacion">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/cpsv#hasChannel"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento"/>
-        <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#LugarPresentacion"/>
+        <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#CentroServicio"/>
+        <rdfs:comment xml:lang="en">This property links a Public Service with the organization to which the application is to be presented.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -321,6 +343,7 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#pregunta">
         <rdfs:subPropertyOf rdf:resource="http://schema.org/question"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Pregunta"/>
+        <rdfs:comment xml:lang="en">This property links a Public Service to the question associated to the service.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -351,6 +374,7 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
         <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/cpsv#hasInput"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorPresencial"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#DocumentacionEntrada"/>
+        <rdfs:comment xml:lang="en">This property links a presence-based Public Service with its inputs/requirements.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -358,7 +382,9 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#presentar -->
 
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#presentar">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/cpsv#hasChannel"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento"/>
+        <rdfs:comment xml:lang="en">This property links a Public Service with the organization to which the application is to be presented.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -368,6 +394,7 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#procedimientoDeMateria">
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Materia"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento"/>
+        <rdfs:comment xml:lang="en">To  be completed</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -377,6 +404,7 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#proporcionadoPor">
         <rdfs:domain rdf:resource="http://purl.org/vocab/cpsv#PublicService"/>
         <rdfs:range rdf:resource="http://purl.org/dc/terms/Agent"/>
+        <rdfs:comment xml:lang="en">this property is the inverse of cpsv:provides.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -387,15 +415,7 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
         <rdfs:subPropertyOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#proporcionadoPor"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#CentroServicio"/>
-        <rdfs:comment>fpriyatna: I am not sure whether this property should be a subproperty of proporcionadoPor or cpsv:physicallyAvailableAt, depends on how we set the range of this property (dct:Location or dct:Agent)
-
-The range of cpsv:physicallyAvailableAt is dct:Location
-The range of proporcionadoPor is dct:Agent
-
-e.g.: Procedimiento 16901: Padrón Municipal de Habitantes: Modificación de Datos
-realizacion: Oficina de Relaciones con los Ciudadanos (ORC, Plaza del Pilar)
-realizacion: Unidad de Estadística y Gestión Padronal
-realizacion: Oficina de Relaciones con los Ciudadanos (ORC, Edificio Seminario)</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property links a PublicService with the places/organization in which the service is realized.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -405,6 +425,7 @@ realizacion: Oficina de Relaciones con los Ciudadanos (ORC, Edificio Seminario)<
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#recursoProcede">
         <rdfs:domain rdf:resource="http://purl.org/vocab/cpsv#PublicService"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Recurso"/>
+        <rdfs:comment xml:lang="en">To  be completed</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -415,6 +436,7 @@ realizacion: Oficina de Relaciones con los Ciudadanos (ORC, Edificio Seminario)<
         <rdfs:subPropertyOf rdf:resource="http://purl.org/vocab/cpsv#hasInput"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorTelefono"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#DocumentacionEntrada"/>
+        <rdfs:comment xml:lang="en">This property links a telephone-based Public Service with its inputs/requirements.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -424,6 +446,7 @@ realizacion: Oficina de Relaciones con los Ciudadanos (ORC, Edificio Seminario)<
     <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#tipoProcedimiento">
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#TipoProcedimiento"/>
+        <rdfs:comment xml:lang="en">this property links a Public Service with the type of the Public Service.</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -446,7 +469,12 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
 
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#usadoPor -->
 
-    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#usadoPor"/>
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#usadoPor">
+        <rdfs:domain rdf:resource="http://purl.org/vocab/cpsv#PublicService"/>
+        <rdfs:range rdf:resource="http://purl.org/dc/terms/Agent"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This property is the inverse of cpsv:uses property.
+This property link a PublicService to an Agent via a &quot;used-by&quot; relationship.</rdfs:label>
+    </owl:ObjectProperty>
     
 
 
@@ -466,6 +494,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
     <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseIniciacionTexto">
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">to be completed.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -475,6 +504,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
     <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseTerminacionTexto">
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">to be completed.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -484,6 +514,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
     <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#correoDocumentacionTexto">
         <rdfs:subPropertyOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#hasInputTexto"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorCorreo"/>
+        <rdfs:comment xml:lang="en">This property links a postal mail based Public Service with its inputs/requirements (in string format).</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -492,6 +523,8 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
 
     <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionCorreoPostalTexto">
         <rdfs:subPropertyOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#followsTexto"/>
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorCorreo"/>
+        <rdfs:comment xml:lang="en">This property links a postal-mail based PublicService with the rules that it follows (in text format).</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -502,6 +535,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
         <rdfs:subPropertyOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#followsTexto"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorEnLinea"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">This property links an online-based PublicService with the rules that it follows (in text format).</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -512,6 +546,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
         <rdfs:subPropertyOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#followsTexto"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorPresencial"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">This property links a presencial-based PublicService with the rules that it follows (in text format).</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -522,6 +557,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
         <rdfs:subPropertyOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#followsTexto"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorTelefono"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">This property links a telefone-based PublicService with the rules that it follows (in text format).</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -532,15 +568,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
         <rdfs:subPropertyOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#hasInputTexto"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorEnLinea"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#enLineaUrl -->
-
-    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#enLineaUrl">
-        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorEnLinea"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">This property links an online-based Public Service with its inputs/requirements (in string format).</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -550,6 +578,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
     <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPlazoFin">
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="en">This property represents the deadline to terminate a public service.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -559,6 +588,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
     <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPlazoInicio">
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="en">This property represent the deadline to start a Public Service.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -620,6 +650,9 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
     <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#followsTexto">
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">This property links a PublicService with the rules that it follow.
+
+Unline cpsv:follow whose range is a Rule, the range of this property is simply an xsd:string.</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -637,6 +670,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
     <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#hasInputTexto">
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The inputs for a Public Service (in string format)</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -661,6 +695,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
         <rdfs:subPropertyOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#hasChannelTexto"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">The place to present the application for a Public Service (in string format)</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -670,6 +705,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
     <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#pago">
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Information about the payment (date, amount, place) for a Public Service</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -718,6 +754,8 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
 
     <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitation">
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:comment xml:lang="en">we should replace all the subproperties with SKOS</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -738,6 +776,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
         <rdfs:subPropertyOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#hasInputTexto"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorPresencial"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">This property links a presence-based Public Service with its inputs/requirements (in string format).</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -747,6 +786,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
     <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#recursoProcedeTexto">
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">to be completed</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -756,6 +796,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
     <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#requisitos">
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>This property links a PublicService with its requirements (in text format)</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -766,6 +807,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
         <rdfs:subPropertyOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#hasInputTexto"/>
         <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorTelefono"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">This property links a telephone-based Public Service with its inputs/requirements (in string format).</rdfs:comment>
     </owl:DatatypeProperty>
     
 
@@ -803,6 +845,16 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
 
     <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#CentroServicio">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#Organization"/>
+        <rdfs:comment xml:lang="en">a subclass of org:Organization, the class CentroServicio represent organizations that are involved in the Public Service activities.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Decisor -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Decisor">
+        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#GestorDecisor"/>
+        <rdfs:comment xml:lang="en">This class represent an entity that makes decision in a Public Service</rdfs:comment>
     </owl:Class>
     
 
@@ -811,6 +863,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
 
     <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#DestinadoProcedimiento">
         <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Agent"/>
+        <rdfs:comment xml:lang="en">This class represent the target entity of a Public Service.</rdfs:comment>
     </owl:Class>
     
 
@@ -819,6 +872,16 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
 
     <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#DocumentacionEntrada">
         <rdfs:subClassOf rdf:resource="http://purl.org/vocab/cpsv#Input"/>
+        <rdfs:comment xml:lang="en">DocumentacionEntrada, a subclass of cpsv:Input represents the input of a public service</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Gestor -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Gestor">
+        <rdfs:subClassOf rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#GestorDecisor"/>
+        <rdfs:comment xml:lang="en">This class represent an entity that manages a Public Service</rdfs:comment>
     </owl:Class>
     
 
@@ -827,6 +890,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
 
     <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#GestorDecisor">
         <rdfs:subClassOf rdf:resource="http://purl.org/dc/terms/Agent"/>
+        <rdfs:comment xml:lang="en">This class represent an entity that makes decision or manages a Public Service</rdfs:comment>
     </owl:Class>
     
 
@@ -835,27 +899,24 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
 
     <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Impreso">
         <rdfs:subClassOf rdf:resource="http://purl.org/vocab/cpsv#Input"/>
-    </owl:Class>
-    
-
-
-    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#LugarPresentacion -->
-
-    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#LugarPresentacion">
-        <rdfs:subClassOf rdf:resource="http://schema.org/CivicStructure"/>
+        <rdfs:comment xml:lang="en">This class represents Forms to be filled in order to request a Public Servcie</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Materia -->
 
-    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Materia"/>
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Materia">
+        <rdfs:comment xml:lang="en">To  be completed</rdfs:comment>
+    </owl:Class>
     
 
 
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#MaterialAgrupacion -->
 
-    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#MaterialAgrupacion"/>
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#MaterialAgrupacion">
+        <rdfs:comment xml:lang="en">To  be completed</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -863,6 +924,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
 
     <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Normativa">
         <rdfs:subClassOf rdf:resource="http://purl.org/vocab/cpsv#Rule"/>
+        <rdfs:comment xml:lang="en">Normativa, a subclass of Rule, represents a rule that has to be followed by a PublicService</rdfs:comment>
     </owl:Class>
     
 
@@ -871,6 +933,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
 
     <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Pregunta">
         <rdfs:subClassOf rdf:resource="http://schema.org/Question"/>
+        <rdfs:comment xml:lang="en">a subclass of schema:Question</rdfs:comment>
     </owl:Class>
     
 
@@ -879,6 +942,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
 
     <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento">
         <rdfs:subClassOf rdf:resource="http://purl.org/vocab/cpsv#PublicService"/>
+        <rdfs:comment xml:lang="en">a subclass of cpsv:PublicService</rdfs:comment>
     </owl:Class>
     
 
@@ -919,13 +983,16 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
 
     <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoProceso">
         <rdfs:subClassOf rdf:resource="http://purl.org/vocab/cpsv#Rule"/>
+        <rdfs:comment xml:lang="en">ProcedimientoProceso, a subclass of Rule, represents a rule that has to be followed by a Procedimiento</rdfs:comment>
     </owl:Class>
     
 
 
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Recurso -->
 
-    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Recurso"/>
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Recurso">
+        <rdfs:comment xml:lang="en">To  be completed</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -978,10 +1045,10 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     </owl:NamedIndividual>
     <rdf:Description>
-        <rdfs:label>RDF</rdfs:label>
+        <rdfs:label>HTML</rdfs:label>
     </rdf:Description>
     <rdf:Description>
-        <rdfs:label>HTML</rdfs:label>
+        <rdfs:label>RDF</rdfs:label>
     </rdf:Description>
 </rdf:RDF>
 
