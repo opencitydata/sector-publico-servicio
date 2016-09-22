@@ -127,6 +127,12 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
     
 
 
+    <!-- http://schema.org/acceptedAnswer -->
+
+    <owl:ObjectProperty rdf:about="http://schema.org/acceptedAnswer"/>
+    
+
+
     <!-- http://schema.org/question -->
 
     <owl:ObjectProperty rdf:about="http://schema.org/question"/>
@@ -426,6 +432,17 @@ Asimismo, se actualizará de acuerdo con la evolución de estos vocabularios (es
         <rdfs:domain rdf:resource="http://purl.org/vocab/cpsv#PublicService"/>
         <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Recurso"/>
         <rdfs:comment xml:lang="en">To  be completed</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#respuestaAceptada -->
+
+    <owl:ObjectProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#respuestaAceptada">
+        <rdfs:subPropertyOf rdf:resource="http://schema.org/acceptedAnswer"/>
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Pregunta"/>
+        <rdfs:range rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Respuesta"/>
+        <rdfs:comment xml:lang="en">Defined as a subproperty of schema:acceptedAnswer, this property links a question (essrvc:Pregunta) with its answer (essrvc:Respuesta)</rdfs:comment>
     </owl:ObjectProperty>
     
 
@@ -810,6 +827,16 @@ Unline cpsv:follow whose range is a Rule, the range of this property is simply a
     
 
 
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#respuestaTexto -->
+
+    <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#respuestaTexto">
+        <rdfs:domain rdf:resource="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Pregunta"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>the answer of a question in string format</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#telefonoDocumentacionTexto -->
 
     <owl:DatatypeProperty rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#telefonoDocumentacionTexto">
@@ -829,6 +856,12 @@ Unline cpsv:follow whose range is a Rule, the range of this property is simply a
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://schema.org/Answer -->
+
+    <owl:Class rdf:about="http://schema.org/Answer"/>
     
 
 
@@ -1005,6 +1038,15 @@ Unline cpsv:follow whose range is a Rule, the range of this property is simply a
     
 
 
+    <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Respuesta -->
+
+    <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Respuesta">
+        <rdfs:subClassOf rdf:resource="http://schema.org/Answer"/>
+        <rdfs:comment xml:lang="en">This class represents the answers for a question.</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#TipoProcedimiento -->
 
     <owl:Class rdf:about="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#TipoProcedimiento"/>
@@ -1054,10 +1096,10 @@ Unline cpsv:follow whose range is a Rule, the range of this property is simply a
         <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
     </owl:NamedIndividual>
     <rdf:Description>
-        <rdfs:label>RDF</rdfs:label>
+        <rdfs:label>HTML</rdfs:label>
     </rdf:Description>
     <rdf:Description>
-        <rdfs:label>HTML</rdfs:label>
+        <rdfs:label>RDF</rdfs:label>
     </rdf:Description>
 </rdf:RDF>
 
