@@ -299,7 +299,7 @@ vann:usageNote
 
 cpsv:currency
       a       owl:ObjectProperty ;
-      rdfs:comment "This property represents the currency in which the Cost needs to be paid and the value of the Cost is expressed."@en , "Esta propiedad representa la moneda en la que se debe pagar los costes asociados a un proceso o servicio."@es ;
+      rdfs:comment "La propiedad Moneda representa la moneda en la que se debe pagar los costes asociados a un proceso o servicio."@es , "This property represents the currency in which the Cost needs to be paid and the value of the Cost is expressed."@en ;
       rdfs:label "Moneda"@es , "Currency"@en ;
       rdfs:range skos:Concept ;
       vann:usageNote "Optional property. The possible values for this property are described in a controlled vocabulary (see European Publications Office's Currencies Names Authority List (NAL) on http://publications.europa.eu/mdr/authority/currency/index.html)."@en .

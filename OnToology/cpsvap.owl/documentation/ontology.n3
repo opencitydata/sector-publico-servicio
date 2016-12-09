@@ -301,7 +301,7 @@
 <http://data.europa.eu/cv/currency> <http://www.w3.org/2000/01/rdf-schema#label> "Moneda"@es .
 <http://data.europa.eu/cv/currency> <http://www.w3.org/2000/01/rdf-schema#label> "Currency"@en .
 <http://data.europa.eu/cv/currency> <http://www.w3.org/2000/01/rdf-schema#comment> "This property represents the currency in which the Cost needs to be paid and the value of the Cost is expressed."@en .
-<http://data.europa.eu/cv/currency> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta propiedad representa la moneda en la que se debe pagar los costes asociados a un proceso o servicio."@es .
+<http://data.europa.eu/cv/currency> <http://www.w3.org/2000/01/rdf-schema#comment> "La propiedad Moneda representa la moneda en la que se debe pagar los costes asociados a un proceso o servicio."@es .
 <http://data.europa.eu/cv/currency> <http://purl.org/vocab/vann/usageNote> "Optional property. The possible values for this property are described in a controlled vocabulary (see European Publications Office's Currencies Names Authority List (NAL) on http://publications.europa.eu/mdr/authority/currency/index.html)."@en .
 <http://data.europa.eu/cv/currency> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
 <http://data.europa.eu/cv/currency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
