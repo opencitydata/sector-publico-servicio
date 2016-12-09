@@ -1,0 +1,11 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "cpsv:Rule" "frbr:Expression" "cpsv:FormalFramework" "org:FormalOrganization" "foaf:Organization" "cpsv:PublicOrganisation" "org:Organization" ; /*classes style*/
+	"cpsv:Rule" -> "frbr:Expression" [ label = "rdfs:subClassOf" ];
+	"cpsv:PublicOrganisation" -> "org:FormalOrganization" [ label = "rdfs:subClassOf" ];
+	"org:FormalOrganization" -> "foaf:Organization" [ label = "rdfs:subClassOf" ];
+	"org:FormalOrganization" -> "org:Organization" [ label = "rdfs:subClassOf" ];
+	"cpsv:FormalFramework" -> "frbr:Expression" [ label = "rdfs:subClassOf" ];
+
+}
