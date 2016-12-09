@@ -1,0 +1,16 @@
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+<..\index-en.html> a prov:Entity;
+	 dc:title "Core Public Service Vocabulary Application Profile";
+	 prov:wasAttributedTo <http://publications.europa.eu/resource/authority/corporate-body/DIGIT>;
+	 dc:creator <http://publications.europa.eu/resource/authority/corporate-body/DIGIT>;
+	 prov:wasAttributedTo <http://publications.europa.eu/resource/authority/corporate-body/GROW>;
+	 dc:contributor <http://publications.europa.eu/resource/authority/corporate-body/GROW>;
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Idafen Santana (OEG, Universidad Politécnica de Madrid)".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Víctor Rodríguez-Doncel (OEG, Universidad Politécnica de Madrid)".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Oscar Corcho (OEG, Universidad Politécnica de Madrid)".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Freddy Priyatna (OEG, Universidad Politécnica de Madrid)".];
+	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:wasGeneratedAt "2016-12-09";
+.
