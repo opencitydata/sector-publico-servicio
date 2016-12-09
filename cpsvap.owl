@@ -1,0 +1,1109 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://data.europa.eu/cv/cpsvap#"
+     xml:base="http://data.europa.eu/cv/cpsvap"
+     xmlns:eli="http://data.europa.eu/eli/ontology#"
+     xmlns:adms="http://www.w3.org/ns/adms#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:org="http://www.w3.org/ns/org#"
+     xmlns:locn1="http://www.w3.org/ns/locn#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:frbr="http://purl.org/vocab/frbr/core#"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:dcat="http://www.w3.org/ns/dcat#"
+     xmlns:locn="http://www.w3.org/ns/locn/"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:cpsv="http://data.europa.eu/cv/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/">
+    <owl:Ontology rdf:about="http://data.europa.eu/cv/cpsvap">
+        <dct:contributor>Víctor Rodríguez-Doncel (OEG, Universidad Politécnica de Madrid)</dct:contributor>
+        <dct:modified>2016-12-09</dct:modified>
+        <dct:publisher rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/DIGIT"/>
+        <dct:contributor rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/GROW"/>
+        <vann:preferredNamespacePrefix>cpsvap</vann:preferredNamespacePrefix>
+        <dct:contributor>Freddy Priyatna (OEG, Universidad Politécnica de Madrid)</dct:contributor>
+        <dct:contributor>Oscar Corcho (OEG, Universidad Politécnica de Madrid)</dct:contributor>
+        <dct:creator rdf:resource="http://publications.europa.eu/resource/authority/corporate-body/DIGIT"/>
+        <dct:status rdf:resource="http://purl.org/adms/status/Completed"/>
+        <dct:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-04-02</dct:created>
+        <dct:contributor>Idafen Santana (OEG, Universidad Politécnica de Madrid)</dct:contributor>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <rdf:Description rdf:about="http://purl.org/dc/terms/creator">
+        <vann:usageNote xml:lang="en">Optional property.</vann:usageNote>
+        <rdfs:comment xml:lang="en">This property links the Formal Framework to one or more instances of the Public Organisation class, which are the creators of the specific Formal Framework.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has creator</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/usageNote -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/usageNote"/>
+    
+
+
+    <!-- http://www.w3.org/ns/locn#GeographicName -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/locn#GeographicName">
+        <vann:usageNote xml:lang="en">Optional property. The range is a literal.</vann:usageNote>
+        <rdfs:comment xml:lang="en">This property represents the geographic name of the location.</rdfs:comment>
+        <rdfs:label xml:lang="en">GeographicName</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/locn#addressArea -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/locn#addressArea">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/locn/Address"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/locn#addressId -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/locn#addressId">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/locn/Address"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/locn#adminUnitL1 -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/locn#adminUnitL1">
+        <vann:usageNote xml:lang="en">Optional property. The range is a literal, conceptually defined by the INSPIRE Geographical Name data type. This property represents the uppermost administrative unit for the Address, almost always a country. Best practice is to use the ISO 3166-1 code but if this is inappropriate for the context, country names should be provided in a consistent manner to reduce ambiguity. For example, either write &apos;United Kingdom&apos; or &apos;UK&apos; consistently throughout the data set and avoid mixing the two. Examples: &apos;UK&apos; or &apos;United Kingdom&apos;</vann:usageNote>
+        <rdfs:comment xml:lang="en">This property represents the uppermost administrative unit for the Address, almost always a country.</rdfs:comment>
+        <rdfs:label xml:lang="en">Admin unit L1</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/locn/Address"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/locn#adminUnitL2 -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/locn#adminUnitL2">
+        <vann:usageNote xml:lang="en">Optional property. The range is a literal, conceptually defined by the INSPIRE Geographical Name data type.</vann:usageNote>
+        <rdfs:comment xml:lang="en">This property represents the region of the Address, usually a county, state or other such area that typically encompasses several localities.</rdfs:comment>
+        <rdfs:label xml:lang="en">Admin unit L2</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/locn/Address"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/locn#fullAddress -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/locn#fullAddress">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/locn/Address"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/locn#poBox -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/locn#poBox">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/locn/Address"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/locn#postCode -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/locn#postCode">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/locn/Address"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/locn#postName -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/locn#postName">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/locn/Address"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/locn#thoroughfare -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/locn#thoroughfare">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/locn/Address"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- http://www.w3.org/ns/locn/Address -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/ns/locn/Address"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://data.europa.eu/cv/AdministrativeLevel -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/cv/AdministrativeLevel">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <vann:usageNote xml:lang="en">Optional property. The possible values for this property are described in a controlled vocabulary (see NUTS taxonomy on http://ec.europa.eu/eurostat/ramon/nomenclatures/index.cfm?TargetUrl=LST_NOM_DTL&amp;StrNom=NUTS_22&amp;StrLanguageCode=EN&amp;IntPcKey=&amp;StrLayoutCode=HIERARCHIC).</vann:usageNote>
+        <rdfs:comment xml:lang="es">Esta propiedad representa el nivel administrativo en el que opera una Organización Formal.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property represents the administrative level a particular Formal Organisation is operating on</rdfs:comment>
+        <rdfs:label xml:lang="en">Administrative level</rdfs:label>
+        <rdfs:label xml:lang="es">Nivel administrativo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/cv/currency -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/cv/currency">
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <vann:usageNote xml:lang="en">Optional property. The possible values for this property are described in a controlled vocabulary (see European Publications Office&apos;s Currencies Names Authority List (NAL) on http://publications.europa.eu/mdr/authority/currency/index.html).</vann:usageNote>
+        <rdfs:comment xml:lang="es">Esta propiedad representa la moneda en la que se debe pagar los costes asociados a un proceso o servicio.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property represents the currency in which the Cost needs to be paid and the value of the Cost is expressed.</rdfs:comment>
+        <rdfs:label xml:lang="en">Currency</rdfs:label>
+        <rdfs:label xml:lang="es">Moneda</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/cv/endDateTime -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/cv/endDateTime">
+        <rdfs:domain rdf:resource="http://purl.org/dc/terms/PeriodOfTime"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/cv/follows -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/cv/follows">
+        <rdfs:range rdf:resource="http://data.europa.eu/cv/Rule"/>
+        <vann:usageNote xml:lang="en">Optional property. The definition of the Rule class is very broad. In a typical case, the competent authority that provides the service will also define the rules that will implement its own policies. The CPSV-AP is flexible to allow for significant variation in such a scenario.</vann:usageNote>
+        <rdfs:comment xml:lang="es">Esta propiedad enlaza un Servicio Público con la(s) regla(s) que rigen su funcionamiento.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The follows property links a Public Service to the Rule(s) under which it operates. </rdfs:comment>
+        <rdfs:label xml:lang="en">Follows</rdfs:label>
+        <rdfs:label xml:lang="es">Sigue normativa</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/cv/hasChannel -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/cv/hasChannel">
+        <rdfs:range rdf:resource="http://data.europa.eu/cv/Channel"/>
+        <vann:usageNote xml:lang="en">Optional property.</vann:usageNote>
+        <rdfs:comment xml:lang="es">Esta propiedad enlaza un Servicio Público con cualquier Canal a través del cual un Agente oferta, usa o interacciona con el servicio.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property links the Public Service to any Channel through which an Agent provides, uses or otherwise interacts with the Public Service.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has channel (e-mail, fax, homepage, telephone, assistant)</rdfs:label>
+        <rdfs:label xml:lang="es">Tiene canal</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/cv/hasCompetentAuthority -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/cv/hasCompetentAuthority">
+        <rdfs:range rdf:resource="http://data.europa.eu/cv/PublicOrganisation"/>
+        <vann:usageNote xml:lang="en">Mandatory property. Whether it provides the service directly or outsources it is not relevant, the Formal Organisation that is the Competent Authority of the service is the one that is ultimately responsible for managing and providing the service.</vann:usageNote>
+        <rdfs:comment xml:lang="es">Esta proipedad enlzada un Servicio Público con una Organización Pública, la cual es la  responsable de ofertar el servicio.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The Has Competent Authority property links a Public Service to a Public Organisation, which is the responsible agent for the delivery of the Public Service.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has competent authority</rdfs:label>
+        <rdfs:label xml:lang="es">Tiene autoridad competente</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/cv/hasCost -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/cv/hasCost">
+        <rdfs:range rdf:resource="http://data.europa.eu/cv/Cost"/>
+        <vann:usageNote xml:lang="en">Optional property.</vann:usageNote>
+        <rdfs:comment xml:lang="es">Esta propiedad enlaza un Servicio Público to una o mas intancias de la clase Costo, indicando los costes relacionados con la ejecución de un Servicio Público para un ciudadno o negocio.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Indicates the cumulative costs related to the execution of the Public Services included in a particular Business Event.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The Has Cost property links a Public Service to one or more instances of the Cost class. It indicates the costs related to the execution of the Public Service by a citizen or a business. </rdfs:comment>
+        <rdfs:label xml:lang="en">Has cost</rdfs:label>
+        <rdfs:label xml:lang="es">Tiene costo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/cv/hasFormalFramework -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/cv/hasFormalFramework">
+        <rdfs:range rdf:resource="http://data.europa.eu/cv/FormalFramework"/>
+        <vann:usageNote xml:lang="en">Optional property.</vann:usageNote>
+        <rdfs:comment xml:lang="es">Enlaza un Servicio Público con un Marco Formal. Indica el marco (e.g. legislación) con el cual se relaciona, bajo el que opera y que establece las bases legales del servicio.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The Has Formal Framework property links a Public Service to a Formal Framework. It indicates the Formal Framework (e.g. legislation) to which the Public Service relates, operates or it has its legal basis.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has formal framework</rdfs:label>
+        <rdfs:label xml:lang="es">Tiene marco formal</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/cv/hasInput -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/cv/hasInput">
+        <rdfs:range rdf:resource="http://data.europa.eu/cv/Input"/>
+        <vann:usageNote xml:lang="en">Mandatory property. A specific Public Service may require the presence of certain Inputs or combinations of Inputs in order to be delivered. These should be described in an instance of a given Public Service.</vann:usageNote>
+        <rdfs:comment xml:lang="es">Esta propiedad enlaza un Servicio Público con una o mas intancias de la clase Entrada.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The Has Input property links a Public Service to one or more instances of the Input class.</rdfs:comment>
+        <rdfs:label xml:lang="en">Has input</rdfs:label>
+        <rdfs:label xml:lang="es">Tiene entrada</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/cv/hasRole -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/cv/hasRole">
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <vann:usageNote xml:lang="en">Optional property.</vann:usageNote>
+        <rdfs:comment xml:lang="en">Plays Role is a generic property that links an Agent to a Public Service in which it plays some role.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Propiedad genérica que enlaza un Agente con un Servicio Público en el cual desempeña algún papel.</rdfs:comment>
+        <rdfs:label xml:lang="es">Desempeña papel</rdfs:label>
+        <rdfs:label xml:lang="en">Plays role</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/cv/implements -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/cv/implements">
+        <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/cv/isDefinedBy"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/cv/Rule"/>
+        <rdfs:range rdf:resource="http://data.europa.eu/cv/FormalFramework"/>
+        <vann:usageNote xml:lang="en">Optional property.</vann:usageNote>
+        <rdfs:comment xml:lang="es">Enlaza una Normativa con los documentos de legislación y políticas relevantes (i.e. Marco Formal) bajo el cual la normativa se define.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The implements property links a Rule to relevant legislation or policy documents i.e. the Formal Framework (see herebefore) under which the Rules are defined.</rdfs:comment>
+        <rdfs:label xml:lang="es">Implementa</rdfs:label>
+        <rdfs:label xml:lang="en">Implements</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/cv/isDefinedBy -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/cv/isDefinedBy">
+        <rdfs:range rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+        <vann:usageNote xml:lang="en">Optional property.</vann:usageNote>
+        <rdfs:comment xml:lang="es">Enlaza el Costo con una o mas intancias de la clase Organización Formal. Esta propiedad indica quién define el costo asociado con la provisión de un servio o con todos los sevicions asociados a un Evento de negocios.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property links the Cost class with one or more instances of the Formal Organisation class. This property indicates who defines the costs associated with the delivery of a particular public service or all public services grouped in a certain business event.</rdfs:comment>
+        <rdfs:label xml:lang="en">Is defined by</rdfs:label>
+        <rdfs:label xml:lang="es">Se define por</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/cv/ownedBy -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/cv/ownedBy">
+        <rdfs:domain rdf:resource="http://data.europa.eu/cv/Channel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+        <vann:usageNote xml:lang="en">Optional property. This property indicates the owner of a specific Channel through which a Public Service is delivered.</vann:usageNote>
+        <rdfs:comment xml:lang="es">Enlaza la clase Canal con una o mas instancias de la clase Organización Formal.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property links the Channel class with one or more instances of the Formal Organisation class</rdfs:comment>
+        <rdfs:label xml:lang="en">Owned by</rdfs:label>
+        <rdfs:label xml:lang="es">Propiedad de</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/cv/physicallyAvailableAt -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/cv/physicallyAvailableAt">
+        <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/cv/hasChannel"/>
+        <rdfs:domain rdf:resource="http://data.europa.eu/cv/PublicService"/>
+        <rdfs:range rdf:resource="http://purl.org/dc/terms/Location"/>
+        <vann:usageNote xml:lang="en">Optional property. It may also include details such as office opening hours, accessibility information about the site etc.</vann:usageNote>
+        <rdfs:comment xml:lang="es">Esta propiedad enlaza un Servicio Público con la localización física en la que un Agente puede interactuar con este.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property links a Public Service to a physical location at which an Agent may interact with it.</rdfs:comment>
+        <rdfs:label xml:lang="es">Disponible físicamente en</rdfs:label>
+        <rdfs:label xml:lang="en">Physically available at</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/cv/processingTime -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/cv/processingTime"/>
+    
+
+
+    <!-- http://data.europa.eu/cv/produces -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/cv/produces">
+        <rdfs:range rdf:resource="http://data.europa.eu/cv/Output"/>
+        <vann:usageNote xml:lang="en">Optional property. Outputs can be any resource - document, artefact – anything produced as result of executing the Public Service.</vann:usageNote>
+        <rdfs:comment xml:lang="es">Esta propiedad enlaza un Servicio Público con una o mas instancias de la clase Salida, describiendo los resultados generados al ejecutar un Servicio Público.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The Produces property links a Public Service to one or more instances of the Output class), describing the actual result of executing a given Public Service.</rdfs:comment>
+        <rdfs:label xml:lang="es">Produce</rdfs:label>
+        <rdfs:label xml:lang="en">Produces</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/cv/sector -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/cv/sector">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/subject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <vann:usageNote xml:lang="en">Optional property. The possible values for this property are described in a controlled vocabulary (list of NACE codes available on http://ec.europa.eu/competition/mergers/cases/index/nace_all.html).</vann:usageNote>
+        <rdfs:comment xml:lang="es">Esta propiedad representa la industria o sector con el que se relaciona un Servicio Público o para el cual se orienta.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property represents the industry or sector a Public Service relates to or is intended for.</rdfs:comment>
+        <rdfs:label xml:lang="en">Sector</rdfs:label>
+        <rdfs:label xml:lang="es">Sector</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/cv/startDateTime -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/cv/startDateTime">
+        <rdfs:domain rdf:resource="http://purl.org/dc/terms/PeriodOfTime"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/cv/uses -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/cv/uses">
+        <rdfs:subPropertyOf rdf:resource="http://data.europa.eu/cv/hasRole"/>
+        <vann:usageNote xml:lang="en">Optional property. This will typically be an individual citizen or an outside organisation. Uses is a sub property of playsRole with specific semantics.</vann:usageNote>
+        <rdfs:comment xml:lang="es">Enlaza un Agente con el Servicio Público en el cual desempeña el papel específico de usuario, aportando las entradas y recibiendo las salidas sin desempeñar ningún papel en el proceso del servicio.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The uses property links an Agent to a Public Service in which it plays the specific role of user, meaning that it provides the input and receives the output but does not play any direct role in providing the service.</rdfs:comment>
+        <rdfs:label xml:lang="es">Usa</rdfs:label>
+        <rdfs:label xml:lang="en">Uses</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/ontology#is_about -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/ontology#is_about">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/subject"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <vann:usageNote xml:lang="en">Optional property. The possible values for this property are described in a controlled vocabulary (see Eurovoc domains on http://eurovoc.europa.eu/drupal/?q=node/555).</vann:usageNote>
+        <rdfs:comment xml:lang="en">This property represents the subject of this Formal Framework.</rdfs:comment>
+        <rdfs:label xml:lang="en">Subject</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/ontology#language -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/ontology#language">
+        <rdfs:range rdf:resource="http://data.europa.eu/eli/ontology#Language"/>
+        <vann:usageNote xml:lang="en">Optional property. This could be one or multiple languages, for instance in countries with more than one official language. The possible values for this property are described in a controlled vocabulary (European Publications Office&apos;s Languages Named Authority List (NAL) - http://publications.europa.eu/mdr/authority/language/).</vann:usageNote>
+        <rdfs:comment xml:lang="en">This property represents the language(s) in which the Forma Framework is available.</rdfs:comment>
+        <rdfs:label xml:lang="en">Language</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/ontology#relevant_for -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/ontology#relevant_for">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/coverage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <vann:usageNote xml:lang="en">Optional property. The recommanded  values for this property are described in a controlled vocabulary (see NUTS taxonomies on http://ec.europa.eu/eurostat/ramon/nomenclatures/index.cfm?TargetUrl=LST_NOM_DTL&amp;StrNom=NUTS_22&amp;StrLanguageCode=EN&amp;IntPcKey=&amp;StrLayoutCode=HIERARCHIC).</vann:usageNote>
+        <rdfs:comment xml:lang="en">This property represents the geographical scope of applicability of the Formal Framework, for instance EU, country/Member State, region…</rdfs:comment>
+        <rdfs:label xml:lang="en">Territorial application</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/ontology#type_document -->
+
+    <owl:ObjectProperty rdf:about="http://data.europa.eu/eli/ontology#type_document">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/type"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <vann:usageNote xml:lang="en">Optional property. The possible values for this property are described in a controlled vocabulary (Resource Types Named Authority Lists (NAL)).</vann:usageNote>
+        <rdfs:comment xml:lang="en">This property represents the type of a Formal Framework as described in a controlled vocabulary.</rdfs:comment>
+        <rdfs:label xml:lang="en">Type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/coverage -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/coverage"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/hasPart">
+        <owl:inverseOf rdf:resource="http://purl.org/dc/terms/isPartOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/isPartOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/isPartOf">
+        <vann:usageNote xml:lang="en">Mandatory property.</vann:usageNote>
+        <rdfs:comment xml:lang="en">This property links the Public Service to the Business Event class. Several Public Services are grouped (aggregated) into a Business Event. The same Public Service may be included in different Business Events.</rdfs:comment>
+        <rdfs:label xml:lang="en">Is grouped by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/language -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/language">
+        <rdfs:range rdf:resource="http://purl.org/dc/terms/LinguisticSystem"/>
+        <rdfs:comment xml:lang="en">This property represents the language(s) in which a resource is available.</rdfs:comment>
+        <rdfs:label xml:lang="en">Language</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/relation -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/relation">
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <vann:usageNote xml:lang="en">Optional property.</vann:usageNote>
+        <rdfs:comment xml:lang="en">This property represents a Formal framework related to this Formal Framework.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property represents a Public Service related to the particular instance of the Public Service class.</rdfs:comment>
+        <rdfs:label xml:lang="en">Related</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/requires -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/requires">
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <vann:usageNote xml:lang="en">Optional property. The nature of the requirement will be described in the associated Rule or Input.</vann:usageNote>
+        <rdfs:comment xml:lang="en">One public service may require, or in some way make use of, one or several other Public Services. In this case, for a Public Service to be executed, another Public Service must be executed beforehand.</rdfs:comment>
+        <rdfs:label xml:lang="en">Requires</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/spatial -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/spatial">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/coverage"/>
+        <rdfs:range rdf:resource="http://purl.org/dc/terms/Location"/>
+        <vann:usageNote xml:lang="en">Optional property. A common usage of spatial will be to define the country in which a Public Service is available.</vann:usageNote>
+        <rdfs:comment xml:lang="en">A Public Service is likely to be available only within a given area, typically the area covered by a particular public authority.</rdfs:comment>
+        <rdfs:label xml:lang="en">Spatial</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/subject -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/subject"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/temporal -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/temporal">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/dc/terms/coverage"/>
+        <rdfs:range rdf:resource="http://purl.org/dc/terms/PeriodOfTime"/>
+        <vann:usageNote xml:lang="en">Optional property. These restrictions are not meant to be used to describe eligibility or the speed of operation of the service. These aspects will be covered by the Rule.</vann:usageNote>
+        <rdfs:comment xml:lang="en">A Public Service is likely to be available only within certain time periods such as the winter months.</rdfs:comment>
+        <rdfs:label xml:lang="en">Temporal</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/type -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/dc/terms/type">
+        <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <rdfs:comment xml:lang="en">This property represents the type of a resource as described in a controlled vocabulary.</rdfs:comment>
+        <rdfs:label xml:lang="en">Type</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/TR/vocab-adms/#adms-status -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/TR/vocab-adms/#adms-status">
+        <vann:usageNote xml:lang="en">Optional property. The possible values for this property are described in a controlled vocabulary (from the European Legislation Identifier) composed of the following terms : in force, not in force, partially applicable, implicitly revoked, explicitly revoked, repealed, expired, suspended, other.</vann:usageNote>
+        <rdfs:comment xml:lang="en">This property represents the status of the Formal Framework.</rdfs:comment>
+        <rdfs:label xml:lang="en">Status</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/homepage -->
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/homepage">
+        <vann:usageNote>Optional property.</vann:usageNote>
+        <rdfs:comment xml:lang="en">This property represents a website through which information about the Formal Organisation can be retrieved, the particular Formal Organisation can be contacted….</rdfs:comment>
+        <rdfs:label xml:lang="en">Homepage</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/page -->
+
+    <owl:ObjectProperty rdf:about="http://xmlns.com/foaf/0.1/page">
+        <vann:usageNote xml:lang="en">Optional property</vann:usageNote>
+        <rdfs:comment xml:lang="en">This property represents documentation that contains information related to the Input, for instance a particular template for an administrative document or an application.</rdfs:comment>
+        <rdfs:label xml:lang="en">Related documentation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://data.europa.eu/cv/endDateTime -->
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/cv/endDateTime">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/cv/monetary_value -->
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/cv/monetary_value">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+        <vann:usageNote xml:lang="en">Optional property. The monetary value must be a positive decimal number.</vann:usageNote>
+        <rdfs:comment xml:lang="es">Esta propiedad representa el valor montario indicando la cantidad de coste.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property represents a monetary value indicating the amount of the Cost.</rdfs:comment>
+        <rdfs:label xml:lang="es">Valor</rdfs:label>
+        <rdfs:label xml:lang="en">Value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/cv/processingTime -->
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/cv/processingTime">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/cv/startDateTime -->
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/cv/startDateTime">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://data.europa.eu/eli/ontology#id_local -->
+
+    <owl:DatatypeProperty rdf:about="http://data.europa.eu/eli/ontology#id_local">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <vann:usageNote xml:lang="en">Mandatory property.</vann:usageNote>
+        <rdfs:comment xml:lang="en">This property represents the name of the Formal Framework.</rdfs:comment>
+        <rdfs:label xml:lang="en">Name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/description">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <vann:usageNote xml:lang="en">Optional property.</vann:usageNote>
+        <rdfs:comment xml:lang="en">This property represents a free text description of a resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/dc/terms/title">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <vann:usageNote xml:lang="en">Mandatory property.</vann:usageNote>
+        <rdfs:comment xml:lang="en">This property represents the name of a resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">Name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#keyword -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/dcat#keyword">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <vann:usageNote xml:lang="en">Optional property.</vann:usageNote>
+        <rdfs:comment xml:lang="en">This property represents a keyword, term or phrase to describe the Public Service.</rdfs:comment>
+        <rdfs:label xml:lang="en">Keyword</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/locn#address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/locn#address">
+        <rdfs:range rdf:resource="http://www.w3.org/ns/locn/Address"/>
+        <vann:usageNote xml:lang="en">Optional property. Asserting the address relationship implies that the Agent has an Address.</vann:usageNote>
+        <vann:usageNote xml:lang="en">Optional property. The relationship &apos;Has Address&apos; links a location to an adress meaning that the adress is representing the location.</vann:usageNote>
+        <rdfs:comment xml:lang="en">This property represents an Address related to an Agent</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property represents an address representing the location</rdfs:comment>
+        <rdfs:label xml:lang="en">Has address</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/locn#addressArea -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/locn#addressArea">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/locn#addressId -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/locn#addressId">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/locn#fullAddress -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/locn#fullAddress">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/locn#poBox -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/locn#poBox">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/locn#postCode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/locn#postCode">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/locn#postName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/locn#postName">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.w3.org/ns/locn#thoroughfare -->
+
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/ns/locn#thoroughfare">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/name -->
+
+    <owl:DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/name">
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <vann:usageNote xml:lang="en">Mandatory property.</vann:usageNote>
+        <rdfs:comment xml:lang="en">This property represents a name by which the Formal Organisation is known other than her official/legal name.</rdfs:comment>
+        <rdfs:label xml:lang="en">Alternative name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://data.europa.eu/cv/BusinessEvent -->
+
+    <owl:Class rdf:about="http://data.europa.eu/cv/BusinessEvent">
+        <vann:usageNote xml:lang="en">Mandatory class. A Business Event requires a set of public services to be delivered in order for the associated business need(s) or obligation(s) to be fulfilled. Business Events are defined within the context of a particular Member State. In other words, a Business Event groups a number of public services that need to be delivered in for completing that particular event. In CPSV-AP this has been modelled by the “Is Grouped By” property of the “Public Service” class.</vann:usageNote>
+        <rdfs:comment xml:lang="es">Esta clase representa un evento de tipo comercial. Un &apos;Evento de negocios&apos; es una estado específico o un evento en el ciclo de vida de un negocio, relacionado con una o más necesidades u obligaciones del negocio en un momento dado.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents a Business Event. A Business Event is a specific situation or event in the lifecycle of a business, which relates to one or more needs or obligations of that business at this specific point in time.</rdfs:comment>
+        <rdfs:label xml:lang="en">Business event</rdfs:label>
+        <rdfs:label xml:lang="es">Evento de negocios</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://data.europa.eu/cv/Channel -->
+
+    <owl:Class rdf:about="http://data.europa.eu/cv/Channel">
+        <vann:usageNote xml:lang="en">Optional class.</vann:usageNote>
+        <rdfs:comment xml:lang="es">La clase Canal representa el medio a través del cual un Agente proporciona, usa o interactúa con un Servicio Público.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The Channel class represents the medium through which an Agent provides, uses or otherwise interacts with a Public Service.</rdfs:comment>
+        <rdfs:label xml:lang="es">Canal</rdfs:label>
+        <rdfs:label xml:lang="en">Channel</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://data.europa.eu/cv/Cost -->
+
+    <owl:Class rdf:about="http://data.europa.eu/cv/Cost">
+        <vann:usageNote xml:lang="en">Optional class.</vann:usageNote>
+        <rdfs:comment xml:lang="es">La clase Costo representa cualquier costo relacionado con la ejecución de un Servicio Público o con todos los Servicios Públicos relacionados con un Evento de negocios que deban ser pagados por el Agente que lo consuma.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The Cost class represents any costs related to the execution of a Public Service or to all Public Services related to a Business Event which the Agent consuming it, needs to pay.</rdfs:comment>
+        <rdfs:label xml:lang="en">Cost</rdfs:label>
+        <rdfs:label xml:lang="es">Costo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://data.europa.eu/cv/FormalFramework -->
+
+    <owl:Class rdf:about="http://data.europa.eu/cv/FormalFramework">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+        <vann:usageNote xml:lang="en">Optional class. As with the Rule class, the Formal Framework class is a sub class of frbr:Expression, i.e. instances of the class are concrete expressions of the more abstract concept of the piece of legislation or policy itself. The definition and properties of the Formal Framework class in the CPSV-AP are aligned with the ontology included in “Council conclusions inviting the introduction of the European Legislation Identifier (ELI) (see http://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:52012XG1026%2801%29).</vann:usageNote>
+        <rdfs:comment xml:lang="es">Esta clase representa la legislación y las políticas que están detrás de las reglas que rigen un servicio.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents the legislation, policy or policies that lie behind the rules that govern the service.</rdfs:comment>
+        <rdfs:label xml:lang="en">Formal framework</rdfs:label>
+        <rdfs:label xml:lang="es">Marco formal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://data.europa.eu/cv/Input -->
+
+    <owl:Class rdf:about="http://data.europa.eu/cv/Input">
+        <vann:usageNote xml:lang="en">Mandatory class. In some cases, the Output of one service will be an Input to another service. Such relationships should be described in the associated Rule(s)</vann:usageNote>
+        <rdfs:comment xml:lang="en">Input can be any resource - document, artefact - anything. In the context of Public Services, Inputs are usually administrative documents, applications… A specific Public Service may require the presence of certain Inputs or combinations of Inputs in order to be delivered.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una Entrada es cualquier recurso requerido en un proceso. En el contexto de los Servicios Públicos, las entradas suelen ser documentos administrativos, aplicaciones, etc. Un Servicio Público específico puede requerir la presencia de ciertas Entradas o combinaciones de Entradas que deben ser entregadas.</rdfs:comment>
+        <rdfs:label xml:lang="es">Entrada</rdfs:label>
+        <rdfs:label xml:lang="en">Input</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://data.europa.eu/cv/Output -->
+
+    <owl:Class rdf:about="http://data.europa.eu/cv/Output">
+        <vann:usageNote xml:lang="en">Optional class. In some cases, the Output of one service will be an Input to another service. Such relationships should be described in the associated Rule(s)</vann:usageNote>
+        <rdfs:comment xml:lang="en">Outputs can be any resource - document, artefact – anything produced by the Public Service. In the context of a Public Service, the output documents an official documentation of the Competent Authority (Formal Organisation) that permits/authorises/entitles an Agent to (do) something.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Una salida es cualquier recurso producido por un servicio. En el contexto de un Servicio Público, el resultado es parte de una documentación oficial de la Autoridad Competente (Organización Formal) que permite, autoriza y/o da derecho a un Agente a hacer algo.</rdfs:comment>
+        <rdfs:label xml:lang="en">Output</rdfs:label>
+        <rdfs:label xml:lang="es">Salida</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://data.europa.eu/cv/PublicOrganisation -->
+
+    <owl:Class rdf:about="http://data.europa.eu/cv/PublicOrganisation">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#FormalOrganization"/>
+        <vann:usageNote xml:lang="en">Optional class.</vann:usageNote>
+        <rdfs:comment xml:lang="es">La clase de Organización pública representa una Organización Formal que es propiedad y se administra por parte del gobierno de un estado (local, regional, nacional ...) y financiada a través de impuestos.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The Public Organisation class represents a Formal Organisation that is owned by and managed by a state’s government (local, regional, national…) and funded through taxes.</rdfs:comment>
+        <rdfs:label xml:lang="es">Organización pública</rdfs:label>
+        <rdfs:label xml:lang="en">Public organisation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://data.europa.eu/cv/PublicService -->
+
+    <owl:Class rdf:about="http://data.europa.eu/cv/PublicService">
+        <vann:usageNote xml:lang="en">Mandatory class.</vann:usageNote>
+        <rdfs:comment xml:lang="en">This class represents the public service itself. A public service is the capacity to carry out a procedure and exists whether it is used or not. It is a set of deeds and acts performed by or on behalf of a public administration for the benefit of, or mandatory to be executed by a citizen, a business or another public administration.</rdfs:comment>
+        <rdfs:comment xml:lang="es">Un servicio público es la capacidad de llevar a cabo un procedimiento y existe independientemente de si se usa o no. Se trata de un conjunto de acciones y actos realizados por, o en nombre de, una administración pública en beneficio de un ciudadano, un negocio u otra administración pública.</rdfs:comment>
+        <rdfs:label xml:lang="en">Public service</rdfs:label>
+        <rdfs:label xml:lang="es">Servicio público</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://data.europa.eu/cv/Rule -->
+
+    <owl:Class rdf:about="http://data.europa.eu/cv/Rule">
+        <rdfs:subClassOf rdf:resource="http://purl.org/vocab/frbr/core#Expression"/>
+        <vann:usageNote xml:lang="en">Optional class. Instances of the Rule class are FRBR Expressions, that is, a concrete expression, such as a document, of the more abstract concept of the rules themselves. Rules are used for validating the input required by the service, deciding on the eligibility of the user, steering the service process and defining the dependencies/relationships between services. The CPSV-AP does not envisage instances of the Rule class as machine-processable business rules.</vann:usageNote>
+        <rdfs:comment xml:lang="es">La clase Normativa representa un documento que establece las reglas, directrices o procedimientos específicos que sigue un Servicio Público. Incluye los términos de servicio, licencia y requisitos de autenticación del Servicio Público. En el contexto original también se denomina a esta clase Regla.</rdfs:comment>
+        <rdfs:comment xml:lang="en">The Rule class represents a document that sets out the specific rules, guidelines or procedures that the Public Service follows. It includes the terms of service, licence, and authentication requirements of the Public Service.</rdfs:comment>
+        <rdfs:label xml:lang="es">Normativa</rdfs:label>
+        <rdfs:label xml:lang="en">Rule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://data.europa.eu/eli/ontology#Language -->
+
+    <owl:Class rdf:about="http://data.europa.eu/eli/ontology#Language"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/LinguisticSystem -->
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/LinguisticSystem"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/Location -->
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/Location">
+        <vann:usageNote xml:lang="en">Optional class.</vann:usageNote>
+        <rdfs:comment xml:lang="en">The Location class represents an identifiable geographic place.</rdfs:comment>
+        <rdfs:label xml:lang="en">Location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/dc/terms/PeriodOfTime -->
+
+    <owl:Class rdf:about="http://purl.org/dc/terms/PeriodOfTime">
+        <vann:usageNote xml:lang="en">Optional class.</vann:usageNote>
+        <rdfs:comment xml:lang="en">The Period of Time class represents an interval of time that is named or defined by its start and end dates. This interval indicates from when to when a Public Service is executable, for instance during particular months of the year or for Public Services that have a known life span.</rdfs:comment>
+        <rdfs:label xml:lang="en">Period of time</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/vocab/frbr/core#Expression -->
+
+    <owl:Class rdf:about="http://purl.org/vocab/frbr/core#Expression"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- http://www.w3.org/ns/adms#Asset -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/adms#Asset"/>
+    
+
+
+    <!-- http://www.w3.org/ns/locn#Address -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/locn#Address">
+        <vann:usageNote xml:lang="en">Optional class.</vann:usageNote>
+        <rdfs:comment xml:lang="en">The Address class represents an address for the representation of a Location. It used for representing the physical address of a PublicOrganisation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Address</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/org#FormalOrganization -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/org#FormalOrganization">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#Organization"/>
+        <rdfs:subClassOf rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+        <vann:usageNote xml:lang="en">Mandatory class. The Formal Organisation class has been defined in the Organization Ontology (see http://www.w3.org/TR/vocab-org/#class-organization).</vann:usageNote>
+        <rdfs:comment xml:lang="en">It represents an Organisation which is recognized in the world at large, in particular in legal jurisdictions, with associated rights and responsibilities. Examples include a corporation, charity, government or church.</rdfs:comment>
+        <rdfs:label xml:lang="en">Formal Organisation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/ns/org#Organization -->
+
+    <owl:Class rdf:about="http://www.w3.org/ns/org#Organization"/>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent">
+        <vann:usageNote>Optional class.</vann:usageNote>
+        <rdfs:comment xml:lang="en">The Agent class is any resource that acts or has the power to act.</rdfs:comment>
+        <rdfs:label xml:lang="en">Agent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Organization -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Organization"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://data.europa.eu/cv/cpsvap -->
+
+    <owl:NamedIndividual rdf:about="http://data.europa.eu/cv/cpsvap">
+        <rdf:type rdf:resource="http://www.w3.org/ns/adms#Asset"/>
+        <dct:type rdf:resource="http://purl.org/adms/assettype/Ontology"/>
+        <foaf:homepage rdf:resource="https://joinup.ec.europa.eu/asset/cpsv-ap/home"/>
+        <dct:description xml:lang="en">The Core Public Service Vocabulary (CPSV) is designed to make it easy to exchange basic information about the functions carried out by the public sector and the services in which those functions are carried out. An Application Profile  is a specification that re-uses terms from one or more base standards, adding more specificity by identifying mandatory, recommended and optional elements to be used for a particular application, as well as recommendations for controlled vocabularies to be used.</dct:description>
+        <dct:title xml:lang="en">Core Public Service Vocabulary Application Profile</dct:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/adms/assettype/Ontology -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/adms/assettype/Ontology"/>
+    
+
+
+    <!-- https://joinup.ec.europa.eu/asset/cpsv-ap/home -->
+
+    <owl:NamedIndividual rdf:about="https://joinup.ec.europa.eu/asset/cpsv-ap/home"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://data.europa.eu/cv/endDateTime">
+        <rdfs:label xml:lang="en">End date/time</rdfs:label>
+        <vann:usageNote xml:lang="en">Mandatory property.</vann:usageNote>
+        <rdfs:comment xml:lang="es">Esta propiedad representa la fecha de finalización de un periodo.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property represents the end of the period.</rdfs:comment>
+        <rdfs:label xml:lang="es">Fecha de finalización</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://data.europa.eu/cv/processingTime">
+        <rdfs:label xml:lang="es">Tiempo de procesamiento</rdfs:label>
+        <rdfs:label xml:lang="en">Processing time</rdfs:label>
+        <rdfs:label xml:lang="en">Processing Time</rdfs:label>
+        <rdfs:comment xml:lang="es">Esta propiedad representa una indicación del tiempo necesario para ejecutar un Servicio Público.</rdfs:comment>
+        <vann:usageNote xml:lang="en">Optional property. This can be a time range, average time, exact time for execution or any other indication of time.</vann:usageNote>
+        <rdfs:comment xml:lang="en">This property represents an indication of time needed for executing a Public Service.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property represents an indication of time needed for executing all Public Services related to a Business Event.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://data.europa.eu/cv/startDateTime">
+        <vann:usageNote xml:lang="en">Mandatory property.</vann:usageNote>
+        <rdfs:comment xml:lang="es">Esta propiedad representa la fecha de comienzo de un periodo.</rdfs:comment>
+        <rdfs:label xml:lang="en">Start date/time</rdfs:label>
+        <rdfs:label xml:lang="es">Fecha de comienzo.</rdfs:label>
+        <rdfs:comment xml:lang="en">This property represents the start of the period.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/locn#addressArea">
+        <rdfs:label xml:lang="en">Address area</rdfs:label>
+        <vann:usageNote xml:lang="en">Optional property. This property represents the name of a geographic area or locality that groups a number of addressable objects for addressing purposes, without being an administrative unit. This would typically be part of a city, a neighbourhood or village.</vann:usageNote>
+        <rdfs:comment xml:lang="en">This property represents the name of a geographic area or locality that groups a number of addressable objects for addressing purposes, without being an administrative unit.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/locn#addressId">
+        <rdfs:label xml:lang="en">Address ID</rdfs:label>
+        <vann:usageNote xml:lang="en">Mandatory property. The concept of adding a globally unique identifier for each instance of an address is a crucial part of the INSPIRE data specification . A number of EU countries have already implemented an ID (a UUID) in their address register/gazetteer, among them Denmark. It is the address identifier that allows an address to be represented in a format other than INSPIRE whilst remaining conformant to the core vocabulary. The identifier is a hook that can be used to link the address to an alternative representation, such as vCard.</vann:usageNote>
+        <rdfs:comment xml:lang="en">This property represents a globally unique identifier for this instance of the Address.</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/locn#fullAddress">
+        <rdfs:label xml:lang="en">Full address</rdfs:label>
+        <rdfs:comment xml:lang="en">This property represents the complete Address with or without formatting.</rdfs:comment>
+        <vann:usageNote xml:lang="en">Mandatory property. Use of this property is mandatory as it will not suffer any misunderstandings that might arise through the breaking up of an address into its component parts.</vann:usageNote>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/locn#locatorDesignator">
+        <vann:usageNote xml:lang="en">Optional property. The locator designator is a number or a sequence of characters that uniquely identifies the locator within the relevant scope(s). The full identification of the locator could include one or more locator designators. In simpler terms, this is the building number, apartment number, etc. It is characteristic that these designators, according to tradition or to a specific set of rules, are assigned systematically. For example address numbers are most often assigned in ascending order with odd and even numbers on each side of the thoroughfare. Another example is the floor identifier that in a standardized way expresses on which level the address is located . The key difference between a locator designator and a locator name is that the latter is a proper name and is unlikely to include digits.</vann:usageNote>
+        <rdfs:comment xml:lang="en">This property represents a number or a sequence of characters that uniquely identifies the locator within the relevant scope.</rdfs:comment>
+        <rdfs:label xml:lang="en">Locator designator</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/locn#locatorName">
+        <vann:usageNote xml:lang="en">Optional property. The locator name is a proper noun applied to the real world entity identified by the locator. The locator name could be the name of the property or complex, of the building or part of the building, or it could be the name of a room inside a building. The key difference between a locator designator and a locator name is that the latter is a proper name and is unlikely to include digits. Examples: &apos;Rose Cottage&apos;, &apos;Grand Suite&apos;, &apos;The little house by the lake&apos;</vann:usageNote>
+        <rdfs:comment xml:lang="en">This property represents a proper noun applied to the real world entity identified by the Address.</rdfs:comment>
+        <rdfs:label xml:lang="en">Locator name</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/locn#poBox">
+        <rdfs:label xml:lang="en">PO Box</rdfs:label>
+        <rdfs:comment xml:lang="en">This property represents the Post Office Box number.</rdfs:comment>
+        <vann:usageNote xml:lang="en">Optional property.</vann:usageNote>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/locn#postCode">
+        <rdfs:label xml:lang="en">Post code</rdfs:label>
+        <rdfs:comment xml:lang="en">This property represents the post code, also known as postal code, ZIP code, etc.</rdfs:comment>
+        <vann:usageNote xml:lang="en">Optional property. Post codes are common elements in many countries&apos; postal address systems.</vann:usageNote>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/locn#postName">
+        <rdfs:comment xml:lang="en">This property represents the key postal division of the address, usually the city.</rdfs:comment>
+        <vann:usageNote xml:lang="en">Optional property. The post name is a name created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points (see INSPIRE Data specifications : http://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.1.pdf).</vann:usageNote>
+        <rdfs:label xml:lang="en">Post name</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.w3.org/ns/locn#thoroughfare">
+        <rdfs:comment xml:lang="en">This property represents the name of a passage or way through from one location to another.</rdfs:comment>
+        <vann:usageNote xml:lang="en">Optional property. A thoroughfare is an address component that represents the name of a passage or way through from one location to another. A thoroughfare is not necessarily a road, it might be a waterway or some other feature.Examples: &apos;Main Street&apos;</vann:usageNote>
+        <rdfs:label xml:lang="en">Thoroughfare</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+
