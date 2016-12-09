@@ -209,7 +209,7 @@
     <owl:ObjectProperty rdf:about="http://data.europa.eu/cv/currency">
         <rdfs:range rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
         <vann:usageNote xml:lang="en">Optional property. The possible values for this property are described in a controlled vocabulary (see European Publications Office&apos;s Currencies Names Authority List (NAL) on http://publications.europa.eu/mdr/authority/currency/index.html).</vann:usageNote>
-        <rdfs:comment xml:lang="es">Esta propiedad representa la moneda en la que se debe pagar los costes asociados a un proceso o servicio.</rdfs:comment>
+        <rdfs:comment xml:lang="es">La propiedad Moneda representa la moneda en la que se debe pagar los costes asociados a un proceso o servicio.</rdfs:comment>
         <rdfs:comment xml:lang="en">This property represents the currency in which the Cost needs to be paid and the value of the Cost is expressed.</rdfs:comment>
         <rdfs:label xml:lang="en">Currency</rdfs:label>
         <rdfs:label xml:lang="es">Moneda</rdfs:label>
