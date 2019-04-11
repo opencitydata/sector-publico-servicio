@@ -1,12 +1,18 @@
-<h2>4. Cross reference for servicio classes, properties and dataproperties</h2>
+<html><h2 id="crossreference" class="list">Cross reference for servicio classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 This section provides details for each class and property defined by servicio.
 <div id="classes">
-   <h2>Classes</h2>
+   <h3 id="classes-headline" class="list">Classes</h3>
    <ul class="hlist">
       <li>
          <a href="#CentroServicio"
             title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#CentroServicio">
             <span>centro servicio</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Decisor"
+            title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Decisor">
+            <span>decisor</span>
          </a>
       </li>
       <li>
@@ -22,6 +28,12 @@ This section provides details for each class and property defined by servicio.
          </a>
       </li>
       <li>
+         <a href="#Gestor"
+            title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Gestor">
+            <span>gestor</span>
+         </a>
+      </li>
+      <li>
          <a href="#GestorDecisor"
             title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#GestorDecisor">
             <span>gestor decisor</span>
@@ -34,9 +46,15 @@ This section provides details for each class and property defined by servicio.
          </a>
       </li>
       <li>
-         <a href="#LugarPresentacion"
-            title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#LugarPresentacion">
-            <span>lugar presentacion</span>
+         <a href="#Materia"
+            title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Materia">
+            <span>materia</span>
+         </a>
+      </li>
+      <li>
+         <a href="#MaterialAgrupacion"
+            title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#MaterialAgrupacion">
+            <span>material agrupacion</span>
          </a>
       </li>
       <li>
@@ -87,6 +105,18 @@ This section provides details for each class and property defined by servicio.
             <span>procedimiento proceso</span>
          </a>
       </li>
+      <li>
+         <a href="#Recurso"
+            title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Recurso">
+            <span>recurso</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Respuesta"
+            title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Respuesta">
+            <span>respuesta</span>
+         </a>
+      </li>
    </ul>
    <div class="entity" id="CentroServicio">
       <h3>centro servicio<sup class="type-c" title="class">c</sup>
@@ -95,6 +125,9 @@ This section provides details for each class and property defined by servicio.
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#CentroServicio</p>
+      <div class="comment">
+         <span class="markdown">a subclass of org:Organization, the class CentroServicio represent organizations that are involved in the Public Service activities.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -107,11 +140,36 @@ This section provides details for each class and property defined by servicio.
                title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#destino">destino</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#info"
                title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#info">info</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#lugarPago"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPago">lugar de pago</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#lugarPresentacion"
                title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPresentacion">lugar presentacion</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#otroLugarPresentacion"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#otroLugarPresentacion">otro lugar presentacion</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#presentar"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#presentar">presentar</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#realizacion"
                title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#realizacion">realizacion</a>
             <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Decisor">
+      <h3>decisor<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Decisor</p>
+      <div class="comment">
+         <span class="markdown">This class represent an entity that makes decision in a Public Service</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#GestorDecisor"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#GestorDecisor">gestor decisor</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
    </div>
@@ -122,10 +180,19 @@ This section provides details for each class and property defined by servicio.
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#DestinadoProcedimiento</p>
+      <div class="comment">
+         <span class="markdown">This class represent the target entity of a Public Service.</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
             <span class="dotted" title="http://purl.org/dc/terms/Agent">agent</span>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#dirigidoPor"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#dirigidoPor">dirigido por</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -136,6 +203,9 @@ This section provides details for each class and property defined by servicio.
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#DocumentacionEntrada</p>
+      <div class="comment">
+         <span class="markdown">DocumentacionEntrada, a subclass of cpsv:Input represents the input of a public service</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -155,6 +225,25 @@ This section provides details for each class and property defined by servicio.
          </dd>
       </dl>
    </div>
+   <div class="entity" id="Gestor">
+      <h3>gestor<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Gestor</p>
+      <div class="comment">
+         <span class="markdown">This class represent an entity that manages a Public Service</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#GestorDecisor"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#GestorDecisor">gestor decisor</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
    <div class="entity" id="GestorDecisor">
       <h3>gestor decisor<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
@@ -162,10 +251,21 @@ This section provides details for each class and property defined by servicio.
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#GestorDecisor</p>
+      <div class="comment">
+         <span class="markdown">This class represent an entity that makes decision or manages a Public Service</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
             <span class="dotted" title="http://purl.org/dc/terms/Agent">agent</span>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Decisor"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Decisor">decisor</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Gestor"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Gestor">gestor</a>
+            <sup class="type-c" title="class">c</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
@@ -182,33 +282,59 @@ This section provides details for each class and property defined by servicio.
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Impreso</p>
+      <div class="comment">
+         <span class="markdown">This class represents Forms to be filled in order to request a Public Servcie</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
             <span class="dotted" title="http://purl.org/vocab/cpsv#Input">input</span>
          </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#impreso"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#impreso">impreso</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
       </dl>
    </div>
-   <div class="entity" id="LugarPresentacion">
-      <h3>lugar presentacion<sup class="type-c" title="class">c</sup>
+   <div class="entity" id="Materia">
+      <h3>materia<sup class="type-c" title="class">c</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#LugarPresentacion</p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Materia</p>
+      <div class="comment">
+         <span class="markdown">To  be completed</span>
+      </div>
       <dl class="description">
-         <dt>has super-classes</dt>
+         <dt>is in domain of</dt>
          <dd>
-            <span class="dotted" title="http://schema.org/CivicStructure">civic structure</span>
-            <sup class="type-c" title="class">c</sup>
+            <a href="#preguntaDeMateria"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#preguntaDeMateria">pregunta de materia</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#procedimientoDeMateria"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#procedimientoDeMateria">procedimiento de materia</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#otroLugarPresentacion"
-               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#otroLugarPresentacion">otro lugar presentacion</a>
+            <a href="#materiaDePregunta"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#materiaDePregunta">materia de pregunta</a>
             <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
+   </div>
+   <div class="entity" id="MaterialAgrupacion">
+      <h3>material agrupacion<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#MaterialAgrupacion</p>
+      <div class="comment">
+         <span class="markdown">To  be completed</span>
+      </div>
    </div>
    <div class="entity" id="Normativa">
       <h3>normativa<sup class="type-c" title="class">c</sup>
@@ -217,6 +343,9 @@ This section provides details for each class and property defined by servicio.
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Normativa</p>
+      <div class="comment">
+         <span class="markdown">Normativa, a subclass of Rule, represents a rule that has to be followed by a PublicService</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -231,6 +360,9 @@ This section provides details for each class and property defined by servicio.
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Pregunta</p>
+      <div class="comment">
+         <span class="markdown">a subclass of schema:Question</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -241,7 +373,11 @@ This section provides details for each class and property defined by servicio.
          <dd>
             <a href="#materiaDePregunta"
                title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#materiaDePregunta">materia de pregunta</a>
-            <sup class="type-op" title="object property">op</sup>
+            <sup class="type-op" title="object property">op</sup>, <a href="#respuestaAceptada"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#respuestaAceptada">respuesta aceptada</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#respuestaTexto"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#respuestaTexto">respuesta texto</a>
+            <sup class="type-dp" title="data property">dp</sup>
          </dd>
          <dt>is in range of</dt>
          <dd>
@@ -262,6 +398,9 @@ This section provides details for each class and property defined by servicio.
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento</p>
+      <div class="comment">
+         <span class="markdown">a subclass of cpsv:PublicService</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -281,33 +420,69 @@ This section provides details for each class and property defined by servicio.
          </dd>
          <dt>is in domain of</dt>
          <dd>
-            <a href="#destino"
+            <a href="#claseIniciacion"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseIniciacion">clase iniciacion</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#claseIniciacionTexto"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseIniciacionTexto">clase iniciacion texto</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#claseTerminacion"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseTerminacion">clase terminacion</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#claseTerminacionTexto"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseTerminacionTexto">clase terminacion texto</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#destino"
                title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#destino">destino</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#dirigidoPor"
                title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#dirigidoPor">dirigido por</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#hasInputTexto"
+            <sup class="type-op" title="object property">op</sup>, <a href="#enLineaURL"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#enLineaURL">en linea u r l</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#fechaPresentacion"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPresentacion">fecha de presentación (formato fecha)</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#fechaPresentacionTexto"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPresentacionTexto">fecha de presentación (formato texto)</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#fechaRespuesta"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaRespuesta">fecha de respuesta (formato fecha)</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#fechaRespuestaTexto"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaRespuestaTexto">fecha de respuesta (formato texto)</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#fechaPlazoFin"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPlazoFin">fecha plazo fin</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#fechaPlazoInicio"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPlazoInicio">fecha plazo inicio</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#followsTexto"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#followsTexto">follows texto</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasChannelTexto"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#hasChannelTexto">has channel texto</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#hasInputTexto"
                title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#hasInputTexto">has input texto</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#info"
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#impreso"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#impreso">impreso</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#info"
                title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#info">info</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#lugarPago"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPago">lugar de pago</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#lugarPagoTexto"
                title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPagoTexto">lugar de pago (formato texto)</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#lugarPresentacion"
                title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPresentacion">lugar presentacion</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#lugarPresentacionTexto"
                title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPresentacionTexto">lugar presentacion texto</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#organo"
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#normativa"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#normativa">normativa</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#organo"
                title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#organo">organo</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#otroLugarPresentacion"
                title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#otroLugarPresentacion">otro lugar presentacion</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#pago"
                title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#pago">pago</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#permiteTramitation"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitation">permite tramitation</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#preguntaDeProcedimiento"
                title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#preguntaDeProcedimiento">pregunta de procedimiento</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#presentar"
                title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#presentar">presentar</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#realizacion"
                title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#realizacion">realizacion</a>
-            <sup class="type-op" title="object property">op</sup>, <a href="#requisitos"
+            <sup class="type-op" title="object property">op</sup>, <a href="#recursoProcedeTexto"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#recursoProcedeTexto">recurso procede texto</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#requisitos"
                title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#requisitos">requisitos</a>
             <sup class="type-dp" title="data property">dp</sup>, <a href="#tipoProcedimiento"
                title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#tipoProcedimiento">tipo procedimiento</a>
@@ -341,6 +516,10 @@ This section provides details for each class and property defined by servicio.
                title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#correoDocumentacion">correo documentacion</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#correoDocumentacionTexto"
                title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#correoDocumentacionTexto">correo documentacion texto</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#detalleTramitacionCorreoPostal"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionCorreoPostal">detalle tramitacion correo postal</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#detalleTramitacionCorreoPostalTexto"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionCorreoPostalTexto">detalle tramitacion correo postal texto</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
       </dl>
@@ -369,8 +548,6 @@ This section provides details for each class and property defined by servicio.
                title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#enLineaDocumentacion">en linea documentacion</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#enLineaDocumentacionTexto"
                title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#enLineaDocumentacionTexto">en linea documentacion texto</a>
-            <sup class="type-dp" title="data property">dp</sup>, <a href="#enLineaUrl"
-               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#enLineaUrl">en linea url</a>
             <sup class="type-dp" title="data property">dp</sup>
          </dd>
       </dl>
@@ -436,6 +613,9 @@ This section provides details for each class and property defined by servicio.
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoProceso</p>
+      <div class="comment">
+         <span class="markdown">ProcedimientoProceso, a subclass of Rule, represents a rule that has to be followed by a Procedimiento</span>
+      </div>
       <dl class="description">
          <dt>has super-classes</dt>
          <dd>
@@ -443,7 +623,9 @@ This section provides details for each class and property defined by servicio.
          </dd>
          <dt>is in range of</dt>
          <dd>
-            <a href="#detalleTramitacionEnLinea"
+            <a href="#detalleTramitacionCorreoPostal"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionCorreoPostal">detalle tramitacion correo postal</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#detalleTramitacionEnLinea"
                title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionEnLinea">detalle tramitacion en linea</a>
             <sup class="type-op" title="object property">op</sup>, <a href="#detalleTramitacionPresencial"
                title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionPresencial">detalle tramitacion presencial</a>
@@ -453,8 +635,51 @@ This section provides details for each class and property defined by servicio.
          </dd>
       </dl>
    </div>
+   <div class="entity" id="Recurso">
+      <h3>recurso<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Recurso</p>
+      <div class="comment">
+         <span class="markdown">To  be completed</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#recursoProcede"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#recursoProcede">recurso procede</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Respuesta">
+      <h3>respuesta<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Respuesta</p>
+      <div class="comment">
+         <span class="markdown">This class represents the answers for a question.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://schema.org/Answer">answer</span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#respuestaAceptada"
+               title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#respuestaAceptada">respuesta aceptada</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
 </div><div id="objectproperties">
-   <h2>Object Properties</h2>
+   <h3 id="properties" class="list">Object Properties</h3>
    <ul class="hlist">
       <li>
          <a href="#claseIniciacion"
@@ -605,6 +830,12 @@ This section provides details for each class and property defined by servicio.
          </a>
       </li>
       <li>
+         <a href="#proporcionadoPor"
+            title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#proporcionadoPor">
+            <span>proporcionado por</span>
+         </a>
+      </li>
+      <li>
          <a href="#realizacion"
             title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#realizacion">
             <span>realizacion</span>
@@ -617,10 +848,21 @@ This section provides details for each class and property defined by servicio.
          </a>
       </li>
       <li>
+         <a href="#respuestaAceptada"
+            title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#respuestaAceptada">
+            <span>respuesta aceptada</span>
+         </a>
+      </li>
+      <li>
          <a href="#telefonoDocumentacion"
             title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#telefonoDocumentacion">
             <span>telefono documentacion</span>
          </a>
+      </li>
+      <li>
+         <a href="#usadoPor"
+            title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#usadoPor">This property is the inverse of cpsv:uses property.
+This property link a PublicService to an Agent via a "used-by" relationship.</a>
       </li>
       <li>
          <a href="#tipoVia"
@@ -640,11 +882,16 @@ This section provides details for each class and property defined by servicio.
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseIniciacion</p>
+      <div class="comment">
+         <span class="markdown">To be completed</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/vocab/cpsv#PublicService">public service</span>
+               <a href="#Procedimiento"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento">procedimiento</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -656,11 +903,16 @@ This section provides details for each class and property defined by servicio.
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseTerminacion</p>
+      <div class="comment">
+         <span class="markdown">To be completed</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/vocab/cpsv#PublicService">public service</span>
+               <a href="#Procedimiento"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento">procedimiento</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -672,6 +924,9 @@ This section provides details for each class and property defined by servicio.
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#correoDocumentacion</p>
+      <div class="comment">
+         <span class="markdown">This property links a postal mail based Public Service with its inputs/requirements.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -700,12 +955,14 @@ This section provides details for each class and property defined by servicio.
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#destino</p>
+      <div class="comment">
+         <span class="markdown">This property links a Public Service to an organization in which the Public Service should be addressed to.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted"
-                     title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#usadoPor">usado por</span>
+               <span class="dotted" title="http://purl.org/vocab/cpsv#hasChannel">has channel</span>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
@@ -730,11 +987,28 @@ This section provides details for each class and property defined by servicio.
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionCorreoPostal</p>
+      <div class="comment">
+         <span class="markdown">The detalleTramitacionCorreoPostal property links a postal mail based service to the Rule(s) under which it operates.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/vocab/cpsv#follows">follows</span>
+               <a href="#normativa"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#normativa">normativa</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ProcedimientoPorCorreo"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorCorreo">procedimiento por correo</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#ProcedimientoProceso"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoProceso">procedimiento proceso</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -746,11 +1020,16 @@ This section provides details for each class and property defined by servicio.
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionEnLinea</p>
+      <div class="comment">
+         <span class="markdown">The detalleTramitacionEnLinea property links an online-based service to the Rule(s) under which it operates.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/vocab/cpsv#follows">follows</span>
+               <a href="#normativa"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#normativa">normativa</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
             <dd>
@@ -774,11 +1053,16 @@ This section provides details for each class and property defined by servicio.
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionPresencial</p>
+      <div class="comment">
+         <span class="markdown">The detalleTramitacionPresencial property links a presence-based service to the Rule(s) under which it operates.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/vocab/cpsv#follows">follows</span>
+               <a href="#normativa"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#normativa">normativa</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
             <dd>
@@ -802,11 +1086,16 @@ This section provides details for each class and property defined by servicio.
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionTelefono</p>
+      <div class="comment">
+         <span class="markdown">The detalleTramitacionEnLinea property links a telephone-based service to the Rule(s) under which it operates.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/vocab/cpsv#follows">follows</span>
+               <a href="#normativa"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#normativa">normativa</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
             <dd>
@@ -828,18 +1117,28 @@ This section provides details for each class and property defined by servicio.
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#dirigidoPor</p>
+      <div class="comment">
+         <span class="markdown">This property links a Public Service with an Entity that directs it</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted"
-                     title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#usadoPor">usado por</span>
+               <a href="#usadoPor"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#usadoPor">This property is the inverse of cpsv:uses property.
+This property link a PublicService to an Agent via a "used-by" relationship.</a>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
             <dd>
                <a href="#Procedimiento"
                   title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento">procedimiento</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#DestinadoProcedimiento"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#DestinadoProcedimiento">destinado procedimiento</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -852,6 +1151,9 @@ This section provides details for each class and property defined by servicio.
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#enLineaDocumentacion</p>
+      <div class="comment">
+         <span class="markdown">This property links an online-based Public Service with its inputs/requirements.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -880,12 +1182,21 @@ This section provides details for each class and property defined by servicio.
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#enLineaURL</p>
+      <div class="comment">
+         <span class="markdown">This property links a online-based PublicService with its URL</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
             <dd>
                <span class="dotted" title="http://purl.org/vocab/cpsv#hasChannel">has channel</span>
                <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Procedimiento"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento">procedimiento</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -897,6 +1208,9 @@ This section provides details for each class and property defined by servicio.
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#impreso</p>
+      <div class="comment">
+         <span class="markdown">This property links a Public Service with its applications forms.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -905,7 +1219,15 @@ This section provides details for each class and property defined by servicio.
             </dd>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/vocab/cpsv#PublicService">public service</span>
+               <a href="#Procedimiento"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento">procedimiento</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Impreso"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Impreso">impreso</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -917,8 +1239,16 @@ This section provides details for each class and property defined by servicio.
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#info</p>
+      <div class="comment">
+         <span class="markdown">This property links a Public Service with the organization that provide information for the corresponding Public Service.</span>
+      </div>
       <div class="description">
          <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/vocab/cpsv#hasChannel">has channel</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
             <dt>has domain</dt>
             <dd>
                <a href="#Procedimiento"
@@ -941,20 +1271,33 @@ This section provides details for each class and property defined by servicio.
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPago</p>
+      <div class="comment">
+         <span class="markdown">Lugar de pago del procedimiento, en caso de tener que realizar pago</span>
+      </div>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio">http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio</a>
          </dd>
       </dl>
-      <div class="comment">
-         <span class="markdown">Lugar de pago del procedimiento, en caso de tener que realizar pago</span>
-      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/vocab/cpsv#physicallyAvailableAt">physically available at</span>
+               <span class="dotted" title="http://purl.org/vocab/cpsv#hasChannel">has channel</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Procedimiento"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento">procedimiento</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#CentroServicio"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#CentroServicio">centro servicio</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -966,12 +1309,14 @@ This section provides details for each class and property defined by servicio.
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPresentacion</p>
+      <div class="comment">
+         <span class="markdown">This property links a Public Service with the organization to which the application is to be presented.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted"
-                     title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#usadoPor">usado por</span>
+               <span class="dotted" title="http://purl.org/vocab/cpsv#hasChannel">has channel</span>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
@@ -996,6 +1341,9 @@ This section provides details for each class and property defined by servicio.
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#materiaDePregunta</p>
+      <div class="comment">
+         <span class="markdown">To  be completed</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1006,8 +1354,8 @@ This section provides details for each class and property defined by servicio.
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted"
-                     title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Materia">materia</span>
+               <a href="#Materia"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Materia">materia</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1020,15 +1368,32 @@ This section provides details for each class and property defined by servicio.
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#normativa</p>
+      <div class="comment">
+         <span class="markdown">The normativa property links a Public Service to a Rule</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/vocab/cpsv#hasInput">has input</span>
+               <span class="dotted" title="http://purl.org/vocab/cpsv#follows">follows</span>
+            </dd>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#detalleTramitacionCorreoPostal"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionCorreoPostal">detalle tramitacion correo postal</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#detalleTramitacionEnLinea"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionEnLinea">detalle tramitacion en linea</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#detalleTramitacionPresencial"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionPresencial">detalle tramitacion presencial</a>
+               <sup class="type-op" title="object property">op</sup>, <a href="#detalleTramitacionTelefono"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionTelefono">detalle tramitacion telefono</a>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/vocab/cpsv#PublicService">public service</span>
+               <a href="#Procedimiento"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento">procedimiento</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -1040,11 +1405,15 @@ This section provides details for each class and property defined by servicio.
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#organo</p>
+      <div class="comment">
+         <span class="markdown">To  be completed</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
+               <span class="dotted" title="http://purl.org/vocab/cpsv#hasChannel">has channel</span>
+               <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
             <dd>
@@ -1068,6 +1437,9 @@ This section provides details for each class and property defined by servicio.
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#otroLugarPresentacion</p>
+      <div class="comment">
+         <span class="markdown">This property links a Public Service with the organization to which the application is to be presented.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -1083,8 +1455,8 @@ This section provides details for each class and property defined by servicio.
             </dd>
             <dt>has range</dt>
             <dd>
-               <a href="#LugarPresentacion"
-                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#LugarPresentacion">lugar presentacion</a>
+               <a href="#CentroServicio"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#CentroServicio">centro servicio</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1097,12 +1469,14 @@ This section provides details for each class and property defined by servicio.
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#pregunta</p>
+      <div class="comment">
+         <span class="markdown">This property links a Public Service to the question associated to the service.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted" title="http://schema.org/question">question</span>
-               <sup class="type-op" title="object property">op</sup>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#topObjectProperty">top object property</span>
             </dd>
             <dt>has sub-properties</dt>
             <dd>
@@ -1111,6 +1485,16 @@ This section provides details for each class and property defined by servicio.
                <sup class="type-op" title="object property">op</sup>, <a href="#preguntaDeProcedimiento"
                   title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#preguntaDeProcedimiento">pregunta de procedimiento</a>
                <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Materia"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Materia">materia</a>
+               <sup class="type-c" title="class">c</sup> 
+               <span class="logic">or</span> 
+               <a href="#Pregunta"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Pregunta">pregunta</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
@@ -1138,8 +1522,8 @@ This section provides details for each class and property defined by servicio.
             </dd>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted"
-                     title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Materia">materia</span>
+               <a href="#Materia"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Materia">materia</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1188,6 +1572,9 @@ This section provides details for each class and property defined by servicio.
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#presencialDocumentacion</p>
+      <div class="comment">
+         <span class="markdown">This property links a presence-based Public Service with its inputs/requirements.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -1216,12 +1603,26 @@ This section provides details for each class and property defined by servicio.
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#presentar</p>
+      <div class="comment">
+         <span class="markdown">The organization in which the application for a Public Service is to be presented.</span>
+      </div>
       <div class="description">
          <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/vocab/cpsv#hasChannel">has channel</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
             <dt>has domain</dt>
             <dd>
                <a href="#Procedimiento"
                   title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento">procedimiento</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#CentroServicio"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#CentroServicio">centro servicio</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1234,12 +1635,15 @@ This section provides details for each class and property defined by servicio.
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#procedimientoDeMateria</p>
+      <div class="comment">
+         <span class="markdown">To  be completed</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted"
-                     title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Materia">materia</span>
+               <a href="#Materia"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Materia">materia</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -1251,6 +1655,29 @@ This section provides details for each class and property defined by servicio.
          </dl>
       </div>
    </div>
+   <div class="entity" id="proporcionadoPor">
+      <h3>proporcionado por<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#proporcionadoPor</p>
+      <div class="comment">
+         <span class="markdown">this property is the inverse of cpsv:provides.</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/vocab/cpsv#PublicService">public service</span>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/Agent">agent</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="realizacion">
       <h3>realizacion<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1258,12 +1685,14 @@ This section provides details for each class and property defined by servicio.
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#realizacion</p>
+      <div class="comment">
+         <span class="markdown">This property links a PublicService with the places/organization in which the service is realized.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted"
-                     title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#proporcionadoPor">proporcionado por</span>
+               <span class="dotted" title="http://purl.org/vocab/cpsv#hasChannel">has channel</span>
                <sup class="type-op" title="object property">op</sup>
             </dd>
             <dt>has domain</dt>
@@ -1288,6 +1717,9 @@ This section provides details for each class and property defined by servicio.
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#recursoProcede</p>
+      <div class="comment">
+         <span class="markdown">To  be completed</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1296,8 +1728,40 @@ This section provides details for each class and property defined by servicio.
             </dd>
             <dt>has range</dt>
             <dd>
-               <span class="dotted"
-                     title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Recurso">recurso</span>
+               <a href="#Recurso"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Recurso">recurso</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="respuestaAceptada">
+      <h3>respuesta aceptada<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#respuestaAceptada</p>
+      <div class="comment">
+         <span class="markdown">Defined as a subproperty of schema:acceptedAnswer, this property links a question (essrvc:Pregunta) with its answer (essrvc:Respuesta)</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <span class="dotted" title="http://schema.org/acceptedAnswer">accepted answer</span>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Pregunta"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Pregunta">pregunta</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Respuesta"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Respuesta">respuesta</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -1310,6 +1774,9 @@ This section provides details for each class and property defined by servicio.
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#telefonoDocumentacion</p>
+      <div class="comment">
+         <span class="markdown">This property links a telephone-based Public Service with its inputs/requirements.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -1331,6 +1798,33 @@ This section provides details for each class and property defined by servicio.
          </dl>
       </div>
    </div>
+   <div class="entity" id="usadoPor">
+      <h3>This property is the inverse of cpsv:uses property.
+This property link a PublicService to an Agent via a "used-by" relationship.<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#usadoPor</p>
+      <div class="description">
+         <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#dirigidoPor"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#dirigidoPor">dirigido por</a>
+               <sup class="type-op" title="object property">op</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/vocab/cpsv#PublicService">public service</span>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://purl.org/dc/terms/Agent">agent</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="tipoVia">
       <h3>tipo de vía<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -1338,18 +1832,18 @@ This section provides details for each class and property defined by servicio.
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#tipoVia</p>
-      <dl class="definedBy">
-         <dt>is defined by</dt>
-         <dd>
-            <a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio">http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio</a>
-         </dd>
-      </dl>
       <div class="comment">
          <span class="markdown">Tipo de vía, que será representado mediante la clasificación en SKOS de URI http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via.
 Por ejemplo, estas serán las URIs correspondientes a calles y plazas
 http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via/CL
 http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via/PL</span>
       </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio">http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio</a>
+         </dd>
+      </dl>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1373,6 +1867,9 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#tipoProcedimiento</p>
+      <div class="comment">
+         <span class="markdown">this property links a Public Service with the type of the Public Service.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -1391,7 +1888,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
       </div>
    </div>
 </div><div id="dataproperties">
-   <h2>Data Properties</h2>
+   <h3 id="dataproperties-headline" class="list">Data Properties</h3>
    <ul class="hlist">
       <li>
          <a href="#claseIniciacionTexto"
@@ -1436,15 +1933,15 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
          </a>
       </li>
       <li>
-         <a href="#enLineaDocumentacionTexto"
-            title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#enLineaDocumentacionTexto">
-            <span>en linea documentacion texto</span>
+         <a href="#efectoSilencioAdministrativo"
+            title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#efectoSilencioAdministrativo">
+            <span>efecto silencio administrativo</span>
          </a>
       </li>
       <li>
-         <a href="#enLineaUrl"
-            title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#enLineaUrl">
-            <span>en linea url</span>
+         <a href="#enLineaDocumentacionTexto"
+            title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#enLineaDocumentacionTexto">
+            <span>en linea documentacion texto</span>
          </a>
       </li>
       <li>
@@ -1479,6 +1976,12 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
          <a href="#followsTexto"
             title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#followsTexto">
             <span>follows texto</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasChannelTexto"
+            title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#hasChannelTexto">
+            <span>has channel texto</span>
          </a>
       </li>
       <li>
@@ -1528,6 +2031,12 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
          </a>
       </li>
       <li>
+         <a href="#permiteTramitation"
+            title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitation">
+            <span>permite tramitation</span>
+         </a>
+      </li>
+      <li>
          <a href="#permiteTramitationCorreoPostal"
             title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitationCorreoPostal">
             <span>permite tramitation correo postal</span>
@@ -1552,6 +2061,12 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
          </a>
       </li>
       <li>
+         <a href="#respuestaTexto"
+            title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#respuestaTexto">
+            <span>respuesta texto</span>
+         </a>
+      </li>
+      <li>
          <a href="#telefonoDocumentacionTexto"
             title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#telefonoDocumentacionTexto">
             <span>telefono documentacion texto</span>
@@ -1565,11 +2080,16 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseIniciacionTexto</p>
+      <div class="comment">
+         <span class="markdown">to be completed.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/vocab/cpsv#PublicService">public service</span>
+               <a href="#Procedimiento"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento">procedimiento</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
@@ -1585,11 +2105,16 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseTerminacionTexto</p>
+      <div class="comment">
+         <span class="markdown">to be completed.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/vocab/cpsv#PublicService">public service</span>
+               <a href="#Procedimiento"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento">procedimiento</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
@@ -1605,6 +2130,9 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#correoDocumentacionTexto</p>
+      <div class="comment">
+         <span class="markdown">This property links a postal mail based Public Service with its inputs/requirements (in string format).</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -1629,6 +2157,9 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionCorreoPostalTexto</p>
+      <div class="comment">
+         <span class="markdown">This property links a postal-mail based PublicService with the rules that it follows (in text format).</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -1636,6 +2167,12 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
                <a href="#followsTexto"
                   title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#followsTexto">follows texto</a>
                <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#ProcedimientoPorCorreo"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorCorreo">procedimiento por correo</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -1647,6 +2184,9 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionEnLineaTexto</p>
+      <div class="comment">
+         <span class="markdown">This property links an online-based PublicService with the rules that it follows (in text format).</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -1675,6 +2215,9 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionPresencialTexto</p>
+      <div class="comment">
+         <span class="markdown">This property links a presencial-based PublicService with the rules that it follows (in text format).</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -1703,6 +2246,9 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionTelefonoTexto</p>
+      <div class="comment">
+         <span class="markdown">This property links a telefone-based PublicService with the rules that it follows (in text format).</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -1724,6 +2270,17 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
          </dl>
       </div>
    </div>
+   <div class="entity" id="efectoSilencioAdministrativo">
+      <h3>efecto silencio administrativo<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#efectoSilencioAdministrativo</p>
+      <div class="comment">
+         <span class="markdown">situation that occurs if there is no response from the entity who is in charge with a Public Service.</span>
+      </div>
+   </div>
    <div class="entity" id="enLineaDocumentacionTexto">
       <h3>en linea documentacion texto<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -1731,6 +2288,9 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#enLineaDocumentacionTexto</p>
+      <div class="comment">
+         <span class="markdown">This property links an online-based Public Service with its inputs/requirements (in string format).</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -1752,28 +2312,6 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
          </dl>
       </div>
    </div>
-   <div class="entity" id="enLineaUrl">
-      <h3>en linea url<sup class="type-dp" title="data property">dp</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#enLineaUrl</p>
-      <div class="description">
-         <dl>
-            <dt>has domain</dt>
-            <dd>
-               <a href="#ProcedimientoPorEnLinea"
-                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorEnLinea">procedimiento por en linea</a>
-               <sup class="type-c" title="class">c</sup>
-            </dd>
-            <dt>has range</dt>
-            <dd>
-               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
-            </dd>
-         </dl>
-      </div>
-   </div>
    <div class="entity" id="fechaPresentacion">
       <h3>fecha de presentación (formato fecha)<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -1781,20 +2319,22 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPresentacion</p>
+      <div class="comment">
+         <span class="markdown">fecha en la que se deben presentar las solicitudes (en formato fecha)</span>
+      </div>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio">http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio</a>
          </dd>
       </dl>
-      <div class="comment">
-         <span class="markdown">fecha en la que se deben presentar las solicitudes (en formato fecha)</span>
-      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/vocab/cpsv#PublicService">public service</span>
+               <a href="#Procedimiento"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento">procedimiento</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
@@ -1810,20 +2350,22 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPresentacionTexto</p>
+      <div class="comment">
+         <span class="markdown">fecha en la que se deben presentar las solicitudes (en formato textual)</span>
+      </div>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio">http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio</a>
          </dd>
       </dl>
-      <div class="comment">
-         <span class="markdown">fecha en la que se deben presentar las solicitudes (en formato textual)</span>
-      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/vocab/cpsv#PublicService">public service</span>
+               <a href="#Procedimiento"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento">procedimiento</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
@@ -1839,20 +2381,22 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaRespuesta</p>
+      <div class="comment">
+         <span class="markdown">fecha en la que se deben resolver las solicitudes (en formato fecha/duración)</span>
+      </div>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio">http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio</a>
          </dd>
       </dl>
-      <div class="comment">
-         <span class="markdown">fecha en la que se deben resolver las solicitudes (en formato fecha/duración)</span>
-      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/vocab/cpsv#PublicService">public service</span>
+               <a href="#Procedimiento"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento">procedimiento</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
@@ -1868,20 +2412,22 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaRespuestaTexto</p>
+      <div class="comment">
+         <span class="markdown">fecha en la que se deben resolver las solicitudes (en formato textual)</span>
+      </div>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio">http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio</a>
          </dd>
       </dl>
-      <div class="comment">
-         <span class="markdown">fecha en la que se deben resolver las solicitudes (en formato textual)</span>
-      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/vocab/cpsv#PublicService">public service</span>
+               <a href="#Procedimiento"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento">procedimiento</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
@@ -1897,11 +2443,16 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPlazoFin</p>
+      <div class="comment">
+         <span class="markdown">This property represents the deadline to terminate a public service.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/vocab/cpsv#PublicService">public service</span>
+               <a href="#Procedimiento"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento">procedimiento</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
@@ -1917,11 +2468,16 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPlazoInicio</p>
+      <div class="comment">
+         <span class="markdown">This property represent the deadline to start a Public Service.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/vocab/cpsv#PublicService">public service</span>
+               <a href="#Procedimiento"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento">procedimiento</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
@@ -1937,6 +2493,11 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#followsTexto</p>
+      <div class="comment">
+         <span class="markdown">This property links a PublicService with the rules that it follow.
+
+Unline cpsv:follow whose range is a Rule, the range of this property is simply an xsd:string.</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has sub-properties</dt>
@@ -1951,9 +2512,41 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
                   title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionTelefonoTexto">detalle tramitacion telefono texto</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Procedimiento"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento">procedimiento</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>has range</dt>
             <dd>
                <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasChannelTexto">
+      <h3>has channel texto<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#hasChannelTexto</p>
+      <div class="description">
+         <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#lugarPagoTexto"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPagoTexto">lugar de pago (formato texto)</a>
+               <sup class="type-dp" title="data property">dp</sup>, <a href="#lugarPresentacionTexto"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPresentacionTexto">lugar presentacion texto</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Procedimiento"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento">procedimiento</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
       </div>
@@ -1965,6 +2558,9 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#hasInputTexto</p>
+      <div class="comment">
+         <span class="markdown">The inputs for a Public Service (in string format)</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has sub-properties</dt>
@@ -1975,6 +2571,8 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
                   title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#enLineaDocumentacionTexto">en linea documentacion texto</a>
                <sup class="type-dp" title="data property">dp</sup>, <a href="#presencialDocumentacionTexto"
                   title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#presencialDocumentacionTexto">presencial documentacion texto</a>
+               <sup class="type-dp" title="data property">dp</sup>, <a href="#requisitos"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#requisitos">requisitos</a>
                <sup class="type-dp" title="data property">dp</sup>, <a href="#telefonoDocumentacionTexto"
                   title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#telefonoDocumentacionTexto">telefono documentacion texto</a>
                <sup class="type-dp" title="data property">dp</sup>
@@ -1999,21 +2597,21 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPagoTexto</p>
+      <div class="comment">
+         <span class="markdown">Lugar donde se realiza el pago del servicio, en caso de que haya que realizar pago (en formato textual)</span>
+      </div>
       <dl class="definedBy">
-         <dt>is defined by</dt>
+         <dt>Is defined by</dt>
          <dd>
             <a href="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio">http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio</a>
          </dd>
       </dl>
-      <div class="comment">
-         <span class="markdown">Lugar donde se realiza el pago del servicio, en caso de que haya que realizar pago (en formato textual)</span>
-      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted"
-                     title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#hasChannelTexto">has channel texto</span>
+               <a href="#hasChannelTexto"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#hasChannelTexto">has channel texto</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -2036,12 +2634,15 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPresentacionTexto</p>
+      <div class="comment">
+         <span class="markdown">The place to present the application for a Public Service (in string format)</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted"
-                     title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#hasChannelTexto">has channel texto</span>
+               <a href="#hasChannelTexto"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#hasChannelTexto">has channel texto</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -2064,6 +2665,9 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#pago</p>
+      <div class="comment">
+         <span class="markdown">Information about the payment (date, amount, place) for a Public Service</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
@@ -2090,8 +2694,8 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted"
-                     title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitation">permite tramitation</span>
+               <a href="#permiteTramitation"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitation">permite tramitation</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -2116,8 +2720,8 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted"
-                     title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitation">permite tramitation</span>
+               <a href="#permiteTramitation"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitation">permite tramitation</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -2142,8 +2746,8 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted"
-                     title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitation">permite tramitation</span>
+               <a href="#permiteTramitation"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitation">permite tramitation</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -2168,13 +2772,52 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted"
-                     title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitation">permite tramitation</span>
+               <a href="#permiteTramitation"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitation">permite tramitation</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
             <dd>
                <span class="dotted" title="http://purl.org/vocab/cpsv#PublicService">public service</span>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#boolean">boolean</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="permiteTramitation">
+      <h3>permite tramitation<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitation</p>
+      <div class="comment">
+         <span class="markdown">we should replace all the subproperties with SKOS</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has sub-properties</dt>
+            <dd>
+               <a href="#permiteTramitacionCorreoCertificado"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitacionCorreoCertificado">permite tramitacion correo certificado</a>
+               <sup class="type-dp" title="data property">dp</sup>, <a href="#permiteTramitacionEnLinea"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitacionEnLinea">permite tramitacion en linea</a>
+               <sup class="type-dp" title="data property">dp</sup>, <a href="#permiteTramitacionPresencial"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitacionPresencial">permite tramitacion presencial</a>
+               <sup class="type-dp" title="data property">dp</sup>, <a href="#permiteTramitacionTelefono"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitacionTelefono">permite tramitacion telefono</a>
+               <sup class="type-dp" title="data property">dp</sup>, <a href="#permiteTramitationCorreoPostal"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitationCorreoPostal">permite tramitation correo postal</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Procedimiento"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento">procedimiento</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
@@ -2194,8 +2837,8 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
          <dl>
             <dt>has super-properties</dt>
             <dd>
-               <span class="dotted"
-                     title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitation">permite tramitation</span>
+               <a href="#permiteTramitation"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitation">permite tramitation</a>
                <sup class="type-dp" title="data property">dp</sup>
             </dd>
             <dt>has domain</dt>
@@ -2216,6 +2859,9 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#presencialDocumentacionTexto</p>
+      <div class="comment">
+         <span class="markdown">This property links a presence-based Public Service with its inputs/requirements (in string format).</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2244,11 +2890,16 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#recursoProcedeTexto</p>
+      <div class="comment">
+         <span class="markdown">to be completed</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has domain</dt>
             <dd>
-               <span class="dotted" title="http://purl.org/vocab/cpsv#PublicService">public service</span>
+               <a href="#Procedimiento"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento">procedimiento</a>
+               <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
             <dd>
@@ -2264,12 +2915,46 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#requisitos</p>
+      <div class="comment">
+         <span class="markdown">This property links a PublicService with its requirements (in text format)</span>
+      </div>
       <div class="description">
          <dl>
+            <dt>has super-properties</dt>
+            <dd>
+               <a href="#hasInputTexto"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#hasInputTexto">has input texto</a>
+               <sup class="type-dp" title="data property">dp</sup>
+            </dd>
             <dt>has domain</dt>
             <dd>
                <a href="#Procedimiento"
                   title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento">procedimiento</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2001/XMLSchema#string">string</span>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="respuestaTexto">
+      <h3>respuesta texto<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#respuestaTexto</p>
+      <div class="comment">
+         <span class="markdown">the answer of a question in string format</span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Pregunta"
+                  title="http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Pregunta">pregunta</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
             <dt>has range</dt>
@@ -2286,6 +2971,9 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
       </h3>
       <p>
          <strong>IRI:</strong> http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#telefonoDocumentacionTexto</p>
+      <div class="comment">
+         <span class="markdown">This property links a telephone-based Public Service with its inputs/requirements (in string format).</span>
+      </div>
       <div class="description">
          <dl>
             <dt>has super-properties</dt>
@@ -2308,7 +2996,7 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
       </div>
    </div>
 </div><div id="namedindividuals">
-   <h2>Named Individuals</h2>
+   <h3 id="namedindividuals" class="list">Named Individuals</h3>
    <ul class="hlist">
       <li>
          <a href="#http://www.geonames.org/ontology#R" title="http://www.geonames.org/ontology#R">
@@ -2351,4 +3039,13 @@ http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via
          </dd>
       </dl>
    </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
 </div>
+</div>
+</html>

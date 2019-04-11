@@ -1,0 +1,665 @@
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio> <http://www.w3.org/2002/07/owl#versionIRI> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio/0.1> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio> <http://www.w3.org/2002/07/owl#imports> <http://purl.org/vocab/cpsv> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio> <http://creativecommons.org/ns#license> <http://creativecommons.org/licenses/by/4.0/> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio> <http://purl.org/dc/elements/1.1/creator> "Freddy Priyatna (Ontology Engineering Group, Universidad Politécnica de Madrid)" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio> <http://purl.org/dc/elements/1.1/creator> "María Jesús Fernández Ruiz (Ayuntamiento de Zaragoza)" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio> <http://purl.org/dc/elements/1.1/creator> "Oscar Corcho (Ontology Engineering Group, Universidad Politécnica de Madrid)" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio> <http://purl.org/dc/elements/1.1/creator> "Víctor Morlán (Ayuntamiento de Zaragoza)" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio> <http://purl.org/dc/elements/1.1/date> "2016-07-28"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio> <http://purl.org/dc/elements/1.1/identifier> "http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio> <http://purl.org/dc/elements/1.1/rights> "Creative Commons Attribution 4.0 International (CC BY 4.0)" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio> <http://purl.org/dc/elements/1.1/title> "Vocabulario para la representación de procedimientos administrativos ofrecidos por un ayuntamiento"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio> <http://purl.org/dc/terms/description> "Este vocabulario se utiliza para la descripción de procedimientos administrativos ofrecidos por un ayuntamiento. Reutiliza términos de varios vocabularios, como:\n- schema.org\n- CPSV (Core Public Service Vocabulary)\n- Unidades territoriales en España\nAsimismo, se actualizará de acuerdo con la evolución de estos vocabularios (especialmente los que están en pleno desarrollo en el momento de creación de este vocabulario, como el vocabulario sobre unidades territoriales en España)."@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio> <http://purl.org/dc/terms/hasFormat> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio.html> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio> <http://purl.org/dc/terms/hasFormat> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio.rdf> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio> <http://purl.org/dc/terms/issued> "2016-07-28"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio> <http://purl.org/vocab/vann/preferredNamespaceUri> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio> <http://www.w3.org/2000/01/rdf-schema#comment> "Este vocabulario se utiliza para la descripción de procedimientos administrativos ofrecidos por un ayuntamiento. Reutiliza términos de varios vocabularios, como:\n- schema.org\n- CPSV (Core Public Service Vocabulary)\n- Unidades territoriales en España\nAsimismo, se actualizará de acuerdo con la evolución de estos vocabularios (especialmente los que están en pleno desarrollo en el momento de creación de este vocabulario, como el vocabulario sobre unidades territoriales en España).\n\t\t"@es .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#comment
+<http://www.w3.org/2000/01/rdf-schema#comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#isDefinedBy
+<http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#label
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#topDataProperty
+<http://www.w3.org/2002/07/owl#topDataProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://www.w3.org/2002/07/owl#topDataProperty> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/cpsv#PublicService> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/vocab/cpsv#hasChannel
+<http://purl.org/vocab/cpsv#hasChannel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://purl.org/vocab/cpsv#hasInput
+<http://purl.org/vocab/cpsv#hasInput> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/cpsv#PublicService> .
+# 
+# http://purl.org/vocab/cpsv#physicallyAvailableAt
+<http://purl.org/vocab/cpsv#physicallyAvailableAt> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/cpsv#hasChannel> .
+# 
+# http://purl.org/vocab/cpsv#provides
+<http://purl.org/vocab/cpsv#provides> <http://www.w3.org/2002/07/owl#inverseOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#proporcionadoPor> .
+# 
+# http://purl.org/vocab/cpsv#uses
+<http://purl.org/vocab/cpsv#uses> <http://www.w3.org/2002/07/owl#inverseOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#usadoPor> .
+# 
+# http://schema.org/acceptedAnswer
+<http://schema.org/acceptedAnswer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://schema.org/question
+<http://schema.org/question> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseIniciacion
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseIniciacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseIniciacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseIniciacion> <http://www.w3.org/2000/01/rdf-schema#comment> "To be completed"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseTerminacion
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseTerminacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseTerminacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseTerminacion> <http://www.w3.org/2000/01/rdf-schema#comment> "To be completed"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#correoDocumentacion
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#correoDocumentacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#correoDocumentacion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/cpsv#hasInput> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#correoDocumentacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorCorreo> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#correoDocumentacion> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#DocumentacionEntrada> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#correoDocumentacion> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links a postal mail based Public Service with its inputs/requirements."@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#destino
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#destino> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#destino> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/cpsv#hasChannel> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#destino> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#destino> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#CentroServicio> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#destino> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links a Public Service to an organization in which the Public Service should be addressed to."@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionCorreoPostal
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionCorreoPostal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionCorreoPostal> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#normativa> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionCorreoPostal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorCorreo> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionCorreoPostal> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoProceso> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionCorreoPostal> <http://www.w3.org/2000/01/rdf-schema#comment> "The detalleTramitacionCorreoPostal property links a postal mail based service to the Rule(s) under which it operates."@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionEnLinea
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionEnLinea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionEnLinea> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#normativa> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionEnLinea> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorEnLinea> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionEnLinea> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoProceso> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionEnLinea> <http://www.w3.org/2000/01/rdf-schema#comment> "The detalleTramitacionEnLinea property links an online-based service to the Rule(s) under which it operates."@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionPresencial
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionPresencial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionPresencial> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#normativa> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionPresencial> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorPresencial> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionPresencial> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoProceso> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionPresencial> <http://www.w3.org/2000/01/rdf-schema#comment> "The detalleTramitacionPresencial property links a presence-based service to the Rule(s) under which it operates."@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionTelefono
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionTelefono> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionTelefono> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#normativa> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionTelefono> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/cpsv#PublicService> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionTelefono> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoProceso> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionTelefono> <http://www.w3.org/2000/01/rdf-schema#comment> "The detalleTramitacionEnLinea property links a telephone-based service to the Rule(s) under which it operates."@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#dirigidoPor
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#dirigidoPor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#dirigidoPor> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#usadoPor> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#dirigidoPor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#dirigidoPor> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#DestinadoProcedimiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#dirigidoPor> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links a Public Service with an Entity that directs it"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#enLineaDocumentacion
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#enLineaDocumentacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#enLineaDocumentacion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/cpsv#hasInput> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#enLineaDocumentacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorEnLinea> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#enLineaDocumentacion> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#DocumentacionEntrada> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#enLineaDocumentacion> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links an online-based Public Service with its inputs/requirements."@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#enLineaURL
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#enLineaURL> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#enLineaURL> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/cpsv#hasChannel> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#enLineaURL> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#enLineaURL> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links a online-based PublicService with its URL"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#impreso
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#impreso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#impreso> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/cpsv#hasInput> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#impreso> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#impreso> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Impreso> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#impreso> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links a Public Service with its applications forms."@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#info
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#info> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#info> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/cpsv#hasChannel> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#info> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#info> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#CentroServicio> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#info> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links a Public Service with the organization that provide information for the corresponding Public Service."@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPago
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPago> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPago> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/cpsv#hasChannel> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPago> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPago> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#CentroServicio> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPago> <http://purl.org/dc/terms/issued> "2016-07-28" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPago> <http://www.w3.org/2000/01/rdf-schema#comment> "Lugar de pago del procedimiento, en caso de tener que realizar pago"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPago> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPago> <http://www.w3.org/2000/01/rdf-schema#label> "lugar de pago"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPresentacion
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPresentacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPresentacion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/cpsv#hasChannel> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPresentacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPresentacion> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#CentroServicio> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPresentacion> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links a Public Service with the organization to which the application is to be presented."@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#materiaDePregunta
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#materiaDePregunta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#materiaDePregunta> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Pregunta> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#materiaDePregunta> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Materia> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#materiaDePregunta> <http://www.w3.org/2000/01/rdf-schema#comment> "To  be completed"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#normativa
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#normativa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#normativa> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/cpsv#follows> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#normativa> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#normativa> <http://www.w3.org/2000/01/rdf-schema#comment> "The normativa property links a Public Service to a Rule"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#organo
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#organo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#organo> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/cpsv#hasChannel> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#organo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#organo> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#GestorDecisor> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#organo> <http://www.w3.org/2000/01/rdf-schema#comment> "To  be completed"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#otroLugarPresentacion
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#otroLugarPresentacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#otroLugarPresentacion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/cpsv#hasChannel> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#otroLugarPresentacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#otroLugarPresentacion> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#CentroServicio> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#otroLugarPresentacion> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links a Public Service with the organization to which the application is to be presented."@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#pregunta
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#pregunta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#pregunta> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/2002/07/owl#topObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#pregunta> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Materia> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Pregunta> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#pregunta> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Pregunta> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#pregunta> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links a Public Service to the question associated to the service."@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#preguntaDeMateria
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#preguntaDeMateria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#preguntaDeMateria> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#pregunta> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#preguntaDeMateria> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Materia> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#preguntaDeMateria> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Pregunta> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#preguntaDeProcedimiento
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#preguntaDeProcedimiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#preguntaDeProcedimiento> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#pregunta> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#preguntaDeProcedimiento> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#preguntaDeProcedimiento> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Pregunta> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#presencialDocumentacion
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#presencialDocumentacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#presencialDocumentacion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/cpsv#hasInput> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#presencialDocumentacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorPresencial> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#presencialDocumentacion> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#DocumentacionEntrada> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#presencialDocumentacion> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links a presence-based Public Service with its inputs/requirements."@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#presentar
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#presentar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#presentar> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/cpsv#hasChannel> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#presentar> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#presentar> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#CentroServicio> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#presentar> <http://www.w3.org/2000/01/rdf-schema#comment> "The organization in which the application for a Public Service is to be presented."@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#procedimientoDeMateria
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#procedimientoDeMateria> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#procedimientoDeMateria> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Materia> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#procedimientoDeMateria> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#procedimientoDeMateria> <http://www.w3.org/2000/01/rdf-schema#comment> "To  be completed"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#proporcionadoPor
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#proporcionadoPor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#proporcionadoPor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/cpsv#PublicService> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#proporcionadoPor> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/Agent> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#proporcionadoPor> <http://www.w3.org/2000/01/rdf-schema#comment> "this property is the inverse of cpsv:provides."@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#realizacion
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#realizacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#realizacion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/cpsv#hasChannel> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#realizacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#realizacion> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#CentroServicio> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#realizacion> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links a PublicService with the places/organization in which the service is realized."@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#recursoProcede
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#recursoProcede> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#recursoProcede> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/cpsv#PublicService> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#recursoProcede> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Recurso> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#recursoProcede> <http://www.w3.org/2000/01/rdf-schema#comment> "To  be completed"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#respuestaAceptada
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#respuestaAceptada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#respuestaAceptada> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/acceptedAnswer> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#respuestaAceptada> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Pregunta> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#respuestaAceptada> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Respuesta> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#respuestaAceptada> <http://www.w3.org/2000/01/rdf-schema#comment> "Defined as a subproperty of schema:acceptedAnswer, this property links a question (essrvc:Pregunta) with its answer (essrvc:Respuesta)"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#telefonoDocumentacion
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#telefonoDocumentacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#telefonoDocumentacion> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/vocab/cpsv#hasInput> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#telefonoDocumentacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorTelefono> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#telefonoDocumentacion> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#DocumentacionEntrada> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#telefonoDocumentacion> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links a telephone-based Public Service with its inputs/requirements."@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#tipoProcedimiento
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#tipoProcedimiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#tipoProcedimiento> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#tipoProcedimiento> <http://www.w3.org/2000/01/rdf-schema#range> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#TipoProcedimiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#tipoProcedimiento> <http://www.w3.org/2000/01/rdf-schema#comment> "this property links a Public Service with the type of the Public Service."@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#tipoVia
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#tipoVia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#tipoVia> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Via> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#tipoVia> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#tipoVia> <http://purl.org/dc/terms/issued> "2014-03-28"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#tipoVia> <http://www.w3.org/2000/01/rdf-schema#comment> "Tipo de vía, que será representado mediante la clasificación en SKOS de URI http://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via.\nPor ejemplo, estas serán las URIs correspondientes a calles y plazas\nhttp://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via/CL\nhttp://vocab.linkeddata.es/datosabiertos/kos/urbanismo-infraestructuras/tipo-via/PL"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#tipoVia> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#tipoVia> <http://www.w3.org/2000/01/rdf-schema#label> "tipo de vía"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#usadoPor
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#usadoPor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#usadoPor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/cpsv#PublicService> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#usadoPor> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/Agent> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#usadoPor> <http://www.w3.org/2000/01/rdf-schema#label> "This property is the inverse of cpsv:uses property.\nThis property link a PublicService to an Agent via a \"used-by\" relationship." .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseIniciacionTexto
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseIniciacionTexto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseIniciacionTexto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseIniciacionTexto> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseIniciacionTexto> <http://www.w3.org/2000/01/rdf-schema#comment> "to be completed."@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseTerminacionTexto
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseTerminacionTexto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseTerminacionTexto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseTerminacionTexto> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#claseTerminacionTexto> <http://www.w3.org/2000/01/rdf-schema#comment> "to be completed."@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#correoDocumentacionTexto
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#correoDocumentacionTexto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#correoDocumentacionTexto> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#hasInputTexto> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#correoDocumentacionTexto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorCorreo> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#correoDocumentacionTexto> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links a postal mail based Public Service with its inputs/requirements (in string format)."@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionCorreoPostalTexto
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionCorreoPostalTexto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionCorreoPostalTexto> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#followsTexto> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionCorreoPostalTexto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorCorreo> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionCorreoPostalTexto> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links a postal-mail based PublicService with the rules that it follows (in text format)."@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionEnLineaTexto
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionEnLineaTexto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionEnLineaTexto> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#followsTexto> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionEnLineaTexto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorEnLinea> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionEnLineaTexto> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionEnLineaTexto> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links an online-based PublicService with the rules that it follows (in text format)."@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionPresencialTexto
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionPresencialTexto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionPresencialTexto> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#followsTexto> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionPresencialTexto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorPresencial> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionPresencialTexto> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionPresencialTexto> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links a presencial-based PublicService with the rules that it follows (in text format)."@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionTelefonoTexto
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionTelefonoTexto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionTelefonoTexto> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#followsTexto> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionTelefonoTexto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorTelefono> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionTelefonoTexto> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#detalleTramitacionTelefonoTexto> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links a telefone-based PublicService with the rules that it follows (in text format)."@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#efectoSilencioAdministrativo
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#efectoSilencioAdministrativo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#efectoSilencioAdministrativo> <http://www.w3.org/2000/01/rdf-schema#comment> "situation that occurs if there is no response from the entity who is in charge with a Public Service."@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#enLineaDocumentacionTexto
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#enLineaDocumentacionTexto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#enLineaDocumentacionTexto> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#hasInputTexto> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#enLineaDocumentacionTexto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorEnLinea> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#enLineaDocumentacionTexto> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#enLineaDocumentacionTexto> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links an online-based Public Service with its inputs/requirements (in string format)."@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPlazoFin
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPlazoFin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPlazoFin> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPlazoFin> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPlazoFin> <http://www.w3.org/2000/01/rdf-schema#comment> "This property represents the deadline to terminate a public service."@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPlazoInicio
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPlazoInicio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPlazoInicio> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPlazoInicio> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPlazoInicio> <http://www.w3.org/2000/01/rdf-schema#comment> "This property represent the deadline to start a Public Service."@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPresentacion
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPresentacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPresentacion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPresentacion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPresentacion> <http://purl.org/dc/terms/issued> "2016-07-28" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPresentacion> <http://www.w3.org/2000/01/rdf-schema#comment> "fecha en la que se deben presentar las solicitudes (en formato fecha)"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPresentacion> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPresentacion> <http://www.w3.org/2000/01/rdf-schema#label> "fecha de presentación (formato fecha)"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPresentacionTexto
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPresentacionTexto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPresentacionTexto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPresentacionTexto> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPresentacionTexto> <http://purl.org/dc/terms/issued> "2016-07-28" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPresentacionTexto> <http://www.w3.org/2000/01/rdf-schema#comment> "fecha en la que se deben presentar las solicitudes (en formato textual)"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPresentacionTexto> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaPresentacionTexto> <http://www.w3.org/2000/01/rdf-schema#label> "fecha de presentación (formato texto)"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaRespuesta
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaRespuesta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaRespuesta> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaRespuesta> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaRespuesta> <http://purl.org/dc/terms/issued> "2016-07-28" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaRespuesta> <http://www.w3.org/2000/01/rdf-schema#comment> "fecha en la que se deben resolver las solicitudes (en formato fecha/duración)"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaRespuesta> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaRespuesta> <http://www.w3.org/2000/01/rdf-schema#label> "fecha de respuesta (formato fecha)"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaRespuestaTexto
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaRespuestaTexto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaRespuestaTexto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaRespuestaTexto> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaRespuestaTexto> <http://purl.org/dc/terms/issued> "2016-07-28" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaRespuestaTexto> <http://www.w3.org/2000/01/rdf-schema#comment> "fecha en la que se deben resolver las solicitudes (en formato textual)"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaRespuestaTexto> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#fechaRespuestaTexto> <http://www.w3.org/2000/01/rdf-schema#label> "fecha de respuesta (formato texto)"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#followsTexto
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#followsTexto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#followsTexto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#followsTexto> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#followsTexto> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links a PublicService with the rules that it follow.\n\nUnline cpsv:follow whose range is a Rule, the range of this property is simply an xsd:string."@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#hasChannelTexto
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#hasChannelTexto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#hasChannelTexto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#hasInputTexto
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#hasInputTexto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#hasInputTexto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#hasInputTexto> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#hasInputTexto> <http://www.w3.org/2000/01/rdf-schema#comment> "The inputs for a Public Service (in string format)"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPagoTexto
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPagoTexto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPagoTexto> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#hasChannelTexto> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPagoTexto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPagoTexto> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPagoTexto> <http://purl.org/dc/terms/issued> "2016-07-28" .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPagoTexto> <http://www.w3.org/2000/01/rdf-schema#comment> "Lugar donde se realiza el pago del servicio, en caso de que haya que realizar pago (en formato textual)"@es .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPagoTexto> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPagoTexto> <http://www.w3.org/2000/01/rdf-schema#label> "lugar de pago (formato texto)"@es .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPresentacionTexto
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPresentacionTexto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPresentacionTexto> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#hasChannelTexto> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPresentacionTexto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPresentacionTexto> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#lugarPresentacionTexto> <http://www.w3.org/2000/01/rdf-schema#comment> "The place to present the application for a Public Service (in string format)"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#pago
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#pago> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#pago> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#pago> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#pago> <http://www.w3.org/2000/01/rdf-schema#comment> "Information about the payment (date, amount, place) for a Public Service"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitacionCorreoCertificado
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitacionCorreoCertificado> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitacionCorreoCertificado> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitation> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitacionCorreoCertificado> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/cpsv#PublicService> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitacionCorreoCertificado> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitacionEnLinea
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitacionEnLinea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitacionEnLinea> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitation> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitacionEnLinea> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/cpsv#PublicService> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitacionEnLinea> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitacionPresencial
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitacionPresencial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitacionPresencial> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitation> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitacionPresencial> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/cpsv#PublicService> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitacionPresencial> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitacionTelefono
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitacionTelefono> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitacionTelefono> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitation> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitacionTelefono> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/cpsv#PublicService> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitacionTelefono> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitation
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitation> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitation> <http://www.w3.org/2000/01/rdf-schema#comment> "we should replace all the subproperties with SKOS"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitationCorreoPostal
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitationCorreoPostal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitationCorreoPostal> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitation> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitationCorreoPostal> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/vocab/cpsv#PublicService> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#permiteTramitationCorreoPostal> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#presencialDocumentacionTexto
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#presencialDocumentacionTexto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#presencialDocumentacionTexto> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#hasInputTexto> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#presencialDocumentacionTexto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorPresencial> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#presencialDocumentacionTexto> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#presencialDocumentacionTexto> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links a presence-based Public Service with its inputs/requirements (in string format)."@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#recursoProcedeTexto
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#recursoProcedeTexto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#recursoProcedeTexto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#recursoProcedeTexto> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#recursoProcedeTexto> <http://www.w3.org/2000/01/rdf-schema#comment> "to be completed"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#requisitos
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#requisitos> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#requisitos> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#hasInputTexto> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#requisitos> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#requisitos> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#requisitos> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links a PublicService with its requirements (in text format)" .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#respuestaTexto
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#respuestaTexto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#respuestaTexto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Pregunta> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#respuestaTexto> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#respuestaTexto> <http://www.w3.org/2000/01/rdf-schema#comment> "the answer of a question in string format" .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#telefonoDocumentacionTexto
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#telefonoDocumentacionTexto> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#telefonoDocumentacionTexto> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#hasInputTexto> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#telefonoDocumentacionTexto> <http://www.w3.org/2000/01/rdf-schema#domain> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorTelefono> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#telefonoDocumentacionTexto> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#telefonoDocumentacionTexto> <http://www.w3.org/2000/01/rdf-schema#comment> "This property links a telephone-based Public Service with its inputs/requirements (in string format)."@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://schema.org/Answer
+<http://schema.org/Answer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://schema.org/CivicStructure
+<http://schema.org/CivicStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://schema.org/Place
+<http://schema.org/Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://schema.org/Question
+<http://schema.org/Question> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#CentroServicio
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#CentroServicio> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#CentroServicio> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/org#Organization> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#CentroServicio> <http://www.w3.org/2000/01/rdf-schema#comment> "a subclass of org:Organization, the class CentroServicio represent organizations that are involved in the Public Service activities."@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Decisor
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Decisor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Decisor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#GestorDecisor> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Decisor> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represent an entity that makes decision in a Public Service"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#DestinadoProcedimiento
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#DestinadoProcedimiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#DestinadoProcedimiento> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/dc/terms/Agent> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#DestinadoProcedimiento> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represent the target entity of a Public Service."@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#DocumentacionEntrada
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#DocumentacionEntrada> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#DocumentacionEntrada> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/cpsv#Input> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#DocumentacionEntrada> <http://www.w3.org/2000/01/rdf-schema#comment> "DocumentacionEntrada, a subclass of cpsv:Input represents the input of a public service"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Gestor
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Gestor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Gestor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#GestorDecisor> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Gestor> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represent an entity that manages a Public Service"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#GestorDecisor
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#GestorDecisor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#GestorDecisor> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/dc/terms/Agent> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#GestorDecisor> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represent an entity that makes decision or manages a Public Service"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Impreso
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Impreso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Impreso> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/cpsv#Input> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Impreso> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents Forms to be filled in order to request a Public Servcie"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Materia
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Materia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Materia> <http://www.w3.org/2000/01/rdf-schema#comment> "To  be completed"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#MaterialAgrupacion
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#MaterialAgrupacion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#MaterialAgrupacion> <http://www.w3.org/2000/01/rdf-schema#comment> "To  be completed"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Normativa
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Normativa> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Normativa> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/cpsv#Rule> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Normativa> <http://www.w3.org/2000/01/rdf-schema#comment> "Normativa, a subclass of Rule, represents a rule that has to be followed by a PublicService"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Pregunta
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Pregunta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Pregunta> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Question> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Pregunta> <http://www.w3.org/2000/01/rdf-schema#comment> "a subclass of schema:Question"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/cpsv#PublicService> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> <http://www.w3.org/2000/01/rdf-schema#comment> "a subclass of cpsv:PublicService"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorCorreo
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorCorreo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorCorreo> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorEnLinea
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorEnLinea> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorEnLinea> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorPresencial
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorPresencial> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorPresencial> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorTelefono
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorTelefono> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoPorTelefono> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Procedimiento> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoProceso
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoProceso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoProceso> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/cpsv#Rule> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#ProcedimientoProceso> <http://www.w3.org/2000/01/rdf-schema#comment> "ProcedimientoProceso, a subclass of Rule, represents a rule that has to be followed by a Procedimiento"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Recurso
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Recurso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Recurso> <http://www.w3.org/2000/01/rdf-schema#comment> "To  be completed"@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Respuesta
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Respuesta> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Respuesta> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Answer> .
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Respuesta> <http://www.w3.org/2000/01/rdf-schema#comment> "This class represents the answers for a question."@en .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#TipoProcedimiento
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#TipoProcedimiento> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Via
+<http://vocab.linkeddata.es/datosabiertos/def/sector-publico/servicio#Via> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/org#Organization
+<http://www.w3.org/ns/org#Organization> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.geonames.org/ontology#R
+<http://www.geonames.org/ontology#R> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.geonames.org/ontology#R> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+# 
+# http://www.geonames.org/ontology#R.ST
+<http://www.geonames.org/ontology#R.ST> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.geonames.org/ontology#R.ST> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+# 
+_:genid4 <http://www.w3.org/2000/01/rdf-schema#label> "HTML" .
+_:genid5 <http://www.w3.org/2000/01/rdf-schema#label> "RDF" .
+# Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/
