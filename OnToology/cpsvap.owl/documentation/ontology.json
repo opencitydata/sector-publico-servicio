@@ -1,0 +1,1512 @@
+[ {
+  "@id" : "http://data.europa.eu/cv/AdministrativeLevel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional property. The possible values for this property are described in a controlled vocabulary (see NUTS taxonomy on http://ec.europa.eu/eurostat/ramon/nomenclatures/index.cfm?TargetUrl=LST_NOM_DTL&StrNom=NUTS_22&StrLanguageCode=EN&IntPcKey=&StrLayoutCode=HIERARCHIC)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Esta propiedad representa el nivel administrativo en el que opera una Organización Formal."
+  }, {
+    "@language" : "en",
+    "@value" : "This property represents the administrative level a particular Formal Organisation is operating on"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/ns/org#FormalOrganization"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Administrative level"
+  }, {
+    "@language" : "es",
+    "@value" : "Nivel administrativo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/cv/BusinessEvent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Mandatory class. A Business Event requires a set of public services to be delivered in order for the associated business need(s) or obligation(s) to be fulfilled. Business Events are defined within the context of a particular Member State. In other words, a Business Event groups a number of public services that need to be delivered in for completing that particular event. In CPSV-AP this has been modelled by the “Is Grouped By” property of the “Public Service” class."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Esta clase representa un evento de tipo comercial. Un 'Evento de negocios' es una estado específico o un evento en el ciclo de vida de un negocio, relacionado con una o más necesidades u obligaciones del negocio en un momento dado."
+  }, {
+    "@language" : "en",
+    "@value" : "This class represents a Business Event. A Business Event is a specific situation or event in the lifecycle of a business, which relates to one or more needs or obligations of that business at this specific point in time."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Business event"
+  }, {
+    "@language" : "es",
+    "@value" : "Evento de negocios"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/cv/Channel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional class."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La clase Canal representa el medio a través del cual un Agente proporciona, usa o interactúa con un Servicio Público."
+  }, {
+    "@language" : "en",
+    "@value" : "The Channel class represents the medium through which an Agent provides, uses or otherwise interacts with a Public Service."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Canal"
+  }, {
+    "@language" : "en",
+    "@value" : "Channel"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/cv/Cost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional class."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La clase Costo representa cualquier costo relacionado con la ejecución de un Servicio Público o con todos los Servicios Públicos relacionados con un Evento de negocios que deban ser pagados por el Agente que lo consuma."
+  }, {
+    "@language" : "en",
+    "@value" : "The Cost class represents any costs related to the execution of a Public Service or to all Public Services related to a Business Event which the Agent consuming it, needs to pay."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Cost"
+  }, {
+    "@language" : "es",
+    "@value" : "Costo"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/cv/FormalFramework",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional class. As with the Rule class, the Formal Framework class is a sub class of frbr:Expression, i.e. instances of the class are concrete expressions of the more abstract concept of the piece of legislation or policy itself. The definition and properties of the Formal Framework class in the CPSV-AP are aligned with the ontology included in “Council conclusions inviting the introduction of the European Legislation Identifier (ELI) (see http://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:52012XG1026%2801%29)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Esta clase representa la legislación y las políticas que están detrás de las reglas que rigen un servicio."
+  }, {
+    "@language" : "en",
+    "@value" : "This class represents the legislation, policy or policies that lie behind the rules that govern the service."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Formal framework"
+  }, {
+    "@language" : "es",
+    "@value" : "Marco formal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#Expression"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/cv/Input",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Mandatory class. In some cases, the Output of one service will be an Input to another service. Such relationships should be described in the associated Rule(s)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Input can be any resource - document, artefact - anything. In the context of Public Services, Inputs are usually administrative documents, applications… A specific Public Service may require the presence of certain Inputs or combinations of Inputs in order to be delivered."
+  }, {
+    "@language" : "es",
+    "@value" : "Una Entrada es cualquier recurso requerido en un proceso. En el contexto de los Servicios Públicos, las entradas suelen ser documentos administrativos, aplicaciones, etc. Un Servicio Público específico puede requerir la presencia de ciertas Entradas o combinaciones de Entradas que deben ser entregadas."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Entrada"
+  }, {
+    "@language" : "en",
+    "@value" : "Input"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/cv/Output",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional class. In some cases, the Output of one service will be an Input to another service. Such relationships should be described in the associated Rule(s)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Outputs can be any resource - document, artefact – anything produced by the Public Service. In the context of a Public Service, the output documents an official documentation of the Competent Authority (Formal Organisation) that permits/authorises/entitles an Agent to (do) something."
+  }, {
+    "@language" : "es",
+    "@value" : "Una salida es cualquier recurso producido por un servicio. En el contexto de un Servicio Público, el resultado es parte de una documentación oficial de la Autoridad Competente (Organización Formal) que permite, autoriza y/o da derecho a un Agente a hacer algo."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Output"
+  }, {
+    "@language" : "es",
+    "@value" : "Salida"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/cv/PublicOrganisation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional class."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La clase de Organización pública representa una Organización Formal que es propiedad y se administra por parte del gobierno de un estado (local, regional, nacional ...) y financiada a través de impuestos."
+  }, {
+    "@language" : "en",
+    "@value" : "The Public Organisation class represents a Formal Organisation that is owned by and managed by a state’s government (local, regional, national…) and funded through taxes."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Organización pública"
+  }, {
+    "@language" : "en",
+    "@value" : "Public organisation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/org#FormalOrganization"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/cv/PublicService",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Mandatory class."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This class represents the public service itself. A public service is the capacity to carry out a procedure and exists whether it is used or not. It is a set of deeds and acts performed by or on behalf of a public administration for the benefit of, or mandatory to be executed by a citizen, a business or another public administration."
+  }, {
+    "@language" : "es",
+    "@value" : "Un servicio público es la capacidad de llevar a cabo un procedimiento y existe independientemente de si se usa o no. Se trata de un conjunto de acciones y actos realizados por, o en nombre de, una administración pública en beneficio de un ciudadano, un negocio u otra administración pública."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Public service"
+  }, {
+    "@language" : "es",
+    "@value" : "Servicio público"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/cv/Rule",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional class. Instances of the Rule class are FRBR Expressions, that is, a concrete expression, such as a document, of the more abstract concept of the rules themselves. Rules are used for validating the input required by the service, deciding on the eligibility of the user, steering the service process and defining the dependencies/relationships between services. The CPSV-AP does not envisage instances of the Rule class as machine-processable business rules."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La clase Normativa representa un documento que establece las reglas, directrices o procedimientos específicos que sigue un Servicio Público. Incluye los términos de servicio, licencia y requisitos de autenticación del Servicio Público. En el contexto original también se denomina a esta clase Regla."
+  }, {
+    "@language" : "en",
+    "@value" : "The Rule class represents a document that sets out the specific rules, guidelines or procedures that the Public Service follows. It includes the terms of service, licence, and authentication requirements of the Public Service."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Normativa"
+  }, {
+    "@language" : "en",
+    "@value" : "Rule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/vocab/frbr/core#Expression"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/cv/cpsvap",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology", "http://www.w3.org/2002/07/owl#NamedIndividual", "http://www.w3.org/ns/adms#Asset" ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Freddy Priyatna (OEG, Universidad Politécnica de Madrid)"
+  }, {
+    "@value" : "Idafen Santana (OEG, Universidad Politécnica de Madrid)"
+  }, {
+    "@value" : "Oscar Corcho (OEG, Universidad Politécnica de Madrid)"
+  }, {
+    "@value" : "Víctor Rodríguez-Doncel (OEG, Universidad Politécnica de Madrid)"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2015-04-02"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@id" : "http://publications.europa.eu/resource/authority/corporate-body/DIGIT"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@language" : "en",
+    "@value" : "The Core Public Service Vocabulary (CPSV) is designed to make it easy to exchange basic information about the functions carried out by the public sector and the services in which those functions are carried out. An Application Profile  is a specification that re-uses terms from one or more base standards, adding more specificity by identifying mandatory, recommended and optional elements to be used for a particular application, as well as recommendations for controlled vocabularies to be used."
+  } ],
+  "http://purl.org/dc/terms/modified" : [ {
+    "@value" : "2016-12-09"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "http://publications.europa.eu/resource/authority/corporate-body/DIGIT"
+  } ],
+  "http://purl.org/dc/terms/status" : [ {
+    "@id" : "http://purl.org/adms/status/Completed"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@language" : "en",
+    "@value" : "Core Public Service Vocabulary Application Profile"
+  } ],
+  "http://purl.org/dc/terms/type" : [ {
+    "@id" : "http://purl.org/adms/assettype/Ontology"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "cpsvap"
+  } ],
+  "http://xmlns.com/foaf/0.1/homepage" : [ {
+    "@id" : "https://joinup.ec.europa.eu/asset/cpsv-ap/home"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/cv/currency",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional property. The possible values for this property are described in a controlled vocabulary (see European Publications Office's Currencies Names Authority List (NAL) on http://publications.europa.eu/mdr/authority/currency/index.html)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La propiedad Moneda representa la moneda en la que se debe pagar los costes asociados a un proceso o servicio."
+  }, {
+    "@language" : "en",
+    "@value" : "This property represents the currency in which the Cost needs to be paid and the value of the Cost is expressed."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Currency"
+  }, {
+    "@language" : "es",
+    "@value" : "Moneda"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/cv/endDateTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Mandatory property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Esta propiedad representa la fecha de finalización de un periodo."
+  }, {
+    "@language" : "en",
+    "@value" : "This property represents the end of the period."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/dc/terms/PeriodOfTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "End date/time"
+  }, {
+    "@language" : "es",
+    "@value" : "Fecha de finalización"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/cv/follows",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional property. The definition of the Rule class is very broad. In a typical case, the competent authority that provides the service will also define the rules that will implement its own policies. The CPSV-AP is flexible to allow for significant variation in such a scenario."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Esta propiedad enlaza un Servicio Público con la(s) regla(s) que rigen su funcionamiento."
+  }, {
+    "@language" : "en",
+    "@value" : "The follows property links a Public Service to the Rule(s) under which it operates. "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Follows"
+  }, {
+    "@language" : "es",
+    "@value" : "Sigue normativa"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://data.europa.eu/cv/Rule"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/cv/hasChannel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Esta propiedad enlaza un Servicio Público con cualquier Canal a través del cual un Agente oferta, usa o interacciona con el servicio."
+  }, {
+    "@language" : "en",
+    "@value" : "This property links the Public Service to any Channel through which an Agent provides, uses or otherwise interacts with the Public Service."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has channel (e-mail, fax, homepage, telephone, assistant)"
+  }, {
+    "@language" : "es",
+    "@value" : "Tiene canal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://data.europa.eu/cv/Channel"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/cv/hasCompetentAuthority",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Mandatory property. Whether it provides the service directly or outsources it is not relevant, the Formal Organisation that is the Competent Authority of the service is the one that is ultimately responsible for managing and providing the service."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Esta proipedad enlzada un Servicio Público con una Organización Pública, la cual es la  responsable de ofertar el servicio."
+  }, {
+    "@language" : "en",
+    "@value" : "The Has Competent Authority property links a Public Service to a Public Organisation, which is the responsible agent for the delivery of the Public Service."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has competent authority"
+  }, {
+    "@language" : "es",
+    "@value" : "Tiene autoridad competente"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://data.europa.eu/cv/PublicOrganisation"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/cv/hasCost",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Esta propiedad enlaza un Servicio Público to una o mas intancias de la clase Costo, indicando los costes relacionados con la ejecución de un Servicio Público para un ciudadno o negocio."
+  }, {
+    "@language" : "en",
+    "@value" : "Indicates the cumulative costs related to the execution of the Public Services included in a particular Business Event."
+  }, {
+    "@language" : "en",
+    "@value" : "The Has Cost property links a Public Service to one or more instances of the Cost class. It indicates the costs related to the execution of the Public Service by a citizen or a business. "
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has cost"
+  }, {
+    "@language" : "es",
+    "@value" : "Tiene costo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://data.europa.eu/cv/Cost"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/cv/hasFormalFramework",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Enlaza un Servicio Público con un Marco Formal. Indica el marco (e.g. legislación) con el cual se relaciona, bajo el que opera y que establece las bases legales del servicio."
+  }, {
+    "@language" : "en",
+    "@value" : "The Has Formal Framework property links a Public Service to a Formal Framework. It indicates the Formal Framework (e.g. legislation) to which the Public Service relates, operates or it has its legal basis."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has formal framework"
+  }, {
+    "@language" : "es",
+    "@value" : "Tiene marco formal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://data.europa.eu/cv/FormalFramework"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/cv/hasInput",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Mandatory property. A specific Public Service may require the presence of certain Inputs or combinations of Inputs in order to be delivered. These should be described in an instance of a given Public Service."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Esta propiedad enlaza un Servicio Público con una o mas intancias de la clase Entrada."
+  }, {
+    "@language" : "en",
+    "@value" : "The Has Input property links a Public Service to one or more instances of the Input class."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has input"
+  }, {
+    "@language" : "es",
+    "@value" : "Tiene entrada"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://data.europa.eu/cv/Input"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/cv/hasRole",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Plays Role is a generic property that links an Agent to a Public Service in which it plays some role."
+  }, {
+    "@language" : "es",
+    "@value" : "Propiedad genérica que enlaza un Agente con un Servicio Público en el cual desempeña algún papel."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Desempeña papel"
+  }, {
+    "@language" : "en",
+    "@value" : "Plays role"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/cv/implements",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Enlaza una Normativa con los documentos de legislación y políticas relevantes (i.e. Marco Formal) bajo el cual la normativa se define."
+  }, {
+    "@language" : "en",
+    "@value" : "The implements property links a Rule to relevant legislation or policy documents i.e. the Formal Framework (see herebefore) under which the Rules are defined."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.europa.eu/cv/Rule"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Implementa"
+  }, {
+    "@language" : "en",
+    "@value" : "Implements"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://data.europa.eu/cv/FormalFramework"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://data.europa.eu/cv/isDefinedBy"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/cv/isDefinedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Enlaza el Costo con una o mas intancias de la clase Organización Formal. Esta propiedad indica quién define el costo asociado con la provisión de un servio o con todos los sevicions asociados a un Evento de negocios."
+  }, {
+    "@language" : "en",
+    "@value" : "This property links the Cost class with one or more instances of the Formal Organisation class. This property indicates who defines the costs associated with the delivery of a particular public service or all public services grouped in a certain business event."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Is defined by"
+  }, {
+    "@language" : "es",
+    "@value" : "Se define por"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/ns/org#FormalOrganization"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/cv/monetary_value",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional property. The monetary value must be a positive decimal number."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Esta propiedad representa el valor montario indicando la cantidad de coste."
+  }, {
+    "@language" : "en",
+    "@value" : "This property represents a monetary value indicating the amount of the Cost."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Valor"
+  }, {
+    "@language" : "en",
+    "@value" : "Value"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#decimal"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/cv/ownedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional property. This property indicates the owner of a specific Channel through which a Public Service is delivered."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Enlaza la clase Canal con una o mas instancias de la clase Organización Formal."
+  }, {
+    "@language" : "en",
+    "@value" : "This property links the Channel class with one or more instances of the Formal Organisation class"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.europa.eu/cv/Channel"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Owned by"
+  }, {
+    "@language" : "es",
+    "@value" : "Propiedad de"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/ns/org#FormalOrganization"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/cv/physicallyAvailableAt",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional property. It may also include details such as office opening hours, accessibility information about the site etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Esta propiedad enlaza un Servicio Público con la localización física en la que un Agente puede interactuar con este."
+  }, {
+    "@language" : "en",
+    "@value" : "This property links a Public Service to a physical location at which an Agent may interact with it."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://data.europa.eu/cv/PublicService"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Disponible físicamente en"
+  }, {
+    "@language" : "en",
+    "@value" : "Physically available at"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/dc/terms/Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://data.europa.eu/cv/hasChannel"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/cv/processingTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional property. This can be a time range, average time, exact time for execution or any other indication of time."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Esta propiedad representa una indicación del tiempo necesario para ejecutar un Servicio Público."
+  }, {
+    "@language" : "en",
+    "@value" : "This property represents an indication of time needed for executing a Public Service."
+  }, {
+    "@language" : "en",
+    "@value" : "This property represents an indication of time needed for executing all Public Services related to a Business Event."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Processing Time"
+  }, {
+    "@language" : "en",
+    "@value" : "Processing time"
+  }, {
+    "@language" : "es",
+    "@value" : "Tiempo de procesamiento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/cv/produces",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional property. Outputs can be any resource - document, artefact – anything produced as result of executing the Public Service."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Esta propiedad enlaza un Servicio Público con una o mas instancias de la clase Salida, describiendo los resultados generados al ejecutar un Servicio Público."
+  }, {
+    "@language" : "en",
+    "@value" : "The Produces property links a Public Service to one or more instances of the Output class), describing the actual result of executing a given Public Service."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Produce"
+  }, {
+    "@language" : "en",
+    "@value" : "Produces"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://data.europa.eu/cv/Output"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/cv/sector",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional property. The possible values for this property are described in a controlled vocabulary (list of NACE codes available on http://ec.europa.eu/competition/mergers/cases/index/nace_all.html)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Esta propiedad representa la industria o sector con el que se relaciona un Servicio Público o para el cual se orienta."
+  }, {
+    "@language" : "en",
+    "@value" : "This property represents the industry or sector a Public Service relates to or is intended for."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sector"
+  }, {
+    "@language" : "es",
+    "@value" : "Sector"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/terms/subject"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/cv/startDateTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Mandatory property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Esta propiedad representa la fecha de comienzo de un periodo."
+  }, {
+    "@language" : "en",
+    "@value" : "This property represents the start of the period."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://purl.org/dc/terms/PeriodOfTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Fecha de comienzo."
+  }, {
+    "@language" : "en",
+    "@value" : "Start date/time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#date"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/cv/uses",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional property. This will typically be an individual citizen or an outside organisation. Uses is a sub property of playsRole with specific semantics."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Enlaza un Agente con el Servicio Público en el cual desempeña el papel específico de usuario, aportando las entradas y recibiendo las salidas sin desempeñar ningún papel en el proceso del servicio."
+  }, {
+    "@language" : "en",
+    "@value" : "The uses property links an Agent to a Public Service in which it plays the specific role of user, meaning that it provides the input and receives the output but does not play any direct role in providing the service."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Usa"
+  }, {
+    "@language" : "en",
+    "@value" : "Uses"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://data.europa.eu/cv/hasRole"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/eli/ontology#Language",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://data.europa.eu/eli/ontology#id_local",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Mandatory property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property represents the name of the Formal Framework."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/eli/ontology#is_about",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional property. The possible values for this property are described in a controlled vocabulary (see Eurovoc domains on http://eurovoc.europa.eu/drupal/?q=node/555)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property represents the subject of this Formal Framework."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Subject"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/terms/subject"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/eli/ontology#language",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional property. This could be one or multiple languages, for instance in countries with more than one official language. The possible values for this property are described in a controlled vocabulary (European Publications Office's Languages Named Authority List (NAL) - http://publications.europa.eu/mdr/authority/language/)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property represents the language(s) in which the Forma Framework is available."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Language"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://data.europa.eu/eli/ontology#Language"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/eli/ontology#relevant_for",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional property. The recommanded  values for this property are described in a controlled vocabulary (see NUTS taxonomies on http://ec.europa.eu/eurostat/ramon/nomenclatures/index.cfm?TargetUrl=LST_NOM_DTL&StrNom=NUTS_22&StrLanguageCode=EN&IntPcKey=&StrLayoutCode=HIERARCHIC)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property represents the geographical scope of applicability of the Formal Framework, for instance EU, country/Member State, region…"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Territorial application"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/terms/coverage"
+  } ]
+}, {
+  "@id" : "http://data.europa.eu/eli/ontology#type_document",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional property. The possible values for this property are described in a controlled vocabulary (Resource Types Named Authority Lists (NAL))."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property represents the type of a Formal Framework as described in a controlled vocabulary."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/terms/type"
+  } ]
+}, {
+  "@id" : "http://purl.org/adms/assettype/Ontology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/LinguisticSystem",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional class."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The Location class represents an identifiable geographic place."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Location"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/PeriodOfTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional class."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The Period of Time class represents an interval of time that is named or defined by its start and end dates. This interval indicates from when to when a Public Service is executable, for instance during particular months of the year or for Public Services that have a known life span."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Period of time"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/coverage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property links the Formal Framework to one or more instances of the Public Organisation class, which are the creators of the specific Formal Framework."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has creator"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property represents a free text description of a resource."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Description"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/hasPart",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://purl.org/dc/terms/isPartOf"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/isPartOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Mandatory property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property links the Public Service to the Business Event class. Several Public Services are grouped (aggregated) into a Business Event. The same Public Service may be included in different Business Events."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Is grouped by"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/language",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property represents the language(s) in which a resource is available."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Language"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/dc/terms/LinguisticSystem"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/modified",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/relation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property represents a Formal framework related to this Formal Framework."
+  }, {
+    "@language" : "en",
+    "@value" : "This property represents a Public Service related to the particular instance of the Public Service class."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Related"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/requires",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional property. The nature of the requirement will be described in the associated Rule or Input."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "One public service may require, or in some way make use of, one or several other Public Services. In this case, for a Public Service to be executed, another Public Service must be executed beforehand."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Requires"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/spatial",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional property. A common usage of spatial will be to define the country in which a Public Service is available."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Public Service is likely to be available only within a given area, typically the area covered by a particular public authority."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Spatial"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/dc/terms/Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/terms/coverage"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/subject",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/temporal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional property. These restrictions are not meant to be used to describe eligibility or the speed of operation of the service. These aspects will be covered by the Rule."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A Public Service is likely to be available only within certain time periods such as the winter months."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Temporal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://purl.org/dc/terms/PeriodOfTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "http://purl.org/dc/terms/coverage"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Mandatory property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property represents the name of a resource."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/type",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property represents the type of a resource as described in a controlled vocabulary."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Type"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+  } ]
+}, {
+  "@id" : "http://purl.org/vocab/frbr/core#Expression",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/usageNote",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/TR/vocab-adms/#adms-status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional property. The possible values for this property are described in a controlled vocabulary (from the European Legislation Identifier) composed of the following terms : in force, not in force, partially applicable, implicitly revoked, explicitly revoked, repealed, expired, suspended, other."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property represents the status of the Formal Framework."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Status"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/adms#Asset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/dcat#keyword",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property represents a keyword, term or phrase to describe the Public Service."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Keyword"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/locn#Address",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional class."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The Address class represents an address for the representation of a Location. It used for representing the physical address of a PublicOrganisation."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Address"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/locn#GeographicName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional property. The range is a literal."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property represents the geographic name of the location."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "GeographicName"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/locn#address",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional property. Asserting the address relationship implies that the Agent has an Address."
+  }, {
+    "@language" : "en",
+    "@value" : "Optional property. The relationship 'Has Address' links a location to an adress meaning that the adress is representing the location."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property represents an Address related to an Agent"
+  }, {
+    "@language" : "en",
+    "@value" : "This property represents an address representing the location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Has address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/ns/locn/Address"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/locn#addressArea",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional property. This property represents the name of a geographic area or locality that groups a number of addressable objects for addressing purposes, without being an administrative unit. This would typically be part of a city, a neighbourhood or village."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property represents the name of a geographic area or locality that groups a number of addressable objects for addressing purposes, without being an administrative unit."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/ns/locn/Address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Address area"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/locn#addressId",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Mandatory property. The concept of adding a globally unique identifier for each instance of an address is a crucial part of the INSPIRE data specification . A number of EU countries have already implemented an ID (a UUID) in their address register/gazetteer, among them Denmark. It is the address identifier that allows an address to be represented in a format other than INSPIRE whilst remaining conformant to the core vocabulary. The identifier is a hook that can be used to link the address to an alternative representation, such as vCard."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property represents a globally unique identifier for this instance of the Address."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/ns/locn/Address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Address ID"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/locn#adminUnitL1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional property. The range is a literal, conceptually defined by the INSPIRE Geographical Name data type. This property represents the uppermost administrative unit for the Address, almost always a country. Best practice is to use the ISO 3166-1 code but if this is inappropriate for the context, country names should be provided in a consistent manner to reduce ambiguity. For example, either write 'United Kingdom' or 'UK' consistently throughout the data set and avoid mixing the two. Examples: 'UK' or 'United Kingdom'"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property represents the uppermost administrative unit for the Address, almost always a country."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/ns/locn/Address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Admin unit L1"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/locn#adminUnitL2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional property. The range is a literal, conceptually defined by the INSPIRE Geographical Name data type."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property represents the region of the Address, usually a county, state or other such area that typically encompasses several localities."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/ns/locn/Address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Admin unit L2"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/locn#fullAddress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Mandatory property. Use of this property is mandatory as it will not suffer any misunderstandings that might arise through the breaking up of an address into its component parts."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property represents the complete Address with or without formatting."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/ns/locn/Address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Full address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/locn#locatorDesignator",
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional property. The locator designator is a number or a sequence of characters that uniquely identifies the locator within the relevant scope(s). The full identification of the locator could include one or more locator designators. In simpler terms, this is the building number, apartment number, etc. It is characteristic that these designators, according to tradition or to a specific set of rules, are assigned systematically. For example address numbers are most often assigned in ascending order with odd and even numbers on each side of the thoroughfare. Another example is the floor identifier that in a standardized way expresses on which level the address is located . The key difference between a locator designator and a locator name is that the latter is a proper name and is unlikely to include digits."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property represents a number or a sequence of characters that uniquely identifies the locator within the relevant scope."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Locator designator"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/locn#locatorName",
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional property. The locator name is a proper noun applied to the real world entity identified by the locator. The locator name could be the name of the property or complex, of the building or part of the building, or it could be the name of a room inside a building. The key difference between a locator designator and a locator name is that the latter is a proper name and is unlikely to include digits. Examples: 'Rose Cottage', 'Grand Suite', 'The little house by the lake'"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property represents a proper noun applied to the real world entity identified by the Address."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Locator name"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/locn#poBox",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property represents the Post Office Box number."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/ns/locn/Address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "PO Box"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/locn#postCode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional property. Post codes are common elements in many countries' postal address systems."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property represents the post code, also known as postal code, ZIP code, etc."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/ns/locn/Address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Post code"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/locn#postName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional property. The post name is a name created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points (see INSPIRE Data specifications : http://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.1.pdf)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property represents the key postal division of the address, usually the city."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/ns/locn/Address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Post name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/locn#thoroughfare",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional property. A thoroughfare is an address component that represents the name of a passage or way through from one location to another. A thoroughfare is not necessarily a road, it might be a waterway or some other feature.Examples: 'Main Street'"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property represents the name of a passage or way through from one location to another."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/ns/locn/Address"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Thoroughfare"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/locn/Address",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/ns/org#FormalOrganization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Mandatory class. The Formal Organisation class has been defined in the Organization Ontology (see http://www.w3.org/TR/vocab-org/#class-organization)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "It represents an Organisation which is recognized in the world at large, in particular in legal jurisdictions, with associated rights and responsibilities. Examples include a corporation, charity, government or church."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Formal Organisation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.w3.org/ns/org#Organization"
+  }, {
+    "@id" : "http://xmlns.com/foaf/0.1/Organization"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/org#Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Agent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@value" : "Optional class."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The Agent class is any resource that acts or has the power to act."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Agent"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/Organization",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/homepage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@value" : "Optional property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property represents a website through which information about the Formal Organisation can be retrieved, the particular Formal Organisation can be contacted…."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Homepage"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Mandatory property."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property represents a name by which the Formal Organisation is known other than her official/legal name."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Alternative name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+  } ]
+}, {
+  "@id" : "http://xmlns.com/foaf/0.1/page",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://purl.org/vocab/vann/usageNote" : [ {
+    "@language" : "en",
+    "@value" : "Optional property"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This property represents documentation that contains information related to the Input, for instance a particular template for an administrative document or an application."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Related documentation"
+  } ]
+}, {
+  "@id" : "https://joinup.ec.europa.eu/asset/cpsv-ap/home",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+} ]
